@@ -5,6 +5,7 @@ This repository deals with the translations of/for the bot [Alchemist](https://t
 
 - Submit a pull request if you want to add/edit/change a language/strings or to completely add a new language!
    - You can also contact me on [Discord](https://discord.com/users/302885091519234050) for a faster response or if you have any questions
+- Check out the blank [example](https://github.com/Domxnvk/acm-translations/blob/main/languages/example.yaml) with which you can work if you start a new language 
 
 ## 🌐 How to properly translate
 
