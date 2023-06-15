@@ -1,721 +1,721 @@
 Announce:
 
-  announce_title: 
-  announce_description: 
-  announce_error: 
-  announce_start: 
-  announce_sent: 
-  announce_not_sent: 
-  announce_error_choice: 
-  announce_send?: 
-  placeholder: 
-  announce_hex: 
-  wrong_file_type: 
+  announce_title: ""
+  announce_description: ""
+  announce_error: ""
+  announce_start: ""
+  announce_sent: ""
+  announce_not_sent: ""
+  announce_error_choice: ""
+  announce_send?: ""
+  placeholder: ""
+  announce_hex: ""
+  wrong_file_type: ""
 
 Autorole:
 
-  autorole_not_assignable: 
-  autorole_true: 
-  autorole_success: 
-  autorole_false: 
-  autorole_toggle: 
-  autorole_same: 
-  autorole_change: 
-  autorole_toggle_embed_title: 
-  autorole_role_error_embed_title: 
-  autorole_success_embed_title: 
-  autorole_same_embed_title: 
-  autorole_changed_embed_title: 
-  autorole_success_embed_desc: 
-  autorole_success_embed_old_role: 
-  autorole_success_embed_new_role: 
-  autorole_reminder: 
+  autorole_not_assignable: ""
+  autorole_true: ""
+  autorole_success: ""
+  autorole_false: ""
+  autorole_toggle: ""
+  autorole_same: ""
+  autorole_change: ""
+  autorole_toggle_embed_title: ""
+  autorole_role_error_embed_title: ""
+  autorole_success_embed_title: ""
+  autorole_same_embed_title: ""
+  autorole_changed_embed_title: ""
+  autorole_success_embed_desc: ""
+  autorole_success_embed_old_role: ""
+  autorole_success_embed_new_role: ""
+  autorole_reminder: ""
 
 Economy:
 
-  slots_ok_title: 
-  top_title: 
-  balance_title: 
-  wallet: 
-  positive_amt: 
-  coinflip_title_win: 
-  coinflip_bot_chose: 
-  slots_win_amout: 
-  slots_lost_title: 
-  coinflip_description_lost: 
-  coinflip_too_long: 
-  bank: 
-  coinflip_field1: 
-  top_description: 
-  not_enough: 
-  too_much: 
-  deposit_success: 
-  coinflip_field2: 
-  withdraw_success: 
-  coinflip_you_chose: 
-  slots_lost_amount: 
-  coinflip_description: 
-  coinflip_title: 
-  deposit_all: 
-  rob_success: 
-  rob_worthless: 
-  beg: 
-  send_success: 
-  slots_won_title: 
-  coinflip_field3: 
-  coinflip_description_won: 
-  slots_ok_amount: 
-  balance_embed_desc: 
-  cooldowns_desc: 
+  slots_ok_title: ""
+  top_title: ""
+  balance_title: ""
+  wallet: ""
+  positive_amt: ""
+  coinflip_title_win: ""
+  coinflip_bot_chose: ""
+  slots_win_amout: ""
+  slots_lost_title: ""
+  coinflip_description_lost: ""
+  coinflip_too_long: ""
+  bank: ""
+  coinflip_field1: ""
+  top_description: ""
+  not_enough: ""
+  too_much: ""
+  deposit_success: ""
+  coinflip_field2: ""
+  withdraw_success: ""
+  coinflip_you_chose: ""
+  slots_lost_amount: ""
+  coinflip_description: ""
+  coinflip_title: ""
+  deposit_all: ""
+  rob_success: ""
+  rob_worthless: ""
+  beg: ""
+  send_success: ""
+  slots_won_title: ""
+  coinflip_field3: ""
+  coinflip_description_won: ""
+  slots_ok_amount: ""
+  balance_embed_desc: ""
+  cooldowns_desc: ""
 
 Errors:
 
-  error_dm: 
-  error_bot_lack: 
-  error_disabled: 
-  error_cooldown: 
-  error_title: 
-  error_lack_perms: 
-  error_runtime: 
+  error_dm: ""
+  error_bot_lack: ""
+  error_disabled: ""
+  error_cooldown: ""
+  error_title: ""
+  error_lack_perms: ""
+  error_runtime: ""
 
 Help:
 
-  next_page_embed_footer: 
-  help_menu_start_title: 
-  help_first_page: 
-  help_menu_reaction_title: 
-  help_menu_customs_title: 
-  help_menu_customs_desc: 
-  help_command_footer: 
-  end_page_footer: 
-  help_closed: 
-  help_last_page: 
-  help_menu_mod_title: 
-  help_menu_economy_title: 
-  help_menu_info_title: 
-  help_menu_utils_title: 
-  first_page_embed_footer: 
-  interaction_nallowed: 
-  laste_page_embed_footer: 
-  help_menu_pvm_title: 
-  help_menu_levels_title: 
-  help_menu_levels_desc: 
-  help_menu_autorole_title: 
-  help_menu_autorole_desc: 
-  help_menu_welcome_title: 
-  help_menu_welcome_desc: 
-  help_menu_start_desc: 
-  help_menu_utils_desc: 
-  help_menu_info_desc: 
-  help_menu_economy_desc: 
-  help_menu_reaction_desc: 
-  help_menu_pvm_desc: 
-  help_menu_mod_desc: 
-  help_menu_namefilter_desc: 
-  help_menu_namefilter_title: 
-  reminder_menu_desc: 
-  help_menu_tickets_desc: 
-  help_menu_roleshop_title: 
-  help_menu_roleshop_desc: 
-  help_menu_tickets_title: 
-  custom_channel_help: 
-  reaction_roles_help: 
-  welcome_and_leave_help: 
-  ticket_system_help: 
-  level_system_help: 
-  economy_system_help: 
-  autorole_system_help: 
-  custom_message_system_help: 
-  information_system_help: 
-  utils_system_help: 
-  moderation_system_help: 
-  twitch_menu_desc: 
-  help_menu_booster_desc: 
-  help_menu_presence_desc: 
+  next_page_embed_footer: ""
+  help_menu_start_title: ""
+  help_first_page: ""
+  help_menu_reaction_title: ""
+  help_menu_customs_title: ""
+  help_menu_customs_desc: ""
+  help_command_footer: ""
+  end_page_footer: ""
+  help_closed: ""
+  help_last_page: ""
+  help_menu_mod_title: ""
+  help_menu_economy_title: ""
+  help_menu_info_title: ""
+  help_menu_utils_title: ""
+  first_page_embed_footer: ""
+  interaction_nallowed: ""
+  laste_page_embed_footer: ""
+  help_menu_pvm_title: ""
+  help_menu_levels_title: ""
+  help_menu_levels_desc: ""
+  help_menu_autorole_title: ""
+  help_menu_autorole_desc: ""
+  help_menu_welcome_title: ""
+  help_menu_welcome_desc: ""
+  help_menu_start_desc: ""
+  help_menu_utils_desc: ""
+  help_menu_info_desc: ""
+  help_menu_economy_desc: ""
+  help_menu_reaction_desc: ""
+  help_menu_pvm_desc: ""
+  help_menu_mod_desc: ""
+  help_menu_namefilter_desc: ""
+  help_menu_namefilter_title: ""
+  reminder_menu_desc: ""
+  help_menu_tickets_desc: ""
+  help_menu_roleshop_title: ""
+  help_menu_roleshop_desc: ""
+  help_menu_tickets_title: ""
+  custom_channel_help: ""
+  reaction_roles_help: ""
+  welcome_and_leave_help: ""
+  ticket_system_help: ""
+  level_system_help: ""
+  economy_system_help: ""
+  autorole_system_help: ""
+  custom_message_system_help: ""
+  information_system_help: ""
+  utils_system_help: ""
+  moderation_system_help: ""
+  twitch_menu_desc: ""
+  help_menu_booster_desc: ""
+  help_menu_presence_desc: ""
 
 Information:
 
-  serverinfo-owner: 
-  uinfo-roles-none: 
-  view_is_normal: 
-  serverinfo-created: 
-  serverinfo-txtchannel: 
-  avatar-no-server: 
-  uinfo-days: 
-  botinfo-python: 
-  uinfo-nickname: 
-  serverinfo-members: 
-  uinfo-voice: 
-  botinfo-guilds: 
-  uinfo-created: 
-  uinfo-joined: 
-  botinfo-channel: 
-  uinfo-days1: 
-  uinfo-perms: 
-  botinfo-users: 
-  botinfo-disnake: 
-  uinfo-highest-none: 
-  view_is_server: 
-  serverinfo-roles: 
-  uinfo-roles: 
-  uinfo-highest: 
-  serverinfo-guild-name: 
-  botinfo-translator: 
-  botinfo-rebooted: 
-  information-buttons: 
-  serverinfo-role-mention: 
+  serverinfo-owner: ""
+  uinfo-roles-none: ""
+  view_is_normal: ""
+  serverinfo-created: ""
+  serverinfo-txtchannel: ""
+  avatar-no-server: ""
+  uinfo-days: ""
+  botinfo-python: ""
+  uinfo-nickname: ""
+  serverinfo-members: ""
+  uinfo-voice: ""
+  botinfo-guilds: ""
+  uinfo-created: ""
+  uinfo-joined: ""
+  botinfo-channel: ""
+  uinfo-days1: ""
+  uinfo-perms: ""
+  botinfo-users: ""
+  botinfo-disnake: ""
+  uinfo-highest-none: ""
+  view_is_server: ""
+  serverinfo-roles: ""
+  uinfo-roles: ""
+  uinfo-highest: ""
+  serverinfo-guild-name: ""
+  botinfo-translator: ""
+  botinfo-rebooted: ""
+  information-buttons: ""
+  serverinfo-role-mention: ""
 
 Levels:
 
-  levels_ignored_already: 
-  levels_ignore_channel: 
-  levels_leaderboard_deactivated: 
-  levels_allow_success: 
-  levels_lb_totalxp: 
-  levels_leaderboard_title: 
-  levels_lb_totalmsg: 
-  levels_lb_member: 
-  levels_false: 
-  levels_mention_false: 
-  levels_rank_progress: 
-  levels_mention_true: 
-  levels_toggle: 
-  levels_allow_not_ignored: 
-  levels_allow_nodata: 
-  levels_leaderboard_description: 
-  levels_allow_nochannel: 
-  levels_rank_no_xp: 
-  on_message_mention: 
-  levels_mention_toggle: 
-  levels_true: 
-  levels_rank_deactivated: 
-  levels_ignore_channel_title: 
-  levels_ignore_channel_new: 
-  levels_ignore_channel_old: 
-  levels_ignore_channel_title_already: 
-  levels_ignore_channel_desc_already: 
-  levels_allow_all_channel: 
-  levels_allow_nodata_title: 
-  levels_allow_nodata_desc: 
-  levels_allow_not_ignored_title: 
-  levels_allow_not_ignored_desc: 
-  levels_allow_success_title: 
-  levels_allow_success_desc: 
-  levels_settings_title: 
-  levels_roles_toggle_title: 
-  levels_roles_toggle: 
-  levels_roles_toggle_true: 
-  roles_roles_toggle_false: 
-  levels_role_error_embed_title: 
-  levels_role_not_assignable: 
-  levels_roles_error_title: 
-  levels_roles_already_role_desc: 
-  levels_roles_success_title: 
-  levels_roles_success_desc: 
-  levels_roles_success_role: 
-  levels_roles_success_reminder: 
-  levels_roles_remove_success_embed_title: 
-  levels_roles_remove_success_desc: 
-  levels_roles_addrole_success_role: 
-  levels_roles_addrole_error_title: 
-  levels_roles_remove_fail: 
-  levels_roles_already_role_field: 
-  levels_roles_already_level_desc: 
-  levels_roles_remove_success_role: 
+  levels_ignored_already: ""
+  levels_ignore_channel: ""
+  levels_leaderboard_deactivated: ""
+  levels_allow_success: ""
+  levels_lb_totalxp: ""
+  levels_leaderboard_title: ""
+  levels_lb_totalmsg: ""
+  levels_lb_member: ""
+  levels_false: ""
+  levels_mention_false: ""
+  levels_rank_progress: ""
+  levels_mention_true: ""
+  levels_toggle: ""
+  levels_allow_not_ignored: ""
+  levels_allow_nodata: ""
+  levels_leaderboard_description: ""
+  levels_allow_nochannel: ""
+  levels_rank_no_xp: ""
+  on_message_mention: ""
+  levels_mention_toggle: ""
+  levels_true: ""
+  levels_rank_deactivated: ""
+  levels_ignore_channel_title: ""
+  levels_ignore_channel_new: ""
+  levels_ignore_channel_old: ""
+  levels_ignore_channel_title_already: ""
+  levels_ignore_channel_desc_already: ""
+  levels_allow_all_channel: ""
+  levels_allow_nodata_title: ""
+  levels_allow_nodata_desc: ""
+  levels_allow_not_ignored_title: ""
+  levels_allow_not_ignored_desc: ""
+  levels_allow_success_title: ""
+  levels_allow_success_desc: ""
+  levels_settings_title: ""
+  levels_roles_toggle_title: ""
+  levels_roles_toggle: ""
+  levels_roles_toggle_true: ""
+  roles_roles_toggle_false: ""
+  levels_role_error_embed_title: ""
+  levels_role_not_assignable: ""
+  levels_roles_error_title: ""
+  levels_roles_already_role_desc: ""
+  levels_roles_success_title: ""
+  levels_roles_success_desc: ""
+  levels_roles_success_role: ""
+  levels_roles_success_reminder: ""
+  levels_roles_remove_success_embed_title: ""
+  levels_roles_remove_success_desc: ""
+  levels_roles_addrole_success_role: ""
+  levels_roles_addrole_error_title: ""
+  levels_roles_remove_fail: ""
+  levels_roles_already_role_field: ""
+  levels_roles_already_level_desc: ""
+  levels_roles_remove_success_role: ""
 
 Moderation:
 
-  modlog_set: 
-  modlog_moved: 
-  modlog_same: 
-  ban_myself: 
-  ban_yourself: 
-  ban_embed_title: 
-  ban_embed_desc: 
-  moderation_embed_reason: 
-  no_action_possible: 
-  action_failed: 
-  ban_guild_embed_title: 
-  modlog_found_ban: 
-  no_modlog_found: 
-  softban_myself: 
-  softban_yourself: 
-  softban_embed_title: 
-  softban_embed_desc: 
-  softban_guild_embed_title: 
-  moderation_member_mention: 
-  softban_log_success: 
-  kick_myself: 
-  kick_yourself: 
-  hackban_yourself: 
-  hackban_myself: 
-  kick_embed_title: 
-  kick_embed_desc: 
-  kick_guild_embed_title: 
-  kick_log_success: 
-  delete_too_high: 
-  delete_message_channel: 
-  delete_log_message: 
-  no_modlog_found_delete: 
-  delete_missing_perms: 
-  hackban_success: 
-  hackban_failed: 
-  hackban_already_banned: 
-  hackban_log_success: 
-  slowmode_set_time: 
-  slowmode_log_entry: 
-  hackban_invalid_argument: 
-  tempban_embed_title: 
-  tempban_embed_desc: 
-  moderation_embed_reason: 
-  moderation_embed_duration: 
-  tempban_guild_embed_title: 
-  tempban_guild_embed_desc: 
-  moderation_member_mention: 
-  tempban_log_success: 
-  action_type: 
-  type_unban: 
-  unbanned_after: 
-  unban_embed_title: 
-  banned_for: 
+  modlog_set: ""
+  modlog_moved: ""
+  modlog_same: ""
+  ban_myself: ""
+  ban_yourself: ""
+  ban_embed_title: ""
+  ban_embed_desc: ""
+  moderation_embed_reason: ""
+  no_action_possible: ""
+  action_failed: ""
+  ban_guild_embed_title: ""
+  modlog_found_ban: ""
+  no_modlog_found: ""
+  softban_myself: ""
+  softban_yourself: ""
+  softban_embed_title: ""
+  softban_embed_desc: ""
+  softban_guild_embed_title: ""
+  moderation_member_mention: ""
+  softban_log_success: ""
+  kick_myself: ""
+  kick_yourself: ""
+  hackban_yourself: ""
+  hackban_myself: ""
+  kick_embed_title: ""
+  kick_embed_desc: ""
+  kick_guild_embed_title: ""
+  kick_log_success: ""
+  delete_too_high: ""
+  delete_message_channel: ""
+  delete_log_message: ""
+  no_modlog_found_delete: ""
+  delete_missing_perms: ""
+  hackban_success: ""
+  hackban_failed: ""
+  hackban_already_banned: ""
+  hackban_log_success: ""
+  slowmode_set_time: ""
+  slowmode_log_entry: ""
+  hackban_invalid_argument: ""
+  tempban_embed_title: ""
+  tempban_embed_desc: ""
+  moderation_embed_reason: ""
+  moderation_embed_duration: ""
+  tempban_guild_embed_title: ""
+  tempban_guild_embed_desc: ""
+  moderation_member_mention: ""
+  tempban_log_success: ""
+  action_type: ""
+  type_unban: ""
+  unbanned_after: ""
+  unban_embed_title: ""
+  banned_for: ""
 
 Msgvote:
 
-  msgvote_upvote_success: 
-  msgvote_toggle: 
-  msgvote_channel_moved: 
-  msgvote_true: 
-  msgvote_upvote_same: 
-  msgvote_channel_same: 
-  msgvote_channel_set: 
-  msgvote_false: 
-  msgvote_downvote_success: 
-  msgvote_downvote_same: 
-  msgvote_settings_title: 
-  msgvote_channel_set_title: 
-  msgvote_channel_set_moved: 
-  msgvote_channel_set_desc: 
-  msgvote_channel_set_old: 
-  msgvote_channel_set_new: 
-  msgvote_channel_same_title: 
-  msgvote_same_title: 
-  msgvote_same_desc: 
-  msgvote_same_entry: 
-  msgvote_success_title: 
-  msgvote_used_for: 
-  msgvote_success_reminder: 
+  msgvote_upvote_success: ""
+  msgvote_toggle: ""
+  msgvote_channel_moved: ""
+  msgvote_true: ""
+  msgvote_upvote_same: ""
+  msgvote_channel_same: ""
+  msgvote_channel_set: ""
+  msgvote_false: ""
+  msgvote_downvote_success: ""
+  msgvote_downvote_same: ""
+  msgvote_settings_title: ""
+  msgvote_channel_set_title: ""
+  msgvote_channel_set_moved: ""
+  msgvote_channel_set_desc: ""
+  msgvote_channel_set_old: ""
+  msgvote_channel_set_new: ""
+  msgvote_channel_same_title: ""
+  msgvote_same_title: ""
+  msgvote_same_desc: ""
+  msgvote_same_entry: ""
+  msgvote_success_title: ""
+  msgvote_used_for: ""
+  msgvote_success_reminder: ""
 
 Language:
 
-  languages_title: 
-  setlang_failed: 
-  setlang_success: 
-  languages_footer: 
-  test_command: 
-  choose_translation: 
+  languages_title: ""
+  setlang_failed: ""
+  setlang_success: ""
+  languages_footer: ""
+  test_command: ""
+  choose_translation: ""
 
 Private:
 
-  pvm_setup_embed_f3_n: 
-  pvm_setup_cmanagement: 
-  pvm_setup_category: 
-  pvm_setup_embed_title: 
-  pvm_setup_embed_f1_n: 
-  pvm_setup_embed_f2_v: 
-  pvm_setup_embed_f3_v: 
-  pvm_setup_joinchannel: 
-  pvm_info_kicked: 
-  pvm_info_field1: 
-  pvm_setup_embed_f2_n: 
-  pvm_clear_success: 
-  pvm_setup_embed_desc: 
-  pvm_limit: 
-  pvm_info_title: 
-  pvm_info_field2: 
-  pvm_cooldowns_desc:
-  pvm_addrole_success_title: 
-  pvm_addrole_list: 
-  pvm_addrole_success_desc: 
-  pvm_an_error: 
-  pvm_addrole_same_desc: 
-  pvm_nodata: 
-  pvm_removerole_no_role_found: 
-  pvm_removerole_noperms: 
-  pvm_removerole_success_title: 
-  pvm_removerole_success_desc: 
-  pvm_setup_success: 
-  pvm_setup_addrole: 
-  pvm_setup_already: 
-  private_new_name: 
-  private_new_name_too_long: 
-  pvm_name_success_title: 
-  pvm_name_success: 
-  contact_owner: 
-  pvm_novc: 
-  pvm_not_owner: 
-  pvm_privacy_closed: 
-  pvm_privacy_open: 
-  private_no_number: 
-  pvm_size_success_title: 
-  pvm_size_success_desc: 
-  private_new_size: 
-  private_kick: 
-  pvm_member_not_found: 
-  private_invite: 
-  pvm_invite_already: 
-  pvm_invite_success: 
-  pvm_immune: 
-  pvm_kick_success: 
-  pvm_kick_already: 
-  pvm_kick_not_in_channel: 
-  pvm_name_cooldown_title: 
-  pvm_name_cooldown_desc: 
-  pvm_ignore_already: 
-  pvm_ignore_success: 
-  pvm_observe_not_found: 
-  pvm_observe_not_ignored: 
-  pvm_observe_success: 
-  pvm_clear_no_setup: 
-  pvm_info_nopvc: 
-  pvm_delete_no_customs: 
-  pvm_delete_messsage: 
-  pvm_delete_success: 
-  private_channel_toggle_embed_title: 
-  private_channel_toggle: 
-  text_channel_true: 
-  text_channel_false: 
+  pvm_setup_embed_f3_n: ""
+  pvm_setup_cmanagement: ""
+  pvm_setup_category: ""
+  pvm_setup_embed_title: ""
+  pvm_setup_embed_f1_n: ""
+  pvm_setup_embed_f2_v: ""
+  pvm_setup_embed_f3_v: ""
+  pvm_setup_joinchannel: ""
+  pvm_info_kicked: ""
+  pvm_info_field1: ""
+  pvm_setup_embed_f2_n: ""
+  pvm_clear_success: ""
+  pvm_setup_embed_desc: ""
+  pvm_limit: ""
+  pvm_info_title: ""
+  pvm_info_field2: ""
+  pvm_cooldowns_desc: ""
+  pvm_addrole_success_title: ""
+  pvm_addrole_list: ""
+  pvm_addrole_success_desc: ""
+  pvm_an_error: ""
+  pvm_addrole_same_desc: ""
+  pvm_nodata: ""
+  pvm_removerole_no_role_found: ""
+  pvm_removerole_noperms: ""
+  pvm_removerole_success_title: ""
+  pvm_removerole_success_desc: ""
+  pvm_setup_success: ""
+  pvm_setup_addrole: ""
+  pvm_setup_already: ""
+  private_new_name: ""
+  private_new_name_too_long: ""
+  pvm_name_success_title: ""
+  pvm_name_success: ""
+  contact_owner: ""
+  pvm_novc: ""
+  pvm_not_owner: ""
+  pvm_privacy_closed: ""
+  pvm_privacy_open: ""
+  private_no_number: ""
+  pvm_size_success_title: ""
+  pvm_size_success_desc: ""
+  private_new_size: ""
+  private_kick: ""
+  pvm_member_not_found: ""
+  private_invite: ""
+  pvm_invite_already: ""
+  pvm_invite_success: ""
+  pvm_immune: ""
+  pvm_kick_success: ""
+  pvm_kick_already: ""
+  pvm_kick_not_in_channel: ""
+  pvm_name_cooldown_title: ""
+  pvm_name_cooldown_desc: ""
+  pvm_ignore_already: ""
+  pvm_ignore_success: ""
+  pvm_observe_not_found: ""
+  pvm_observe_not_ignored: ""
+  pvm_observe_success: ""
+  pvm_clear_no_setup: ""
+  pvm_info_nopvc: ""
+  pvm_delete_no_customs: ""
+  pvm_delete_messsage: ""
+  pvm_delete_success: ""
+  private_channel_toggle_embed_title: ""
+  private_channel_toggle: ""
+  text_channel_true: ""
+  text_channel_false: ""
 
 Reaction:
 
-  reaction_channel_moved: 
-  reaction_channel_already: 
-  reaction_title: 
-  reaction_no_channel: 
-  reaction_addrole_use: 
-  reaction_addrole_emoji_use: 
-  reaction_list_no_data: 
-  reaction_addrole_success: 
-  reaction_channel_set: 
-  reaction_remove_fail: 
-  reaction_remove_success: 
-  reaction_channel_data: 
-  reaction_role_not_assignable: 
-  reaction_addrole_error_title: 
-  reaction_addrole_already_desc: 
-  reaction_addrole_already_role_field: 
-  reaction_addrole_already_emoj_field: 
-  reaction_addrole_already_emoji_field: 
-  reaction_addrole_already_emoj_role_field: 
-  reaction_addrole_success_title: 
-  reaction_addrole_success_desc: 
-  reaction_addrole_success_role: 
-  reaction_addrole_already_emoji_desc: 
-  reaction_remove_success_embed_title: 
-  reaction_remove_success_desc: 
-  reaction_remove_fail_footer: 
-  reaction_success_reminder: 
-  reaction_channel_set_embed_title: 
-  reaction_channel_moved_embed_title: 
-  reaction_channel_moved_embed_desc: 
-  reaction_channel_moved_old: 
-  reaction_channel_moved_new: 
-  reaction_channel_same_embed_title: 
-  reaction_role_error_embed_title: 
+  reaction_channel_moved: ""
+  reaction_channel_already: ""
+  reaction_title: ""
+  reaction_no_channel: ""
+  reaction_addrole_use: ""
+  reaction_addrole_emoji_use: ""
+  reaction_list_no_data: ""
+  reaction_addrole_success: ""
+  reaction_channel_set: ""
+  reaction_remove_fail: ""
+  reaction_remove_success: ""
+  reaction_channel_data: ""
+  reaction_role_not_assignable: ""
+  reaction_addrole_error_title: ""
+  reaction_addrole_already_desc: ""
+  reaction_addrole_already_role_field: ""
+  reaction_addrole_already_emoj_field: ""
+  reaction_addrole_already_emoji_field: ""
+  reaction_addrole_already_emoj_role_field: ""
+  reaction_addrole_success_title: ""
+  reaction_addrole_success_desc: ""
+  reaction_addrole_success_role: ""
+  reaction_addrole_already_emoji_desc: ""
+  reaction_remove_success_embed_title: ""
+  reaction_remove_success_desc: ""
+  reaction_remove_fail_footer: ""
+  reaction_success_reminder: ""
+  reaction_channel_set_embed_title: ""
+  reaction_channel_moved_embed_title: ""
+  reaction_channel_moved_embed_desc: ""
+  reaction_channel_moved_old: ""
+  reaction_channel_moved_new: ""
+  reaction_channel_same_embed_title: ""
+  reaction_role_error_embed_title: ""
 
-Ticket: 
+Ticket: ""
 
-  ticket_unblock_success: 
-  ticket_unblock_no_block: 
-  ticket_addrole_same: 
-  ticket_addrole_success: 
-  ticket_ping_addrole_success: 
-  ticket_ping_addrole_same: 
-  ticket_setup_no_role: 
-  ticket_block_success: 
-  ticket_removerole_success: 
-  button_create_no_role: 
-  button_youre_blocked: 
-  ticket_setup_supportchannel: 
-  ticket_setup_embed_title: 
-  button_block_self: 
-  ticket_setup_embed_description: 
-  button_close_noperms: 
-  ticket_embed_title: 
-  ticket_close_wrongc: 
-  button_ticket_embed_title: 
-  button_block_already: 
-  ticket_setup_embed_message: 
-  button_block_success: 
-  ticket_setup_already: 
-  ticket_block_failed: 
-  ticket_topic: 
-  ticket_unblock_no_data: 
-  ticket_removerole_not_set: 
-  ticket_success: 
-  ticket_setup_too_long_success: 
-  button_create_ticket_f3: 
-  button_create_open_ticket: 
-  button_block_noperms: 
-  button_create_ticket_f2: 
-  ticket_setup_button: 
-  button_create_ticket_f1: 
-  button_ticket_embed_description: 
-  ticket_embed_description: 
-  edit_start: 
-  edit_title: 
-  edit_description: 
-  edit_edit?: 
-  edit_true: 
-  edit_false: 
-  edit_error: 
-  ticket_settings_title: 
-  ticket_channel_changed_title: 
-  ticket_channel_changed_fail_title: 
-  ticket_transcript_toggle: 
-  ticket_transcript_true: 
-  ticket_transcript_false: 
-  ticket_channel_set: 
-  ticket_channel_already: 
-  ticket_channel_moved: 
-  ticket_no_config: 
-  ticket_no_category: 
-  ticket_same_category: 
-  ticket_category_success: 
-  ticket_category_success_desc: 
-  ticket_clear_success: 
-  ticket_setup_again: 
-  edit_true: 
-  edit_false: 
-  ticket_pings_toggle: 
-  ticket_ping_true: 
-  ticket_ping_false: 
+  ticket_unblock_success: ""
+  ticket_unblock_no_block: ""
+  ticket_addrole_same: ""
+  ticket_addrole_success: ""
+  ticket_ping_addrole_success: ""
+  ticket_ping_addrole_same: ""
+  ticket_setup_no_role: ""
+  ticket_block_success: ""
+  ticket_removerole_success: ""
+  button_create_no_role: ""
+  button_youre_blocked: ""
+  ticket_setup_supportchannel: ""
+  ticket_setup_embed_title: ""
+  button_block_self: ""
+  ticket_setup_embed_description: ""
+  button_close_noperms: ""
+  ticket_embed_title: ""
+  ticket_close_wrongc: ""
+  button_ticket_embed_title: ""
+  button_block_already: ""
+  ticket_setup_embed_message: ""
+  button_block_success: ""
+  ticket_setup_already: ""
+  ticket_block_failed: ""
+  ticket_topic: ""
+  ticket_unblock_no_data: ""
+  ticket_removerole_not_set: ""
+  ticket_success: ""
+  ticket_setup_too_long_success: ""
+  button_create_ticket_f3: ""
+  button_create_open_ticket: ""
+  button_block_noperms: ""
+  button_create_ticket_f2: ""
+  ticket_setup_button: ""
+  button_create_ticket_f1: ""
+  button_ticket_embed_description: ""
+  ticket_embed_description: ""
+  edit_start: ""
+  edit_title: ""
+  edit_description: ""
+  edit_edit?: ""
+  edit_true: ""
+  edit_false: ""
+  edit_error: ""
+  ticket_settings_title: ""
+  ticket_channel_changed_title: ""
+  ticket_channel_changed_fail_title: ""
+  ticket_transcript_toggle: ""
+  ticket_transcript_true: ""
+  ticket_transcript_false: ""
+  ticket_channel_set: ""
+  ticket_channel_already: ""
+  ticket_channel_moved: ""
+  ticket_no_config: ""
+  ticket_no_category: ""
+  ticket_same_category: ""
+  ticket_category_success: ""
+  ticket_category_success_desc: ""
+  ticket_clear_success: ""
+  ticket_setup_again: ""
+  edit_true: ""
+  edit_false: ""
+  ticket_pings_toggle: ""
+  ticket_ping_true: ""
+  ticket_ping_false: ""
 
 Work:
 
-  worklist_start_title: 
-  worklist_start_desc: 
-  worklist_lowpaid_title: 
-  worklist_middle_title: 
-  worklist_highpaid_title: 
-  worklist_lowpaid_desc: 
-  worklist_lowpaid_desc2: 
-  worklist_mid_desc: 
-  worklist_mid_desc2: 
-  worklist_mid_desc3: 
-  worklist_high_desc: 
-  worklist_closed: 
-  work_reminder: 
-  key_gardener: 
-  key_athlete: 
-  embed_field_salary: 
-  key_librarian: 
-  employee_desc: 
-  no_reminder_button: 
-  key_lawyer: 
-  key_doctor: 
-  key_cashier: 
-  key_nurses: 
-  engineer_desc: 
-  key_musician: 
-  key_employee: 
-  embed_field_appear_time: 
-  lawyer_desc: 
-  set_reminder_button: 
-  key_programmer: 
-  nurses_desc: 
-  doctor_desc: 
-  job_changed_embed_desc: 
-  programmer_desc: 
-  workstatus_current_job: 
-  key_police_officer: 
-  workstatus_apply: 
-  gardener_desc: 
-  educator_desc: 
-  musician_desc: 
-  work_quit_last_job: 
-  embed_field_job: 
-  work_start_show_up: 
-  athlete_desc: 
-  set_reminder_button_success: 
-  embed_title_work_accepted: 
-  not_enough_hours: 
-  job_same: 
-  work_quit_total_hours: 
-  job_changed_embed_title: 
-  work_start_field_job: 
-  work_start_field_earned: 
-  work_quit_desc: 
-  workstatus_earned_money: 
-  job_not_available: 
-  cooldowns_desc: 
-  work_start_embed_title: 
-  work_start_cooldown: 
-  work_start_embed_desc: 
-  work_quit_title: 
-  workstatus_title: 
-  workstatus_worked_hours: 
-  embed_desc_work_accepted: 
-  apply_first: 
-  key_educator: 
-  librarian_desc: 
-  police_officer_desc: 
-  no_reminder_button_success: 
-  workstatus_last_time: 
-  key_engineer: 
-  cashier_desc: 
-  embed_field_appear: 
-  work_quit_total_earnings: 
-  apply_again: 
-  work_apply_text: 
-  workstatus_next_job:
-  
+  worklist_start_title: ""
+  worklist_start_desc: ""
+  worklist_lowpaid_title: ""
+  worklist_middle_title: ""
+  worklist_highpaid_title: ""
+  worklist_lowpaid_desc: ""
+  worklist_lowpaid_desc2: ""
+  worklist_mid_desc: ""
+  worklist_mid_desc2: ""
+  worklist_mid_desc3: ""
+  worklist_high_desc: ""
+  worklist_closed: ""
+  work_reminder: ""
+  key_gardener: ""
+  key_athlete: ""
+  embed_field_salary: ""
+  key_librarian: ""
+  employee_desc: ""
+  no_reminder_button: ""
+  key_lawyer: ""
+  key_doctor: ""
+  key_cashier: ""
+  key_nurses: ""
+  engineer_desc: ""
+  key_musician: ""
+  key_employee: ""
+  embed_field_appear_time: ""
+  lawyer_desc: ""
+  set_reminder_button: ""
+  key_programmer: ""
+  nurses_desc: ""
+  doctor_desc: ""
+  job_changed_embed_desc: ""
+  programmer_desc: ""
+  workstatus_current_job: ""
+  key_police_officer: ""
+  workstatus_apply: ""
+  gardener_desc: ""
+  educator_desc: ""
+  musician_desc: ""
+  work_quit_last_job: ""
+  embed_field_job: ""
+  work_start_show_up: ""
+  athlete_desc: ""
+  set_reminder_button_success: ""
+  embed_title_work_accepted: ""
+  not_enough_hours: ""
+  job_same: ""
+  work_quit_total_hours: ""
+  job_changed_embed_title: ""
+  work_start_field_job: ""
+  work_start_field_earned: ""
+  work_quit_desc: ""
+  workstatus_earned_money: ""
+  job_not_available: ""
+  cooldowns_desc: ""
+  work_start_embed_title: ""
+  work_start_cooldown: ""
+  work_start_embed_desc: ""
+  work_quit_title: ""
+  workstatus_title: ""
+  workstatus_worked_hours: ""
+  embed_desc_work_accepted: ""
+  apply_first: ""
+  key_educator: ""
+  librarian_desc: ""
+  police_officer_desc: ""
+  no_reminder_button_success: ""
+  workstatus_last_time: ""
+  key_engineer: ""
+  cashier_desc: ""
+  embed_field_appear: ""
+  work_quit_total_earnings: ""
+  apply_again: ""
+  work_apply_text: ""
+  workstatus_next_job: ""
+
 Welcome:
 
-  welcome_toggle: 
-  welcome_true: 
-  welcome_false: 
-  welcome_channel_set: 
-  welcome_channel_already: 
-  welcome_channel_moved: 
-  welcome_msg_toggle: 
-  welcome_msg_choose: 
-  welcome_msg_title: 
-  welcome_msg_already: 
-  welcome_msg_switched: 
-  welcome_msg_too_long: 
-  welcome_not_enabled: 
+  welcome_toggle: ""
+  welcome_true: ""
+  welcome_false: ""
+  welcome_channel_set: ""
+  welcome_channel_already: ""
+  welcome_channel_moved: ""
+  welcome_msg_toggle: ""
+  welcome_msg_choose: ""
+  welcome_msg_title: ""
+  welcome_msg_already: ""
+  welcome_msg_switched: ""
+  welcome_msg_too_long: ""
+  welcome_not_enabled: ""
 
 Namefilter:
 
-  namefilter_settings_title: 
-  namefilter_add_fail_too_long: 
-  namefilter_toggle: 
-  namefilter_true: 
-  namefilter_false: 
-  namefilter_add_success_title: 
-  namefilter_add_success_desc: 
-  namefilter_add_fail_title: 
-  namefilter_add_fail_desc: 
-  namefilter_add_tip_list: 
-  namefilter_error_nodata: 
-  namefilter_remove_error_title: 
-  namefilter_remove_error_desc: 
-  namefilter_remove_success_title: 
-  namefilter_remove_success_desc: 
-  namefilter_list_success: 
-  namefilter_check_title: 
-  namefilter_check_desc: 
-  namefilter_check_not_found_title: 
-  namefilter_check_ban_button: 
-  namefilter_check_rename_button: 
-  namefilter_check_nothing_button: 
-  namefilter_check_footer: 
-  namefilter_check_banned_title: 
-  namefilter_check_banned_desc: 
-  namefilter_check_banned_unable_desc: 
-  namefilter_ban_reason: 
-  namefilter_check_renamed_title: 
-  namefilter_check_renamed_unable_desc: 
-  namefilter_check_renamed_desc: 
-  namefilter_fix_result_desc_unable: 
-  namefilter_check_nothing_title: 
-  namefilter_check_0_renamed_title: 
-  namefilter_check_0_renamed_desc: 
-  namefilter_timeout_error: 
-  namefilter_fix_start: 
-  namefilter_fix_result_title: 
-  namefilter_fix_result_desc: 
-  namefilter_fix_result_nothing_title: 
-  namefilter_fix_result_nothing_desc: 
-  namefilter_on_member_update_title: 
-  namefilter_on_member_update_desc: 
-  namefilter_on_member_update_old_name: 
-  namefilter_on_member_update_new_name: 
-  namefilter_fix_no_charfilter_title: 
+  namefilter_settings_title: ""
+  namefilter_add_fail_too_long: ""
+  namefilter_toggle: ""
+  namefilter_true: ""
+  namefilter_false: ""
+  namefilter_add_success_title: ""
+  namefilter_add_success_desc: ""
+  namefilter_add_fail_title: ""
+  namefilter_add_fail_desc: ""
+  namefilter_add_tip_list: ""
+  namefilter_error_nodata: ""
+  namefilter_remove_error_title: ""
+  namefilter_remove_error_desc: ""
+  namefilter_remove_success_title: ""
+  namefilter_remove_success_desc: ""
+  namefilter_list_success: ""
+  namefilter_check_title: ""
+  namefilter_check_desc: ""
+  namefilter_check_not_found_title: ""
+  namefilter_check_ban_button: ""
+  namefilter_check_rename_button: ""
+  namefilter_check_nothing_button: ""
+  namefilter_check_footer: ""
+  namefilter_check_banned_title: ""
+  namefilter_check_banned_desc: ""
+  namefilter_check_banned_unable_desc: ""
+  namefilter_ban_reason: ""
+  namefilter_check_renamed_title: ""
+  namefilter_check_renamed_unable_desc: ""
+  namefilter_check_renamed_desc: ""
+  namefilter_fix_result_desc_unable: ""
+  namefilter_check_nothing_title: ""
+  namefilter_check_0_renamed_title: ""
+  namefilter_check_0_renamed_desc: ""
+  namefilter_timeout_error: ""
+  namefilter_fix_start: ""
+  namefilter_fix_result_title: ""
+  namefilter_fix_result_desc: ""
+  namefilter_fix_result_nothing_title: ""
+  namefilter_fix_result_nothing_desc: ""
+  namefilter_on_member_update_title: ""
+  namefilter_on_member_update_desc: ""
+  namefilter_on_member_update_old_name: ""
+  namefilter_on_member_update_new_name: ""
+  namefilter_fix_no_charfilter_title: ""
 
 Customs:
 
-  trigger_already: 
-  create_trigger_title: 
-  create_trigger_label: 
-  create_trigger_placeholder: 
-  create_trigger_success: 
-  create_trigger_success_description: 
-  trigger_remove: 
-  edit_trigger_title: 
-  edit_trigger_success: 
-  edit_trigger_success_description: 
-  trigger_list: 
-  trigger_list_not_found: 
-  
+  trigger_already: ""
+  create_trigger_title: ""
+  create_trigger_label: ""
+  create_trigger_placeholder: ""
+  create_trigger_success: ""
+  create_trigger_success_description: ""
+  trigger_remove: ""
+  edit_trigger_title: ""
+  edit_trigger_success: ""
+  edit_trigger_success_description: ""
+  trigger_list: ""
+  trigger_list_not_found: ""
+
 Feedback:
 
-  standard_embed: 
-  own_embed: 
-  5min: 
-  10min: 
-  15min: 
-  20min: 
-  25min: 
-  30min: 
-  45min: 
-  60min: 
-  send?: 
-  sent: 
-  not_sent: 
+  standard_embed: ""
+  own_embed: ""
+  5min: ""
+  10min: ""
+  15min: ""
+  20min: ""
+  25min: ""
+  30min: ""
+  45min: ""
+  60min: ""
+  send?: ""
+  sent: ""
+  not_sent: ""
 
 Leave:
-  leave_toggle: 
-  leave_msg_toggle: 
-  leave_not_enabled: 
-  leave_true: 
-  leave_false: 
+  leave_toggle: ""
+  leave_msg_toggle: ""
+  leave_not_enabled: ""
+  leave_true: ""
+  leave_false: ""
 
 Booster:
 
-  new_booster_channel_title: 
-  new_booster_channel_desc: 
-  booster_channel_moved_desc: 
-  booster_same_channel_title: 
-  server_boost_toggle_true: 
-  server_boost_toggle_true_desc : 
-  server_boost_toggle_false: 
-  server_boost_toggle_false_desc : 
-  server_boost_variables_title: 
-  server_boost_variables_mention: 
-  server_boost_variables_name: 
-  server_boost_variables_id: 
-  server_boost_variables_guild_name: 
-  server_boost_variables_boost_count: 
-  server_boost_variables_boost_level: 
-  boost_not_enabled: 
-  boost_enable_first: 
-  server_boost_message_set_title: 
-  invalid_hex_code: 
-  valid_hex_code: 
-  server_boost_embed_desc_final: 
-  server_boost_message_changed_title: 
-  unchanged_ping: 
-  unchanged_embed: 
-  unchanged_hex: 
-  unchanged_boost_message: 
-  settings_missing_message: 
-  settings_missing_channel: 
-  test_message_title: 
-  test_message_desc: 
+  new_booster_channel_title: ""
+  new_booster_channel_desc: ""
+  booster_channel_moved_desc: ""
+  booster_same_channel_title: ""
+  server_boost_toggle_true: ""
+  server_boost_toggle_true_desc : ""
+  server_boost_toggle_false: ""
+  server_boost_toggle_false_desc : ""
+  server_boost_variables_title: ""
+  server_boost_variables_mention: ""
+  server_boost_variables_name: ""
+  server_boost_variables_id: ""
+  server_boost_variables_guild_name: ""
+  server_boost_variables_boost_count: ""
+  server_boost_variables_boost_level: ""
+  boost_not_enabled: ""
+  boost_enable_first: ""
+  server_boost_message_set_title: ""
+  invalid_hex_code: ""
+  valid_hex_code: ""
+  server_boost_embed_desc_final: ""
+  server_boost_message_changed_title: ""
+  unchanged_ping: ""
+  unchanged_embed: ""
+  unchanged_hex: ""
+  unchanged_boost_message: ""
+  settings_missing_message: ""
+  settings_missing_channel: ""
+  test_message_title: ""
+  test_message_desc: ""
 
 TicketResp:
 
-trigger_already: 
-create_trigger_title: 
-create_trigger_placeholder: 
-create_trigger_success: 
-trigger_remove: 
-edit_trigger_title: 
-create_trigger_label: 
-create_trigger_success_description: 
-edit_trigger_title: 
-edit_trigger_success: 
-edit_trigger_success_description: 
-trigger_list: 
-trigger_list_not_found: 
+trigger_already: ""
+create_trigger_title: ""
+create_trigger_placeholder: ""
+create_trigger_success: ""
+trigger_remove: ""
+edit_trigger_title: ""
+create_trigger_label: ""
+create_trigger_success_description: ""
+edit_trigger_title: ""
+edit_trigger_success: ""
+edit_trigger_success_description: ""
+trigger_list: ""
+trigger_list_not_found: ""
