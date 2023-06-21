@@ -10,8 +10,8 @@ This repository deals with the translations of/for the bot [Alchemist](https://t
 ## 🌐 How to properly translate
 
 - Only translate things that are not emojis and variables. The following things should not be translated:
-  - "This is a {test}" ➜ `{test}` should **not** be translated!
-  - "<:acm:1114236086785429592>, is a cool bot" ➜ `<:acm:1114236086785429592>` should **not** be translated!
+  - "This is a {test}" ➜ `{test}` should **__not__** be translated!
+  - "<:acm:1114236086785429592>, is a cool bot" ➜ `<:acm:1114236086785429592>` should **__not__** be translated!
 - Only translate/edit the blue part:
 ```yaml
 test_string: "This is a test string"
