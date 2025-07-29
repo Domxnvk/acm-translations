@@ -1,8 +1,11 @@
 Achievements:
+
   msg_toggle: ""
   state_enabled: ""
   state_disabled: ""
+
 Announce:
+
   announce_title: ""
   announce_description: ""
   announce_error: ""
@@ -23,8 +26,11 @@ Announce:
   channel_not_exist: ""
   not_bot_message: ""
   message_not_found: ""
+  announce_error: ""
   uploading_image: ""
+
 AiModeration:
+
   automod_already_enabled: ""
   automod_already_disabled: ""
   automod_enabled: ""
@@ -37,7 +43,10 @@ AiModeration:
   autodelete_already_set: ""
   autodelete_set: ""
   autodelete_changed: ""
+
+
 Autorole:
+
   autorole_not_assignable: ""
   autorole_success: ""
   autorole_toggle: ""
@@ -64,7 +73,10 @@ Autorole:
   state_disabled: ""
   autorole_moved_title: ""
   autorole_moved_description: ""
+
+
 Userinfo:
+
   bots_cant_collect_achievements: ""
   achievements_title_list: ""
   achievements_footer: ""
@@ -87,7 +99,9 @@ Userinfo:
   no_roles: ""
   run_again: ""
   avatar_translation: ""
+
 Birthday:
+
   timezone_placeholder: ""
   timezone_set: ""
   set_birthday_modal: ""
@@ -101,7 +115,9 @@ Birthday:
   upcoming_birthdays: ""
   birthday_removed: ""
   no_birthday_set: ""
+
 Booster:
+
   booster_channel_moved_desc: ""
   booster_channel_set_desc: ""
   booster_same_channel_title: ""
@@ -132,7 +148,10 @@ Booster:
   missing_channel_permissions: ""
   boost_moved_title: ""
   boost_moved_description: ""
+
+
 Chatbot:
+
   modal_title: ""
   modal_label: ""
   modal_placeholder: ""
@@ -149,7 +168,9 @@ Chatbot:
   token_information_content: ""
   not_voted_yet: ""
   error_mp3: ""
+
 Customs:
+
   trigger_already: ""
   create_trigger_title: ""
   trigger_too_long: ""
@@ -162,7 +183,9 @@ Customs:
   trigger_list_not_found: ""
   trigger_not_found: ""
   trigger_list_title: ""
+
 Economy:
+
   slots_ok_title: ""
   send_limit_reached: ""
   slots_win_amout: ""
@@ -220,7 +243,9 @@ Economy:
   wallet: ""
   dailyleaderboard_streak: ""
   dailyleaderboard_title: ""
+
 Errors:
+
   error_dm: ""
   error_bot_lack: ""
   error_disabled: ""
@@ -232,7 +257,9 @@ Errors:
   timeout_error: ""
   invalid_date: ""
   generic_error: ""
+
 Giveaway:
+
   giveaway_ended: ""
   no_one_joined: ""
   winner_mention: ""
@@ -249,7 +276,9 @@ Giveaway:
   giveaway_deleted_successfully: ""
   left_giveaway_button: ""
   joined_giveaway_button: ""
+
 Help:
+
   help_additional_perms: ""
   help_menu_start_title: ""
   choose_category: ""
@@ -294,7 +323,9 @@ Help:
   help_menu_booster_desc: ""
   help_menu_presence_desc: ""
   missing_commands_hint: ""
+
 Information:
+
   serverinfo-owner: ""
   view_is_normal: ""
   serverinfo-created: ""
@@ -309,7 +340,9 @@ Information:
   serverinfo-roles: ""
   botinfo-translator: ""
   botinfo-rebooted: ""
+
 Leave:
+
   leave_toggle: ""
   leave_message: ""
   leave_message_placeholder: ""
@@ -324,7 +357,10 @@ Leave:
   leave_toggle_error: ""
   leave_moved_title: ""
   leave_moved_description: ""
+
+
 Levels:
+
   levels_leaderboard_title: ""
   levels_toggle: ""
   levels_allow_not_ignored: ""
@@ -353,7 +389,9 @@ Levels:
   levels_roles_remove_success_desc: ""
   levels_roles_remove_fail: ""
   levels_leaderboard_footer: ""
+
 Moderation:
+
   channelmode_set: ""
   channelmode_already_set: ""
   modlog_set: ""
@@ -406,10 +444,13 @@ Moderation:
   static_emoji_limit_reached: ""
   emoji_invalid: ""
   emoji_added: ""
+  channelmode_set: ""
   channelmode_unset: ""
   emoji_invalid_format: ""
   no_reason: ""
+
 Msgvote:
+
   msgvote_upvote_success: ""
   msgvote_toggle: ""
   msgvote_toggle_not_set: ""
@@ -420,14 +461,18 @@ Msgvote:
   msgvote_channel_set_new: ""
   msgvote_same_desc_upvote: ""
   msgvote_same_desc_downvote: ""
+
 Language:
+
   languages_title: ""
   setlang_failed: ""
   setlang_success: ""
   languages_footer: ""
   test_command: ""
   choose_translation: ""
+
 Presence:
+
   no_spotify_channel: ""
   spotify_channel_removed: ""
   no_spotify_role: ""
@@ -462,7 +507,9 @@ Presence:
   stream_information: ""
   spotify_member_now: ""
   no_presence_data: ""
+
 Private:
+
   pvm_setup_cmanagement: ""
   pvm_setup_category: ""
   pvm_setup_joinchannel: ""
@@ -526,7 +573,9 @@ Private:
   pvm_modal_name_title: ""
   pvm_modal_name_label: ""
   pvm_modal_name_placeholder: ""
+
 Reaction:
+
   reaction_channel_already: ""
   reaction_channel_update: ""
   reaction_title: ""
@@ -541,7 +590,9 @@ Reaction:
   reaction_addrole_success: ""
   reaction_remove_success: ""
   reaction_role_emoji_not_from_guild: ""
+
 Reminder:
+
   reminder_translation: ""
   reminder_time: ""
   choose_reminder: ""
@@ -557,7 +608,9 @@ Reminder:
   reminder_deleted: ""
   reminder_title: ""
   reminder_context: ""
+
 Roleshop:
+
   is_empty: ""
   roleshop_translation: ""
   role_not_assignable: ""
@@ -572,7 +625,9 @@ Roleshop:
   role_purchased_description: ""
   role_purchase_failed: ""
   roleshop_negative_amount: ""
+
 Spotify:
+
   spotify_channel_set: ""
   spotify_channel_already_set: ""
   spotify_channel_update: ""
@@ -583,13 +638,17 @@ Spotify:
   artist_removed: ""
   no_artists: ""
   artists_following: ""
+
 Serverlogging:
+
   logging_channel_already_set: ""
   logging_channel_updated: ""
   logging_type_already_set: ""
   logging_type_already_disabled: ""
   logging_type_updated: ""
+
 Sticky:
+
   count_label: ""
   no_sticky_messages: ""
   sticky_message_set: ""
@@ -598,6 +657,7 @@ Sticky:
   not_a_number: ""
   count_too_low: ""
   sticky_message_edited: ""
+  sticky_message_removed: ""
   sticky_message_already_exists: ""
   sticky_message_title: ""
   select_channel: ""
@@ -612,7 +672,9 @@ Sticky:
   sticky_message_count_label: ""
   edit_sticky_message: ""
   select_channel_to_view: ""
+
 Ticket:
+
   ticket_unblock_success: ""
   ticket_unblock_no_block: ""
   ticket_addrole_same: ""
@@ -689,6 +751,9 @@ Ticket:
   edit_new_ticket_message_label: ""
   edit_new_ticket_message_placeholder: ""
   edit_new_ticket_message_success: ""
+  edit_new_ticket_message_title: ""
+  edit_new_ticket_message_label: ""
+  edit_new_ticket_message_placeholder: ""
   edit_create_ticket_message_title: ""
   edit_create_ticket_message_title_label: ""
   edit_create_ticket_message_title_placeholder: ""
@@ -701,6 +766,7 @@ Ticket:
   ticket_invalid_category: ""
   ticket_channel_not_found: ""
   ticket_message_not_found: ""
+  
   not_a_ticket: ""
   confirm_closure: ""
   confirm_closure_description: ""
@@ -751,7 +817,9 @@ Ticket:
   stats_error: ""
   auto_closed_title: ""
   auto_closed_description: ""
+
 Ticketresponse:
+
   tr_trigger_already: ""
   create_trigger_title: ""
   create_trigger_placeholder: ""
@@ -763,7 +831,9 @@ Ticketresponse:
   trigger_list_title: ""
   tr_create_trigger_success_message: ""
   edit_trigger_success_message: ""
+
 Twitch:
+
   invalid_channel: ""
   twitch_channel_added: ""
   twitch_channel_removed: ""
@@ -779,7 +849,9 @@ Twitch:
   watchlist: ""
   twitch_moved_title: ""
   twitch_moved_description: ""
+
 Welcome:
+
   welcome_toggle: ""
   welcome_not_enabled: ""
   welcome_placeholder: ""
@@ -807,13 +879,16 @@ Welcome:
   channel_already_set: ""
   channel_moved: ""
   channel_set: ""
+  toggle_error: ""
   send_error: ""
   test_error: ""
   error_opening_settings: ""
   variables_title: ""
   welcome_moved_title: ""
   welcome_moved_description: ""
+
 Work:
+
   workstatus_next_job_reached: ""
   workleaderboard_hours: ""
   workleaderboard_title: ""
@@ -910,7 +985,10 @@ Work:
   futurist_desc: ""
   coins: ""
   hours: ""
+
+
 YouTube:
+
   channel_not_found: ""
   channel_added: ""
   channel_already_added: ""
@@ -925,7 +1003,10 @@ YouTube:
   role_not_set: ""
   youtube_moved_title: ""
   youtube_moved_description: ""
+
+
 Tournament:
+
   tournament_in_progress: ""
   not_enough_participants: ""
   tournament_starting: ""
@@ -960,69 +1041,99 @@ Tournament:
   no_active_tournament: ""
   need_admin_permissions: ""
   error_cancelling: ""
+
 Action:
+
   completed: ""
   in_progress: ""
   ticket_created: ""
   canceled: ""
   open_dashboard: ""
+
 Settings:
+
   changed: ""
   updated: ""
+
+
+
 Commands:
+
   youtube:
     group_description: ""
+    
     add:
       command_description: ""
       parameters:
         channel:
           desc: ""
+    
     channel:
       command_description: ""
       parameters:
         channel:
           desc: ""
+    
     remove:
       command_description: ""
       parameters:
         channel:
           desc: ""
+    
     list:
       command_description: ""
+  
   ping:
     command_description: ""
+    parameters:
+      action:
+        desc: ""
+      role:
+        desc: ""
+
   work:
     group_description: ""
+    
     apply:
       command_description: ""
+    
     start:
       command_description: ""
+    
     list:
       command_description: ""
+    
     status:
       command_description: ""
+
   welcome:
     command_name: ""
     command_description: ""
+
   twitch:
     group_description: ""
+    
     accesstoken:
       command_description: ""
+    
     add:
       command_description: ""
       parameters:
         streamer:
           desc: ""
+    
     remove:
       command_description: ""
       parameters:
         streamer:
           desc: ""
+    
     channel:
       command_description: ""
       parameters:
         channel:
           desc: ""
+    
     role:
       command_description: ""
       parameters:
@@ -1030,8 +1141,10 @@ Commands:
           desc: ""
         action:
           desc: ""
+    
     list:
       command_description: ""
+
   tournament:
     command_name: ""
     command_description: ""
@@ -1039,17 +1152,22 @@ Commands:
       mode:
         name: ""
         desc: ""
+
   tournament_stats:
     command_name: ""
     command_description: ""
+
   tournament_history:
     command_name: ""
     command_description: ""
+
   tournament_cancel:
     command_name: ""
     command_description: ""
+
   ticket:
     group_description: ""
+    
     role:
       command_description: ""
       parameters:
@@ -1057,6 +1175,7 @@ Commands:
           desc: ""
         action:
           desc: ""
+    
     setup:
       command_description: ""
       parameters:
@@ -1066,6 +1185,7 @@ Commands:
           desc: ""
         image:
           desc: ""
+    
     edit:
       command_description: ""
       parameters:
@@ -1075,18 +1195,22 @@ Commands:
           desc: ""
         type:
           desc: ""
+    
     clear:
       command_description: ""
+    
     log:
       command_description: ""
       parameters:
         channel:
           desc: ""
+    
     category:
       command_description: ""
       parameters:
         category:
           desc: ""
+    
     ping:
       command_description: ""
       parameters:
@@ -1094,6 +1218,7 @@ Commands:
           desc: ""
         action:
           desc: ""
+    
     member:
       command_description: ""
       parameters:
@@ -1101,8 +1226,10 @@ Commands:
           desc: ""
         action:
           desc: ""
+
   sticky:
     group_description: ""
+    
     set:
       command_description: ""
       parameters:
@@ -1110,22 +1237,28 @@ Commands:
           desc: ""
         embed:
           desc: ""
+    
     unset:
       command_description: ""
       parameters:
         channel:
           desc: ""
+    
     edit:
       command_description: ""
       parameters:
         channel:
           desc: ""
+    
     list:
       command_description: ""
+
   roleshop:
     group_description: ""
+    
     show:
       command_description: ""
+    
     add:
       command_description: ""
       parameters:
@@ -1133,11 +1266,13 @@ Commands:
           desc: ""
         price:
           desc: ""
+    
     remove:
       command_description: ""
       parameters:
         role:
           desc: ""
+    
     update:
       command_description: ""
       parameters:
@@ -1145,13 +1280,16 @@ Commands:
           desc: ""
         price:
           desc: ""
+
   logging:
     group_description: ""
+    
     channel:
       command_description: ""
       parameters:
         channel:
           desc: ""
+    
     type:
       command_description: ""
       parameters:
@@ -1159,10 +1297,13 @@ Commands:
           desc: ""
         toggle:
           desc: ""
+    
     status:
       command_description: ""
+
   reminder:
     group_description: ""
+    
     set:
       command_description: ""
       parameters:
@@ -1174,20 +1315,25 @@ Commands:
           desc: ""
         interval:
           desc: ""
+    
     delete:
       command_description: ""
       parameters:
         reminder:
           desc: ""
+    
     list:
       command_description: ""
+
   reaction:
     group_description: ""
+    
     channel:
       command_description: ""
       parameters:
         channel:
           desc: ""
+    
     add:
       command_description: ""
       parameters:
@@ -1195,15 +1341,20 @@ Commands:
           desc: ""
         role:
           desc: ""
+    
     remove:
       command_description: ""
       parameters:
         role:
           desc: ""
+    
     list:
       command_description: ""
+
+
   pvm:
     group_description: ""
+    
     role:
       command_name: ""
       command_description: ""
@@ -1214,6 +1365,7 @@ Commands:
         action:
           name: ""
           desc: ""
+    
     member:
       command_name: ""
       command_description: ""
@@ -1224,15 +1376,19 @@ Commands:
         action:
           name: ""
           desc: ""
+    
     setup:
       command_name: ""
       command_description: ""
+    
     menu:
       command_name: ""
       command_description: ""
+    
     clear:
       command_name: ""
       command_description: ""
+    
     info:
       command_name: ""
       command_description: ""
@@ -1240,6 +1396,7 @@ Commands:
         channel:
           name: ""
           desc: ""
+    
     privacy:
       command_name: ""
       command_description: ""
@@ -1247,6 +1404,7 @@ Commands:
         toggle:
           name: ""
           desc: ""
+    
     kick:
       command_name: ""
       command_description: ""
@@ -1254,6 +1412,7 @@ Commands:
         member:
           name: ""
           desc: ""
+    
     invite:
       command_name: ""
       command_description: ""
@@ -1261,6 +1420,7 @@ Commands:
         member:
           name: ""
           desc: ""
+    
     name:
       command_name: ""
       command_description: ""
@@ -1268,6 +1428,7 @@ Commands:
         name:
           name: ""
           desc: ""
+    
     size:
       command_name: ""
       command_description: ""
@@ -1275,8 +1436,10 @@ Commands:
         size:
           name: ""
           desc: ""
+
   msgvote:
     group_description: ""
+    
     toggle:
       command_name: ""
       command_description: ""
@@ -1284,6 +1447,7 @@ Commands:
         toggle:
           name: ""
           desc: ""
+    
     channel:
       command_name: ""
       command_description: ""
@@ -1291,6 +1455,7 @@ Commands:
         channel:
           name: ""
           desc: ""
+    
     upvote:
       command_name: ""
       command_description: ""
@@ -1298,6 +1463,7 @@ Commands:
         emoji:
           name: ""
           desc: ""
+    
     downvote:
       command_name: ""
       command_description: ""
@@ -1305,6 +1471,7 @@ Commands:
         emoji:
           name: ""
           desc: ""
+
   modlog:
     command_name: ""
     command_description: ""
@@ -1312,6 +1479,7 @@ Commands:
       channel:
         name: ""
         desc: ""
+
   channelmode:
     command_name: ""
     command_description: ""
@@ -1325,6 +1493,7 @@ Commands:
       toggle:
         name: ""
         desc: ""
+
   ban:
     command_name: ""
     command_description: ""
@@ -1335,6 +1504,7 @@ Commands:
       reason:
         name: ""
         desc: ""
+
   kick:
     command_name: ""
     command_description: ""
@@ -1345,6 +1515,7 @@ Commands:
       reason:
         name: ""
         desc: ""
+
   emojisteal:
     command_name: ""
     command_description: ""
@@ -1352,6 +1523,7 @@ Commands:
       emoji:
         name: ""
         desc: ""
+
   tempban:
     command_name: ""
     command_description: ""
@@ -1365,6 +1537,7 @@ Commands:
       reason:
         name: ""
         desc: ""
+
   delete:
     command_name: ""
     command_description: ""
@@ -1372,6 +1545,7 @@ Commands:
       amount:
         name: ""
         desc: ""
+
   hackban:
     command_name: ""
     command_description: ""
@@ -1382,8 +1556,10 @@ Commands:
       reason:
         name: ""
         desc: ""
+
   levels:
     group_description: ""
+    
     toggle:
       command_name: ""
       command_description: ""
@@ -1391,6 +1567,7 @@ Commands:
         toggle:
           name: ""
           desc: ""
+    
     mention:
       command_name: ""
       command_description: ""
@@ -1398,6 +1575,7 @@ Commands:
         toggle:
           name: ""
           desc: ""
+    
     channel:
       command_name: ""
       command_description: ""
@@ -1408,6 +1586,7 @@ Commands:
         channel:
           name: ""
           desc: ""
+    
     background:
       command_name: ""
       command_description: ""
@@ -1415,8 +1594,10 @@ Commands:
         image:
           name: ""
           desc: ""
+    
     roles:
       group_description: ""
+      
       toggle:
         command_name: ""
         command_description: ""
@@ -1424,6 +1605,7 @@ Commands:
           toggle:
             name: ""
             desc: ""
+      
       add:
         command_name: ""
         command_description: ""
@@ -1434,6 +1616,7 @@ Commands:
           role:
             name: ""
             desc: ""
+      
       remove:
         command_name: ""
         command_description: ""
@@ -1441,6 +1624,7 @@ Commands:
           role:
             name: ""
             desc: ""
+  
   rank:
     command_name: ""
     command_description: ""
@@ -1448,8 +1632,10 @@ Commands:
       member:
         name: ""
         desc: ""
+
   leave:
     group_description: ""
+    
     toggle:
       command_name: ""
       command_description: ""
@@ -1457,6 +1643,7 @@ Commands:
         toggle:
           name: ""
           desc: ""
+    
     message:
       command_name: ""
       command_description: ""
@@ -1464,6 +1651,7 @@ Commands:
         embed:
           name: ""
           desc: ""
+
   economy:
     chemistryclass:
       command_name: ""
@@ -1472,6 +1660,7 @@ Commands:
         amount:
           name: ""
           desc: ""
+    
     economyban:
       command_name: ""
       command_description: ""
@@ -1482,6 +1671,7 @@ Commands:
         reason:
           name: ""
           desc: ""
+    
     economyunban:
       command_name: ""
       command_description: ""
@@ -1489,6 +1679,7 @@ Commands:
         member:
           name: ""
           desc: ""
+    
     grant:
       command_name: ""
       command_description: ""
@@ -1499,8 +1690,11 @@ Commands:
         amount:
           name: ""
           desc: ""
+
+
   automod:
     group_description: ""
+    
     toggle:
       command_name: ""
       command_description: ""
@@ -1508,6 +1702,7 @@ Commands:
         toggle:
           name: ""
           desc: ""
+    
     channel:
       command_name: ""
       command_description: ""
@@ -1515,6 +1710,7 @@ Commands:
         channel:
           name: ""
           desc: ""
+    
     autodelete:
       command_name: ""
       command_description: ""
@@ -1525,6 +1721,7 @@ Commands:
         threshold:
           name: ""
           desc: ""
+
   achievements:
     toggle:
       command_name: ""
@@ -1533,6 +1730,7 @@ Commands:
         toggle:
           name: ""
           desc: ""
+    
     list:
       command_name: ""
       command_description: ""
@@ -1540,6 +1738,7 @@ Commands:
         member:
           name: ""
           desc: ""
+  
   userinfo:
     command_name: ""
     command_description: ""
@@ -1547,6 +1746,7 @@ Commands:
       member:
         name: ""
         desc: ""
+
   bonk:
     command_name: ""
     command_description: ""
@@ -1554,6 +1754,7 @@ Commands:
       user:
         name: ""
         description: ""
+
   announcement_create:
     command_name: ""
     command_description: ""
@@ -1567,6 +1768,8 @@ Commands:
       image:
         name: ""
         desc: ""
+
+
   announcement_edit:
     command_name: ""
     command_description: ""
@@ -1574,21 +1777,28 @@ Commands:
       message:
         name: ""
         desc: ""
+
+
   autorole:
     command_description: ""
+
+
   boost_toggle:
     command_description: ""
     parameters:
       toggle:
         name: ""
         desc: ""
+
   boost_channel:
     command_description: ""
     parameters:
       channel:
         desc: ""
+
   boost_variables:
     command_description: ""
+
   boost_message:
     command_description: ""
     parameters:
@@ -1596,67 +1806,87 @@ Commands:
         desc: ""
       embed:
         desc: ""
+
   boost_test:
     command_description: ""
+
   chatgpt_ask:
     command_description: ""
+
   chatgpt_tokens:
     command_description: ""
+
   imagedescription:
     command_description: ""
+
   transcribe:
     command_description: ""
+
   generate_audio:
     command_description: ""
     parameters:
       text:
         desc: ""
+
   custom_add:
     command_description: ""
     parameters:
       trigger:
         desc: ""
+
   custom_remove:
     command_description: ""
     parameters:
       trigger:
         desc: ""
+
   custom_edit:
     command_description: ""
     parameters:
       trigger:
         desc: ""
+
   custom_list:
     command_description: ""
+  
+
+
   balance:
     command_description: ""
+
   higherlower:
     command_description: ""
     parameters:
       amount:
         desc: ""
+
   withdraw:
     command_description: ""
     parameters:
       amount:
         desc: ""
+
   beg:
     command_description: ""
+
   deposit:
     command_description: ""
     parameters:
       amount:
         desc: ""
+
   coinflip:
     command_description: ""
     parameters:
       amount:
         desc: ""
+
   slots:
     command_description: ""
     parameters:
       amount:
         desc: ""
+
   guess:
     command_description: ""
     parameters:
@@ -1664,11 +1894,13 @@ Commands:
         desc: ""
       difficulty:
         desc: ""
+
   rob:
     command_description: ""
     parameters:
       member:
         desc: ""
+
   send:
     command_description: ""
     parameters:
@@ -1676,8 +1908,11 @@ Commands:
         desc: ""
       amount:
         desc: ""
+
   daily:
     command_description: ""
+  
+
   giveaway_start:
     command_description: ""
     parameters:
@@ -1691,6 +1926,7 @@ Commands:
         desc: ""
       ping:
         desc: ""
+
   giveaway_reroll:
     command_description: ""
     parameters:
@@ -1698,28 +1934,39 @@ Commands:
         desc: ""
       winners:
         desc: ""
+
   giveaway_end:
     command_description: ""
     parameters:
       id:
         desc: ""
+
   giveaway_delete:
     command_description: ""
     parameters:
       id:
         desc: ""
+  
   help:
     command_description: ""
+  
   mydata:
     command_description: ""
+
   serverinfo:
     command_description: ""
+
   botinfo:
     command_description: ""
+
+  ping:
+    command_description: ""
+
   avatar:
     command_description: ""
     parameters:
       member:
         desc: ""
+  
   leaderboard:
     command_description: ""
