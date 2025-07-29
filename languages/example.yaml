@@ -1,75 +1,226 @@
+Achievements:
+  msg_toggle: ""
+  state_enabled: ""
+  state_disabled: ""
 Announce:
-
   announce_title: ""
   announce_description: ""
   announce_error: ""
   announce_start: ""
   announce_sent: ""
   announce_not_sent: ""
-  announce_error_choice: ""
-  announce_send?: ""
+  question_announcement: ""
+  invalid_hex: ""
   placeholder: ""
   announce_hex: ""
+  announce_not_found: ""
+  announce_not_editable: ""
   wrong_file_type: ""
-
+  announce_edit: ""
+  announce_edited: ""
+  announce_not_edited: ""
+  announce_error_edit: ""
+  channel_not_exist: ""
+  not_bot_message: ""
+  message_not_found: ""
+  uploading_image: ""
+AiModeration:
+  automod_already_enabled: ""
+  automod_already_disabled: ""
+  automod_enabled: ""
+  automod_disabled: ""
+  log_channel_already_set: ""
+  log_channel_set: ""
+  log_channel_changed: ""
+  autodelete_not_set: ""
+  autodelete_removed: ""
+  autodelete_already_set: ""
+  autodelete_set: ""
+  autodelete_changed: ""
 Autorole:
-
   autorole_not_assignable: ""
-  autorole_true: ""
   autorole_success: ""
-  autorole_false: ""
   autorole_toggle: ""
   autorole_same: ""
-  autorole_change: ""
-  autorole_toggle_embed_title: ""
-  autorole_role_error_embed_title: ""
-  autorole_success_embed_title: ""
-  autorole_same_embed_title: ""
-  autorole_changed_embed_title: ""
-  autorole_success_embed_desc: ""
-  autorole_success_embed_old_role: ""
-  autorole_success_embed_new_role: ""
-  autorole_reminder: ""
-
+  autorole_not_enabled: ""
+  max_role_limit: ""
+  role_not_set: ""
+  autorole_added: ""
+  autorole_removed: ""
+  autorole_none: ""
+  role_removed: ""
+  request_more: ""
+  autorole_max_limit: ""
+  no_roles: ""
+  settings: ""
+  settings_footer: ""
+  settings_below: ""
+  choose_roles: ""
+  toggle_button: ""
+  autorole_roles: ""
+  autorole_no_data_found: ""
+  status: ""
+  state_enabled: ""
+  state_disabled: ""
+  autorole_moved_title: ""
+  autorole_moved_description: ""
+Userinfo:
+  bots_cant_collect_achievements: ""
+  achievements_title_list: ""
+  achievements_footer: ""
+  level_achievement: ""
+  slashcmd_progress: ""
+  vote_progress: ""
+  economy_progress: ""
+  bughunter_achievement: ""
+  nickname: ""
+  custom_activity: ""
+  status: ""
+  all_roles: ""
+  voice_channel: ""
+  account_created: ""
+  joined_at: ""
+  achievements: ""
+  achievements_title: ""
+  achievement_message: ""
+  roles_title: ""
+  no_roles: ""
+  run_again: ""
+  avatar_translation: ""
+Birthday:
+  timezone_placeholder: ""
+  timezone_set: ""
+  set_birthday_modal: ""
+  birthday_input: ""
+  birthday_set: ""
+  missing_data: ""
+  birthday_set_title: ""
+  birthday_set_description: ""
+  birthday_setup: ""
+  no_upcoming_birthdays: ""
+  upcoming_birthdays: ""
+  birthday_removed: ""
+  no_birthday_set: ""
+Booster:
+  booster_channel_moved_desc: ""
+  booster_channel_set_desc: ""
+  booster_same_channel_title: ""
+  server_boost_toggle: ""
+  server_boost_disabled: ""
+  server_boost_variables_title: ""
+  server_boost_variables_mention: ""
+  server_boost_variables_name: ""
+  server_boost_variables_id: ""
+  server_boost_variables_guild_name: ""
+  server_boost_variables_boost_count: ""
+  server_boost_variables_boost_level: ""
+  boost_not_enabled: ""
+  server_boost_embed_desc_final: ""
+  server_boost_message_changed_title: ""
+  unchanged_ping: ""
+  changed_ping: ""
+  unchanged_embed: ""
+  changed_embed: ""
+  unchanged_hex: ""
+  changed_hex: ""
+  settings_missing_message: ""
+  settings_missing_channel: ""
+  test_message_desc: ""
+  default_value: ""
+  select_channel: ""
+  settings_title: ""
+  missing_channel_permissions: ""
+  boost_moved_title: ""
+  boost_moved_description: ""
+Chatbot:
+  modal_title: ""
+  modal_label: ""
+  modal_placeholder: ""
+  embed_title: ""
+  embed_footer_extra: ""
+  embed_title_answer: ""
+  cost_content_extra: ""
+  embed_footer_normal: ""
+  cost_content_normal: ""
+  error_extra_tokens: ""
+  error_no_vote: ""
+  error_no_tokens: ""
+  token_information: ""
+  token_information_content: ""
+  not_voted_yet: ""
+  error_mp3: ""
+Customs:
+  trigger_already: ""
+  create_trigger_title: ""
+  trigger_too_long: ""
+  create_trigger_label: ""
+  create_trigger_placeholder: ""
+  create_trigger_success_message: ""
+  trigger_remove: ""
+  edit_trigger_title: ""
+  edit_trigger_success_message: ""
+  trigger_list_not_found: ""
+  trigger_not_found: ""
+  trigger_list_title: ""
 Economy:
-
   slots_ok_title: ""
-  top_title: ""
-  balance_title: ""
-  wallet: ""
-  positive_amt: ""
-  coinflip_title_win: ""
-  coinflip_bot_chose: ""
+  send_limit_reached: ""
   slots_win_amout: ""
   slots_lost_title: ""
-  coinflip_description_lost: ""
-  coinflip_too_long: ""
-  bank: ""
-  coinflip_field1: ""
-  top_description: ""
-  not_enough: ""
-  too_much: ""
-  deposit_success: ""
-  coinflip_field2: ""
-  withdraw_success: ""
-  coinflip_you_chose: ""
   slots_lost_amount: ""
-  coinflip_description: ""
-  coinflip_title: ""
-  deposit_all: ""
-  rob_success: ""
-  rob_worthless: ""
   beg: ""
-  send_success: ""
   slots_won_title: ""
-  coinflip_field3: ""
-  coinflip_description_won: ""
   slots_ok_amount: ""
-  balance_embed_desc: ""
-  cooldowns_desc: ""
-
+  no_daily_data: ""
+  dailyreminder_enabled: ""
+  dailyreminder_disabled: ""
+  you_won: ""
+  head_or_tails_win: ""
+  you_lost: ""
+  head_or_tails_lose: ""
+  daily_limit_reached_750k: ""
+  daily_limit_reached_500k: ""
+  daily_reminder_title: ""
+  daily_reminder_text: ""
+  not_enough_money: ""
+  not_positive_amount: ""
+  withdraw_successful: ""
+  beg_success: ""
+  beg_fail: ""
+  not_valid_amount: ""
+  deposit_successful: ""
+  not_valid_or_insufficient: ""
+  coinflip_title: ""
+  coinflip_description: ""
+  coinflip_amount: ""
+  coinflip_possible_winnings: ""
+  slots_spinning_title: ""
+  slots_spinning_description: ""
+  guess_title: ""
+  guess_description: ""
+  guess_won: ""
+  guess_lost: ""
+  guess_lost_time: ""
+  robbery_impossible: ""
+  robbery_success: ""
+  robbery_success_balance: ""
+  robbery_impossible_poor: ""
+  robbery_failed: ""
+  rob_yourself_or_bot: ""
+  robbery_failed_balance: ""
+  robbery_failed_no_funds: ""
+  send_yourself_or_bot: ""
+  send_success_description: ""
+  leaderboard_title: ""
+  leaderboard_description: ""
+  daily_too_early: ""
+  daily_too_late: ""
+  daily_success: ""
+  bank: ""
+  wallet: ""
+  dailyleaderboard_streak: ""
+  dailyleaderboard_title: ""
 Errors:
-
   error_dm: ""
   error_bot_lack: ""
   error_disabled: ""
@@ -77,26 +228,38 @@ Errors:
   error_title: ""
   error_lack_perms: ""
   error_runtime: ""
-
+  interaction_not_allowed: ""
+  timeout_error: ""
+  invalid_date: ""
+  generic_error: ""
+Giveaway:
+  giveaway_ended: ""
+  no_one_joined: ""
+  winner_mention: ""
+  embed_desc_end: ""
+  time_too_long: ""
+  winners_too_low: ""
+  giveaway_start_desc: ""
+  giveaway_started_successfully: ""
+  no_giveaway_found: ""
+  too_many_winners: ""
+  winner_mention_reroll: ""
+  giveaway_rerolled: ""
+  giveaway_ended_successfully: ""
+  giveaway_deleted_successfully: ""
+  left_giveaway_button: ""
+  joined_giveaway_button: ""
 Help:
-
-  next_page_embed_footer: ""
+  help_additional_perms: ""
   help_menu_start_title: ""
-  help_first_page: ""
+  choose_category: ""
   help_menu_reaction_title: ""
   help_menu_customs_title: ""
   help_menu_customs_desc: ""
-  help_command_footer: ""
-  end_page_footer: ""
-  help_closed: ""
-  help_last_page: ""
   help_menu_mod_title: ""
   help_menu_economy_title: ""
   help_menu_info_title: ""
   help_menu_utils_title: ""
-  first_page_embed_footer: ""
-  interaction_nallowed: ""
-  laste_page_embed_footer: ""
   help_menu_pvm_title: ""
   help_menu_levels_title: ""
   help_menu_levels_desc: ""
@@ -111,8 +274,6 @@ Help:
   help_menu_reaction_desc: ""
   help_menu_pvm_desc: ""
   help_menu_mod_desc: ""
-  help_menu_namefilter_desc: ""
-  help_menu_namefilter_title: ""
   reminder_menu_desc: ""
   help_menu_tickets_desc: ""
   help_menu_roleshop_title: ""
@@ -132,385 +293,537 @@ Help:
   twitch_menu_desc: ""
   help_menu_booster_desc: ""
   help_menu_presence_desc: ""
-
+  missing_commands_hint: ""
 Information:
-
   serverinfo-owner: ""
-  uinfo-roles-none: ""
   view_is_normal: ""
   serverinfo-created: ""
   serverinfo-txtchannel: ""
   avatar-no-server: ""
-  uinfo-days: ""
   botinfo-python: ""
-  uinfo-nickname: ""
   serverinfo-members: ""
-  uinfo-voice: ""
   botinfo-guilds: ""
-  uinfo-created: ""
-  uinfo-joined: ""
-  botinfo-channel: ""
-  uinfo-days1: ""
-  uinfo-perms: ""
   botinfo-users: ""
   botinfo-disnake: ""
-  uinfo-highest-none: ""
   view_is_server: ""
   serverinfo-roles: ""
-  uinfo-roles: ""
-  uinfo-highest: ""
-  serverinfo-guild-name: ""
   botinfo-translator: ""
   botinfo-rebooted: ""
-  information-buttons: ""
-  serverinfo-role-mention: ""
-
+Leave:
+  leave_toggle: ""
+  leave_message: ""
+  leave_message_placeholder: ""
+  leave_channel: ""
+  edit_leave_message: ""
+  leave_message_channel: ""
+  leave_message_unchanged: ""
+  leave_message_changed: ""
+  leave_message_unchanged_text: ""
+  leave_message_indicator: ""
+  leave_message_embed: ""
+  leave_toggle_error: ""
+  leave_moved_title: ""
+  leave_moved_description: ""
 Levels:
-
-  levels_ignored_already: ""
-  levels_ignore_channel: ""
-  levels_leaderboard_deactivated: ""
-  levels_allow_success: ""
-  levels_lb_totalxp: ""
   levels_leaderboard_title: ""
-  levels_lb_totalmsg: ""
-  levels_lb_member: ""
-  levels_false: ""
-  levels_mention_false: ""
-  levels_rank_progress: ""
-  levels_mention_true: ""
   levels_toggle: ""
   levels_allow_not_ignored: ""
-  levels_allow_nodata: ""
-  levels_leaderboard_description: ""
-  levels_allow_nochannel: ""
   levels_rank_no_xp: ""
   on_message_mention: ""
   levels_mention_toggle: ""
-  levels_true: ""
   levels_rank_deactivated: ""
-  levels_ignore_channel_title: ""
   levels_ignore_channel_new: ""
+  levels_ignore_channel_adding: ""
   levels_ignore_channel_old: ""
-  levels_ignore_channel_title_already: ""
-  levels_ignore_channel_desc_already: ""
-  levels_allow_all_channel: ""
-  levels_allow_nodata_title: ""
+  levels_ignore_channel_already: ""
+  levels_rank_bot: ""
+  levels_background_too_large: ""
+  levels_background_invalid: ""
+  levels_background_changed: ""
+  recommended_size: ""
+  levels_rank_no_xp_member: ""
   levels_allow_nodata_desc: ""
-  levels_allow_not_ignored_title: ""
-  levels_allow_not_ignored_desc: ""
-  levels_allow_success_title: ""
   levels_allow_success_desc: ""
-  levels_settings_title: ""
-  levels_roles_toggle_title: ""
   levels_roles_toggle: ""
-  levels_roles_toggle_true: ""
-  roles_roles_toggle_false: ""
-  levels_role_error_embed_title: ""
   levels_role_not_assignable: ""
-  levels_roles_error_title: ""
   levels_roles_already_role_desc: ""
-  levels_roles_success_title: ""
-  levels_roles_success_desc: ""
-  levels_roles_success_role: ""
-  levels_roles_success_reminder: ""
-  levels_roles_remove_success_embed_title: ""
-  levels_roles_remove_success_desc: ""
-  levels_roles_addrole_success_role: ""
-  levels_roles_addrole_error_title: ""
-  levels_roles_remove_fail: ""
-  levels_roles_already_role_field: ""
+  levels_role_level_too_low: ""
   levels_roles_already_level_desc: ""
-  levels_roles_remove_success_role: ""
-
+  levels_roles_success_desc: ""
+  levels_roles_remove_success_desc: ""
+  levels_roles_remove_fail: ""
+  levels_leaderboard_footer: ""
 Moderation:
-
+  channelmode_set: ""
+  channelmode_already_set: ""
   modlog_set: ""
   modlog_moved: ""
   modlog_same: ""
   ban_myself: ""
   ban_yourself: ""
-  ban_embed_title: ""
-  ban_embed_desc: ""
-  moderation_embed_reason: ""
-  no_action_possible: ""
-  action_failed: ""
-  ban_guild_embed_title: ""
   modlog_found_ban: ""
   no_modlog_found: ""
-  softban_myself: ""
-  softban_yourself: ""
-  softban_embed_title: ""
-  softban_embed_desc: ""
-  softban_guild_embed_title: ""
-  moderation_member_mention: ""
-  softban_log_success: ""
+  moderation_embed_reason: ""
+  banned_until: ""
+  ban_guild_embed_title: ""
+  tempban_guild_embed_title: ""
+  tempban_success_desc: ""
+  tempban_no_modlog_found: ""
+  no_action_possible: ""
+  action_failed: ""
   kick_myself: ""
   kick_yourself: ""
+  kick_embed_title: ""
+  kick_guild_embed_title: ""
+  kick_guild_embed_desc: ""
+  kick_log_success: ""
+  kick_log_success_nolog: ""
   hackban_yourself: ""
   hackban_myself: ""
-  kick_embed_title: ""
-  kick_embed_desc: ""
-  kick_guild_embed_title: ""
-  kick_log_success: ""
-  delete_too_high: ""
-  delete_message_channel: ""
-  delete_log_message: ""
-  no_modlog_found_delete: ""
-  delete_missing_perms: ""
   hackban_success: ""
-  hackban_failed: ""
   hackban_already_banned: ""
   hackban_log_success: ""
-  slowmode_set_time: ""
-  slowmode_log_entry: ""
   hackban_invalid_argument: ""
+  hackban_log_success_nolog: ""
+  moderation_id: ""
+  delete_too_high: ""
+  delete_message_channel: ""
+  delete_negative: ""
+  delete_guild_embed_title: ""
+  delete_guild_embed_desc: ""
+  no_modlog_found_delete: ""
   tempban_embed_title: ""
-  tempban_embed_desc: ""
-  moderation_embed_reason: ""
-  moderation_embed_duration: ""
-  tempban_guild_embed_title: ""
-  tempban_guild_embed_desc: ""
-  moderation_member_mention: ""
   tempban_log_success: ""
-  action_type: ""
-  type_unban: ""
   unbanned_after: ""
   unban_embed_title: ""
+  unban_desc: ""
   banned_for: ""
-
+  ban_datetime: ""
+  banned_guild_title: ""
+  ban_success: ""
+  emoji_limit_reached: ""
+  animated_emoji_limit_reached: ""
+  static_emoji_limit_reached: ""
+  emoji_invalid: ""
+  emoji_added: ""
+  channelmode_unset: ""
+  emoji_invalid_format: ""
+  no_reason: ""
 Msgvote:
-
   msgvote_upvote_success: ""
   msgvote_toggle: ""
-  msgvote_channel_moved: ""
-  msgvote_true: ""
-  msgvote_upvote_same: ""
+  msgvote_toggle_not_set: ""
   msgvote_channel_same: ""
   msgvote_channel_set: ""
-  msgvote_false: ""
   msgvote_downvote_success: ""
-  msgvote_downvote_same: ""
-  msgvote_settings_title: ""
-  msgvote_channel_set_title: ""
-  msgvote_channel_set_moved: ""
-  msgvote_channel_set_desc: ""
   msgvote_channel_set_old: ""
   msgvote_channel_set_new: ""
-  msgvote_channel_same_title: ""
-  msgvote_same_title: ""
-  msgvote_same_desc: ""
-  msgvote_same_entry: ""
-  msgvote_success_title: ""
-  msgvote_used_for: ""
-  msgvote_success_reminder: ""
-
+  msgvote_same_desc_upvote: ""
+  msgvote_same_desc_downvote: ""
 Language:
-
   languages_title: ""
   setlang_failed: ""
   setlang_success: ""
   languages_footer: ""
   test_command: ""
   choose_translation: ""
-
+Presence:
+  no_spotify_channel: ""
+  spotify_channel_removed: ""
+  no_spotify_role: ""
+  spotify_role_removed: ""
+  no_twitch_channel: ""
+  twitch_channel_removed: ""
+  no_twitch_role: ""
+  twitch_role_removed: ""
+  no_spotify_channel_or_role: ""
+  spotify_toggle_changed: ""
+  no_twitch_channel_or_role: ""
+  twitch_toggle_changed: ""
+  spotify_channel_changed: ""
+  spotify_channel_already_set: ""
+  spotify_channel_changed_new: ""
+  twitch_channel_changed: ""
+  twitch_channel_changed_new: ""
+  twitch_channel_already_set: ""
+  already_opt_in: ""
+  opted_in: ""
+  already_opted_out: ""
+  opted_out: ""
+  spotify_role_changed: ""
+  spotify_role_already_set: ""
+  spotify_role_changed_new: ""
+  twitch_role_changed: ""
+  twitch_role_already_set: ""
+  twitch_role_changed_new: ""
+  new_start_information: ""
+  switched_song_information: ""
+  new_start_twitch_information: ""
+  stream_information: ""
+  spotify_member_now: ""
+  no_presence_data: ""
 Private:
-
-  pvm_setup_embed_f3_n: ""
   pvm_setup_cmanagement: ""
   pvm_setup_category: ""
-  pvm_setup_embed_title: ""
-  pvm_setup_embed_f1_n: ""
-  pvm_setup_embed_f2_v: ""
-  pvm_setup_embed_f3_v: ""
   pvm_setup_joinchannel: ""
   pvm_info_kicked: ""
-  pvm_info_field1: ""
-  pvm_setup_embed_f2_n: ""
   pvm_clear_success: ""
-  pvm_setup_embed_desc: ""
   pvm_limit: ""
   pvm_info_title: ""
-  pvm_info_field2: ""
-  pvm_cooldowns_desc: ""
-  pvm_addrole_success_title: ""
-  pvm_addrole_list: ""
-  pvm_addrole_success_desc: ""
-  pvm_an_error: ""
+  pvm_info_joined: ""
   pvm_addrole_same_desc: ""
   pvm_nodata: ""
-  pvm_removerole_no_role_found: ""
-  pvm_removerole_noperms: ""
-  pvm_removerole_success_title: ""
+  pvm_role_not_in_list: ""
   pvm_removerole_success_desc: ""
   pvm_setup_success: ""
-  pvm_setup_addrole: ""
   pvm_setup_already: ""
-  private_new_name: ""
-  private_new_name_too_long: ""
-  pvm_name_success_title: ""
   pvm_name_success: ""
-  contact_owner: ""
   pvm_novc: ""
   pvm_not_owner: ""
   pvm_privacy_closed: ""
   pvm_privacy_open: ""
-  private_no_number: ""
-  pvm_size_success_title: ""
-  pvm_size_success_desc: ""
-  private_new_size: ""
-  private_kick: ""
   pvm_member_not_found: ""
-  private_invite: ""
   pvm_invite_already: ""
+  pvm_embed_open: ""
+  pvm_embed_close: ""
+  pvm_embed_kick: ""
+  pvm_embed_invite: ""
+  pvm_embed_size: ""
+  pvm_embed_name: ""
+  privacy_text_translation: ""
+  pvm_setup_kick_text: ""
+  pvm_setup_invite_text: ""
+  pvm_size_text_translation: ""
+  pvm_setup_name_text: ""
+  pvm_setup_title: ""
   pvm_invite_success: ""
   pvm_immune: ""
   pvm_kick_success: ""
   pvm_kick_already: ""
   pvm_kick_not_in_channel: ""
-  pvm_name_cooldown_title: ""
-  pvm_name_cooldown_desc: ""
-  pvm_ignore_already: ""
+  pvm_already_immune: ""
+  pvm_addrole_everyone: ""
+  pvm_addrole_success_desc: ""
+  pvm_kick_self: ""
+  pvm_not_numeric: ""
+  pvm_menu_title: ""
+  pvm_menu_desc: ""
   pvm_ignore_success: ""
-  pvm_observe_not_found: ""
-  pvm_observe_not_ignored: ""
-  pvm_observe_success: ""
-  pvm_clear_no_setup: ""
-  pvm_info_nopvc: ""
-  pvm_delete_no_customs: ""
-  pvm_delete_messsage: ""
-  pvm_delete_success: ""
-  private_channel_toggle_embed_title: ""
-  private_channel_toggle: ""
-  text_channel_true: ""
-  text_channel_false: ""
-
+  pvm_not_immune: ""
+  pvm_unignore_success: ""
+  pvm_setup_noroles: ""
+  no_custom_channel: ""
+  pvm_name_cooldown: ""
+  pvm_size_success: ""
+  pvm_modal_invite_title: ""
+  pvm_modal_invite_member: ""
+  pvm_modal_member_placeholder: ""
+  pvm_modal_kick_title: ""
+  pvm_modal_kick_member: ""
+  pvm_modal_size_title: ""
+  pvm_modal_size_label: ""
+  pvm_modal_size_placeholder: ""
+  pvm_modal_name_title: ""
+  pvm_modal_name_label: ""
+  pvm_modal_name_placeholder: ""
 Reaction:
-
-  reaction_channel_moved: ""
   reaction_channel_already: ""
+  reaction_channel_update: ""
   reaction_title: ""
   reaction_no_channel: ""
-  reaction_addrole_use: ""
-  reaction_addrole_emoji_use: ""
   reaction_list_no_data: ""
-  reaction_addrole_success: ""
   reaction_channel_set: ""
   reaction_remove_fail: ""
-  reaction_remove_success: ""
   reaction_channel_data: ""
   reaction_role_not_assignable: ""
-  reaction_addrole_error_title: ""
-  reaction_addrole_already_desc: ""
-  reaction_addrole_already_role_field: ""
-  reaction_addrole_already_emoj_field: ""
-  reaction_addrole_already_emoji_field: ""
-  reaction_addrole_already_emoj_role_field: ""
-  reaction_addrole_success_title: ""
-  reaction_addrole_success_desc: ""
-  reaction_addrole_success_role: ""
-  reaction_addrole_already_emoji_desc: ""
-  reaction_remove_success_embed_title: ""
-  reaction_remove_success_desc: ""
-  reaction_remove_fail_footer: ""
-  reaction_success_reminder: ""
-  reaction_channel_set_embed_title: ""
-  reaction_channel_moved_embed_title: ""
-  reaction_channel_moved_embed_desc: ""
-  reaction_channel_moved_old: ""
-  reaction_channel_moved_new: ""
-  reaction_channel_same_embed_title: ""
-  reaction_role_error_embed_title: ""
-
-Ticket: ""
-
+  reaction_role_already_used: ""
+  reaction_emoji_already_used: ""
+  reaction_addrole_success: ""
+  reaction_remove_success: ""
+  reaction_role_emoji_not_from_guild: ""
+Reminder:
+  reminder_translation: ""
+  reminder_time: ""
+  choose_reminder: ""
+  removed_reminder_dropdown: ""
+  reminder_too_long: ""
+  time_too_long: ""
+  reminder_set_title: ""
+  reminder_set_description: ""
+  reminder_dm: ""
+  reminder_channel: ""
+  no_reminders: ""
+  reminder_list_title_one: ""
+  reminder_deleted: ""
+  reminder_title: ""
+  reminder_context: ""
+Roleshop:
+  is_empty: ""
+  roleshop_translation: ""
+  role_not_assignable: ""
+  role_already_exists: ""
+  role_added_description: ""
+  role_removed_description: ""
+  role_not_in_roleshop: ""
+  roleshop_role_active_removed: ""
+  role_updated_description: ""
+  not_enough_coins: ""
+  role_already_owned: ""
+  role_purchased_description: ""
+  role_purchase_failed: ""
+  roleshop_negative_amount: ""
+Spotify:
+  spotify_channel_set: ""
+  spotify_channel_already_set: ""
+  spotify_channel_update: ""
+  artist_not_found: ""
+  artist_already_in_list: ""
+  artist_added: ""
+  artist_not_in_list: ""
+  artist_removed: ""
+  no_artists: ""
+  artists_following: ""
+Serverlogging:
+  logging_channel_already_set: ""
+  logging_channel_updated: ""
+  logging_type_already_set: ""
+  logging_type_already_disabled: ""
+  logging_type_updated: ""
+Sticky:
+  count_label: ""
+  no_sticky_messages: ""
+  sticky_message_set: ""
+  sticky_message_removed: ""
+  no_sticky_message: ""
+  not_a_number: ""
+  count_too_low: ""
+  sticky_message_edited: ""
+  sticky_message_already_exists: ""
+  sticky_message_title: ""
+  select_channel: ""
+  sticky_messages_list: ""
+  sticky_messages_list_desc: ""
+  sticky_message_not_found: ""
+  sticky_message_for_channel: ""
+  create_sticky_message: ""
+  embed_label: ""
+  sticky_message_label: ""
+  sticky_message_placeholder: ""
+  sticky_message_count_label: ""
+  edit_sticky_message: ""
+  select_channel_to_view: ""
+Ticket:
   ticket_unblock_success: ""
   ticket_unblock_no_block: ""
   ticket_addrole_same: ""
   ticket_addrole_success: ""
   ticket_ping_addrole_success: ""
   ticket_ping_addrole_same: ""
-  ticket_setup_no_role: ""
   ticket_block_success: ""
   ticket_removerole_success: ""
-  button_create_no_role: ""
   button_youre_blocked: ""
   ticket_setup_supportchannel: ""
-  ticket_setup_embed_title: ""
   button_block_self: ""
-  ticket_setup_embed_description: ""
+  ticket_block_self: ""
+  button_block_staff: ""
   button_close_noperms: ""
   ticket_embed_title: ""
-  ticket_close_wrongc: ""
   button_ticket_embed_title: ""
-  button_block_already: ""
-  ticket_setup_embed_message: ""
   button_block_success: ""
   ticket_setup_already: ""
-  ticket_block_failed: ""
+  ticket_setup_title: ""
+  ticket_setup_modal_title: ""
+  ticket_setup_modal_description: ""
+  ticket_setup_modal_description_placeholder: ""
+  ticket_setup_modal_title_placeholder: ""
+  ticket_setup_modal_footer: ""
+  ticket_setup_modal_footer_placeholder: ""
+  ticket_setup_modal_hexcolor: ""
   ticket_topic: ""
-  ticket_unblock_no_data: ""
+  button_close_ticket: ""
+  button_block_ticket: ""
   ticket_removerole_not_set: ""
   ticket_success: ""
-  ticket_setup_too_long_success: ""
-  button_create_ticket_f3: ""
-  button_create_open_ticket: ""
+  created_account_field: ""
+  ticket_closed_menu: ""
   button_block_noperms: ""
-  button_create_ticket_f2: ""
+  log_not_found: ""
+  no_ticketlog_set: ""
+  server_joined_field: ""
   ticket_setup_button: ""
-  button_create_ticket_f1: ""
+  ticket_created_field: ""
   button_ticket_embed_description: ""
   ticket_embed_description: ""
-  edit_start: ""
-  edit_title: ""
-  edit_description: ""
-  edit_edit?: ""
-  edit_true: ""
-  edit_false: ""
-  edit_error: ""
-  ticket_settings_title: ""
-  ticket_channel_changed_title: ""
-  ticket_channel_changed_fail_title: ""
-  ticket_transcript_toggle: ""
-  ticket_transcript_true: ""
-  ticket_transcript_false: ""
+  ticket_edit_title: ""
   ticket_channel_set: ""
   ticket_channel_already: ""
-  ticket_channel_moved: ""
   ticket_no_config: ""
-  ticket_no_category: ""
-  ticket_same_category: ""
   ticket_category_success: ""
-  ticket_category_success_desc: ""
+  ticket_category_same: ""
+  ticket_category_success_set: ""
   ticket_clear_success: ""
-  ticket_setup_again: ""
-  edit_true: ""
-  edit_false: ""
-  ticket_pings_toggle: ""
-  ticket_ping_true: ""
-  ticket_ping_false: ""
-
+  ticket_no_config_message: ""
+  ticket_unfetchable_message: ""
+  ticket_edit_success: ""
+  ticket_channel_changed: ""
+  ticket_ping_removerole_no_role: ""
+  ticket_ping_removerole_success: ""
+  created_mention: ""
+  button_create_ticket_error: ""
+  button_create_ticket_already: ""
+  button_transcript: ""
+  button_reopen: ""
+  button_delete: ""
+  close_success: ""
+  saving_transcript: ""
+  transcript_saved: ""
+  view_transcript_link: ""
+  button_reopen_own: ""
+  reopen_success: ""
+  ticket_block_same: ""
+  ticket_image_size: ""
+  button_create_ticket_full: ""
+  closed_information: ""
+  closed_information_left: ""
+  edit_new_ticket_message_title: ""
+  edit_new_ticket_message_label: ""
+  edit_new_ticket_message_placeholder: ""
+  edit_new_ticket_message_success: ""
+  edit_create_ticket_message_title: ""
+  edit_create_ticket_message_title_label: ""
+  edit_create_ticket_message_title_placeholder: ""
+  edit_create_ticket_message_description_label: ""
+  edit_create_ticket_message_description_placeholder: ""
+  edit_create_ticket_message_footer_label: ""
+  edit_create_ticket_message_footer_placeholder: ""
+  edit_create_ticket_message_hex_color_label: ""
+  edit_create_ticket_message_success: ""
+  ticket_invalid_category: ""
+  ticket_channel_not_found: ""
+  ticket_message_not_found: ""
+  not_a_ticket: ""
+  confirm_closure: ""
+  confirm_closure_description: ""
+  confirm_closure_manual: ""
+  select_close_reason: ""
+  reason_resolved: ""
+  reason_resolved_desc: ""
+  reason_no_response: ""
+  reason_no_response_desc: ""
+  reason_duplicate: ""
+  reason_duplicate_desc: ""
+  reason_other: ""
+  reason_other_desc: ""
+  no_reason_provided: ""
+  ticket_closed: ""
+  ticket_closed_by: ""
+  close_reason: ""
+  close_cancelled: ""
+  close_error: ""
+  transcript_no_perms: ""
+  transcript_url: ""
+  transcript_error: ""
+  transcript: ""
+  ticket_footer: ""
+  log_user: ""
+  log_ticket: ""
+  log_number: ""
+  create_error: ""
+  block_error: ""
+  owner_not_found: ""
+  panel_before_title: ""
+  panel_before_content: ""
+  panel_response_title: ""
+  panel_response_content: ""
+  panel_created: ""
+  panel_error: ""
+  stats_title: ""
+  stats_description: ""
+  stats_overview: ""
+  stats_performance: ""
+  stats_total: ""
+  stats_open: ""
+  stats_closed: ""
+  stats_avg_resolution: ""
+  stats_hours: ""
+  stats_tickets: ""
+  stats_top_creators: ""
+  stats_error: ""
+  auto_closed_title: ""
+  auto_closed_description: ""
+Ticketresponse:
+  tr_trigger_already: ""
+  create_trigger_title: ""
+  create_trigger_placeholder: ""
+  create_trigger_label: ""
+  edit_trigger_title: ""
+  trigger_list_not_found: ""
+  tr_trigger_remove: ""
+  tr_trigger_not_found: ""
+  trigger_list_title: ""
+  tr_create_trigger_success_message: ""
+  edit_trigger_success_message: ""
+Twitch:
+  invalid_channel: ""
+  twitch_channel_added: ""
+  twitch_channel_removed: ""
+  already_in_watchlist: ""
+  no_watchlist: ""
+  not_in_watchlist: ""
+  twitch_channel_set: ""
+  twitch_channel_already_set: ""
+  twitch_channel_moved: ""
+  twitch_role_set: ""
+  role_already_set: ""
+  twitch_role_moved: ""
+  watchlist: ""
+  twitch_moved_title: ""
+  twitch_moved_description: ""
+Welcome:
+  welcome_toggle: ""
+  welcome_not_enabled: ""
+  welcome_placeholder: ""
+  welcome_modal_title: ""
+  welcome_modal_label: ""
+  welcome_modal_placeholder: ""
+  welcome_modal_channelid: ""
+  welcome_modal_channelid_placeholder: ""
+  welcome_modalres_title: ""
+  welcome_modalres_unchanged_channel: ""
+  welcome_modalres_changed_channel: ""
+  welcome_modalres_ping_unchanged: ""
+  welcome_modalres_ping_changed: ""
+  welcome_modalres_embed_unchanged: ""
+  welcome_modalres_unchangedmsg: ""
+  welcome_modalres_embed_changed: ""
+  select_channel: ""
+  settings_title: ""
+  system_disabled: ""
+  toggle_error: ""
+  no_channel_set: ""
+  no_message_set: ""
+  channel_not_found: ""
+  missing_permissions: ""
+  channel_already_set: ""
+  channel_moved: ""
+  channel_set: ""
+  send_error: ""
+  test_error: ""
+  error_opening_settings: ""
+  variables_title: ""
+  welcome_moved_title: ""
+  welcome_moved_description: ""
 Work:
-
+  workstatus_next_job_reached: ""
+  workleaderboard_hours: ""
+  workleaderboard_title: ""
   worklist_start_title: ""
   worklist_start_desc: ""
-  worklist_lowpaid_title: ""
-  worklist_middle_title: ""
-  worklist_highpaid_title: ""
-  worklist_lowpaid_desc: ""
-  worklist_lowpaid_desc2: ""
-  worklist_mid_desc: ""
-  worklist_mid_desc2: ""
-  worklist_mid_desc3: ""
-  worklist_high_desc: ""
-  worklist_closed: ""
   work_reminder: ""
   key_gardener: ""
   key_athlete: ""
-  embed_field_salary: ""
   key_librarian: ""
   employee_desc: ""
-  no_reminder_button: ""
   key_lawyer: ""
   key_doctor: ""
   key_cashier: ""
@@ -518,204 +831,895 @@ Work:
   engineer_desc: ""
   key_musician: ""
   key_employee: ""
-  embed_field_appear_time: ""
   lawyer_desc: ""
-  set_reminder_button: ""
   key_programmer: ""
   nurses_desc: ""
   doctor_desc: ""
-  job_changed_embed_desc: ""
   programmer_desc: ""
   workstatus_current_job: ""
   key_police_officer: ""
-  workstatus_apply: ""
   gardener_desc: ""
   educator_desc: ""
   musician_desc: ""
-  work_quit_last_job: ""
-  embed_field_job: ""
-  work_start_show_up: ""
   athlete_desc: ""
-  set_reminder_button_success: ""
-  embed_title_work_accepted: ""
   not_enough_hours: ""
   job_same: ""
-  work_quit_total_hours: ""
-  job_changed_embed_title: ""
   work_start_field_job: ""
   work_start_field_earned: ""
-  work_quit_desc: ""
-  workstatus_earned_money: ""
-  job_not_available: ""
-  cooldowns_desc: ""
   work_start_embed_title: ""
   work_start_cooldown: ""
   work_start_embed_desc: ""
-  work_quit_title: ""
   workstatus_title: ""
   workstatus_worked_hours: ""
-  embed_desc_work_accepted: ""
   apply_first: ""
   key_educator: ""
   librarian_desc: ""
   police_officer_desc: ""
-  no_reminder_button_success: ""
   workstatus_last_time: ""
   key_engineer: ""
   cashier_desc: ""
-  embed_field_appear: ""
-  work_quit_total_earnings: ""
-  apply_again: ""
-  work_apply_text: ""
   workstatus_next_job: ""
-
-Welcome:
-
-  welcome_toggle: ""
-  welcome_true: ""
-  welcome_false: ""
-  welcome_channel_set: ""
-  welcome_channel_already: ""
-  welcome_channel_moved: ""
-  welcome_msg_toggle: ""
-  welcome_msg_choose: ""
-  welcome_msg_title: ""
-  welcome_msg_already: ""
-  welcome_msg_switched: ""
-  welcome_msg_too_long: ""
-  welcome_not_enabled: ""
-
-Namefilter:
-
-  namefilter_settings_title: ""
-  namefilter_add_fail_too_long: ""
-  namefilter_toggle: ""
-  namefilter_true: ""
-  namefilter_false: ""
-  namefilter_add_success_title: ""
-  namefilter_add_success_desc: ""
-  namefilter_add_fail_title: ""
-  namefilter_add_fail_desc: ""
-  namefilter_add_tip_list: ""
-  namefilter_error_nodata: ""
-  namefilter_remove_error_title: ""
-  namefilter_remove_error_desc: ""
-  namefilter_remove_success_title: ""
-  namefilter_remove_success_desc: ""
-  namefilter_list_success: ""
-  namefilter_check_title: ""
-  namefilter_check_desc: ""
-  namefilter_check_not_found_title: ""
-  namefilter_check_ban_button: ""
-  namefilter_check_rename_button: ""
-  namefilter_check_nothing_button: ""
-  namefilter_check_footer: ""
-  namefilter_check_banned_title: ""
-  namefilter_check_banned_desc: ""
-  namefilter_check_banned_unable_desc: ""
-  namefilter_ban_reason: ""
-  namefilter_check_renamed_title: ""
-  namefilter_check_renamed_unable_desc: ""
-  namefilter_check_renamed_desc: ""
-  namefilter_fix_result_desc_unable: ""
-  namefilter_check_nothing_title: ""
-  namefilter_check_0_renamed_title: ""
-  namefilter_check_0_renamed_desc: ""
-  namefilter_timeout_error: ""
-  namefilter_fix_start: ""
-  namefilter_fix_result_title: ""
-  namefilter_fix_result_desc: ""
-  namefilter_fix_result_nothing_title: ""
-  namefilter_fix_result_nothing_desc: ""
-  namefilter_on_member_update_title: ""
-  namefilter_on_member_update_desc: ""
-  namefilter_on_member_update_old_name: ""
-  namefilter_on_member_update_new_name: ""
-  namefilter_fix_no_charfilter_title: ""
-
-Customs:
-
-  trigger_already: ""
-  create_trigger_title: ""
-  create_trigger_label: ""
-  create_trigger_placeholder: ""
-  create_trigger_success: ""
-  create_trigger_success_description: ""
-  trigger_remove: ""
-  edit_trigger_title: ""
-  edit_trigger_success: ""
-  edit_trigger_success_description: ""
-  trigger_list: ""
-  trigger_list_not_found: ""
-
-Feedback:
-
-  standard_embed: ""
-  own_embed: ""
-  5min: ""
-  10min: ""
-  15min: ""
-  20min: ""
-  25min: ""
-  30min: ""
-  45min: ""
-  60min: ""
-  send?: ""
-  sent: ""
-  not_sent: ""
-
-Leave:
-  leave_toggle: ""
-  leave_msg_toggle: ""
-  leave_not_enabled: ""
-  leave_true: ""
-  leave_false: ""
-
-Booster:
-
-  new_booster_channel_title: ""
-  new_booster_channel_desc: ""
-  booster_channel_moved_desc: ""
-  booster_same_channel_title: ""
-  server_boost_toggle_true: ""
-  server_boost_toggle_true_desc : ""
-  server_boost_toggle_false: ""
-  server_boost_toggle_false_desc : ""
-  server_boost_variables_title: ""
-  server_boost_variables_mention: ""
-  server_boost_variables_name: ""
-  server_boost_variables_id: ""
-  server_boost_variables_guild_name: ""
-  server_boost_variables_boost_count: ""
-  server_boost_variables_boost_level: ""
-  boost_not_enabled: ""
-  boost_enable_first: ""
-  server_boost_message_set_title: ""
-  invalid_hex_code: ""
-  valid_hex_code: ""
-  server_boost_embed_desc_final: ""
-  server_boost_message_changed_title: ""
-  unchanged_ping: ""
-  unchanged_embed: ""
-  unchanged_hex: ""
-  unchanged_boost_message: ""
-  settings_missing_message: ""
-  settings_missing_channel: ""
-  test_message_title: ""
-  test_message_desc: ""
-
-TicketResp:
-
-trigger_already: ""
-create_trigger_title: ""
-create_trigger_placeholder: ""
-create_trigger_success: ""
-trigger_remove: ""
-edit_trigger_title: ""
-create_trigger_label: ""
-create_trigger_success_description: ""
-edit_trigger_title: ""
-edit_trigger_success: ""
-edit_trigger_success_description: ""
-trigger_list: ""
-trigger_list_not_found: ""
+  application_accepted: ""
+  employee_start_desc: ""
+  reminder_change: ""
+  employee_first: ""
+  promotion_accepted_title: ""
+  promotion_accepted_desc: ""
+  apply_title: ""
+  apply_desc: ""
+  workstatus_end: ""
+  key_marketing_intern: ""
+  marketing_intern_desc: ""
+  key_sales_representative: ""
+  sales_representative_desc: ""
+  key_graphic_designer: ""
+  graphic_designer_desc: ""
+  key_hr_specialist: ""
+  hr_specialist_desc: ""
+  key_account_manager: ""
+  account_manager_desc: ""
+  key_it_support: ""
+  it_support_desc: ""
+  key_research_scientist: ""
+  research_scientist_desc: ""
+  key_financial_analyst: ""
+  financial_analyst_desc: ""
+  key_legal_advisor: ""
+  legal_advisor_desc: ""
+  key_supply_chain_manager: ""
+  supply_chain_manager_desc: ""
+  key_construction_manager: ""
+  construction_manager_desc: ""
+  key_architect: ""
+  architect_desc: ""
+  key_biotech_engineer: ""
+  biotech_engineer_desc: ""
+  key_aerospace_engineer: ""
+  aerospace_engineer_desc: ""
+  key_diplomat: ""
+  diplomat_desc: ""
+  key_cybersecurity_expert: ""
+  cybersecurity_expert_desc: ""
+  key_energy_consultant: ""
+  energy_consultant_desc: ""
+  key_climate_scientist: ""
+  climate_scientist_desc: ""
+  key_space_explorer: ""
+  space_explorer_desc: ""
+  key_futurist: ""
+  futurist_desc: ""
+  coins: ""
+  hours: ""
+YouTube:
+  channel_not_found: ""
+  channel_added: ""
+  channel_already_added: ""
+  channel_already_set: ""
+  channel_set: ""
+  channel_removed: ""
+  no_channels: ""
+  channels_list: ""
+  role_already_set: ""
+  role_set: ""
+  role_removed: ""
+  role_not_set: ""
+  youtube_moved_title: ""
+  youtube_moved_description: ""
+Tournament:
+  tournament_in_progress: ""
+  not_enough_participants: ""
+  tournament_starting: ""
+  tournament_starting_desc: ""
+  tournament_error: ""
+  winner_announcement: ""
+  winner_description: ""
+  prize_field: ""
+  participants_field: ""
+  time_field: ""
+  wins_server_field: ""
+  wins_global_field: ""
+  not_enough_coins: ""
+  already_joined: ""
+  join_success: ""
+  join_with_custom_bet: ""
+  custom_bet_title: ""
+  custom_bet_label: ""
+  custom_bet_placeholder: ""
+  minimum_bet_error: ""
+  insufficient_funds: ""
+  signup_title: ""
+  signup_description: ""
+  prize_pool_field: ""
+  participants_field_title: ""
+  how_to_join_betting: ""
+  how_to_join_standard: ""
+  hosted_by: ""
+  no_completed_tournaments: ""
+  no_tournament_history: ""
+  tournament_cancelled: ""
+  no_active_tournament: ""
+  need_admin_permissions: ""
+  error_cancelling: ""
+Action:
+  completed: ""
+  in_progress: ""
+  ticket_created: ""
+  canceled: ""
+  open_dashboard: ""
+Settings:
+  changed: ""
+  updated: ""
+Commands:
+  youtube:
+    group_description: ""
+    add:
+      command_description: ""
+      parameters:
+        channel:
+          desc: ""
+    channel:
+      command_description: ""
+      parameters:
+        channel:
+          desc: ""
+    remove:
+      command_description: ""
+      parameters:
+        channel:
+          desc: ""
+    list:
+      command_description: ""
+  ping:
+    command_description: ""
+  work:
+    group_description: ""
+    apply:
+      command_description: ""
+    start:
+      command_description: ""
+    list:
+      command_description: ""
+    status:
+      command_description: ""
+  welcome:
+    command_name: ""
+    command_description: ""
+  twitch:
+    group_description: ""
+    accesstoken:
+      command_description: ""
+    add:
+      command_description: ""
+      parameters:
+        streamer:
+          desc: ""
+    remove:
+      command_description: ""
+      parameters:
+        streamer:
+          desc: ""
+    channel:
+      command_description: ""
+      parameters:
+        channel:
+          desc: ""
+    role:
+      command_description: ""
+      parameters:
+        role:
+          desc: ""
+        action:
+          desc: ""
+    list:
+      command_description: ""
+  tournament:
+    command_name: ""
+    command_description: ""
+    parameters:
+      mode:
+        name: ""
+        desc: ""
+  tournament_stats:
+    command_name: ""
+    command_description: ""
+  tournament_history:
+    command_name: ""
+    command_description: ""
+  tournament_cancel:
+    command_name: ""
+    command_description: ""
+  ticket:
+    group_description: ""
+    role:
+      command_description: ""
+      parameters:
+        role:
+          desc: ""
+        action:
+          desc: ""
+    setup:
+      command_description: ""
+      parameters:
+        system:
+          desc: ""
+        thumbnail:
+          desc: ""
+        image:
+          desc: ""
+    edit:
+      command_description: ""
+      parameters:
+        thumbnail:
+          desc: ""
+        image:
+          desc: ""
+        type:
+          desc: ""
+    clear:
+      command_description: ""
+    log:
+      command_description: ""
+      parameters:
+        channel:
+          desc: ""
+    category:
+      command_description: ""
+      parameters:
+        category:
+          desc: ""
+    ping:
+      command_description: ""
+      parameters:
+        role:
+          desc: ""
+        action:
+          desc: ""
+    member:
+      command_description: ""
+      parameters:
+        member:
+          desc: ""
+        action:
+          desc: ""
+  sticky:
+    group_description: ""
+    set:
+      command_description: ""
+      parameters:
+        channel:
+          desc: ""
+        embed:
+          desc: ""
+    unset:
+      command_description: ""
+      parameters:
+        channel:
+          desc: ""
+    edit:
+      command_description: ""
+      parameters:
+        channel:
+          desc: ""
+    list:
+      command_description: ""
+  roleshop:
+    group_description: ""
+    show:
+      command_description: ""
+    add:
+      command_description: ""
+      parameters:
+        role:
+          desc: ""
+        price:
+          desc: ""
+    remove:
+      command_description: ""
+      parameters:
+        role:
+          desc: ""
+    update:
+      command_description: ""
+      parameters:
+        role:
+          desc: ""
+        price:
+          desc: ""
+  logging:
+    group_description: ""
+    channel:
+      command_description: ""
+      parameters:
+        channel:
+          desc: ""
+    type:
+      command_description: ""
+      parameters:
+        type:
+          desc: ""
+        toggle:
+          desc: ""
+    status:
+      command_description: ""
+  reminder:
+    group_description: ""
+    set:
+      command_description: ""
+      parameters:
+        time:
+          desc: ""
+        reminder:
+          desc: ""
+        dm:
+          desc: ""
+        interval:
+          desc: ""
+    delete:
+      command_description: ""
+      parameters:
+        reminder:
+          desc: ""
+    list:
+      command_description: ""
+  reaction:
+    group_description: ""
+    channel:
+      command_description: ""
+      parameters:
+        channel:
+          desc: ""
+    add:
+      command_description: ""
+      parameters:
+        emoji:
+          desc: ""
+        role:
+          desc: ""
+    remove:
+      command_description: ""
+      parameters:
+        role:
+          desc: ""
+    list:
+      command_description: ""
+  pvm:
+    group_description: ""
+    role:
+      command_name: ""
+      command_description: ""
+      parameters:
+        role:
+          name: ""
+          desc: ""
+        action:
+          name: ""
+          desc: ""
+    member:
+      command_name: ""
+      command_description: ""
+      parameters:
+        member:
+          name: ""
+          desc: ""
+        action:
+          name: ""
+          desc: ""
+    setup:
+      command_name: ""
+      command_description: ""
+    menu:
+      command_name: ""
+      command_description: ""
+    clear:
+      command_name: ""
+      command_description: ""
+    info:
+      command_name: ""
+      command_description: ""
+      parameters:
+        channel:
+          name: ""
+          desc: ""
+    privacy:
+      command_name: ""
+      command_description: ""
+      parameters:
+        toggle:
+          name: ""
+          desc: ""
+    kick:
+      command_name: ""
+      command_description: ""
+      parameters:
+        member:
+          name: ""
+          desc: ""
+    invite:
+      command_name: ""
+      command_description: ""
+      parameters:
+        member:
+          name: ""
+          desc: ""
+    name:
+      command_name: ""
+      command_description: ""
+      parameters:
+        name:
+          name: ""
+          desc: ""
+    size:
+      command_name: ""
+      command_description: ""
+      parameters:
+        size:
+          name: ""
+          desc: ""
+  msgvote:
+    group_description: ""
+    toggle:
+      command_name: ""
+      command_description: ""
+      parameters:
+        toggle:
+          name: ""
+          desc: ""
+    channel:
+      command_name: ""
+      command_description: ""
+      parameters:
+        channel:
+          name: ""
+          desc: ""
+    upvote:
+      command_name: ""
+      command_description: ""
+      parameters:
+        emoji:
+          name: ""
+          desc: ""
+    downvote:
+      command_name: ""
+      command_description: ""
+      parameters:
+        emoji:
+          name: ""
+          desc: ""
+  modlog:
+    command_name: ""
+    command_description: ""
+    parameters:
+      channel:
+        name: ""
+        desc: ""
+  channelmode:
+    command_name: ""
+    command_description: ""
+    parameters:
+      channel:
+        name: ""
+        desc: ""
+      mode:
+        name: ""
+        desc: ""
+      toggle:
+        name: ""
+        desc: ""
+  ban:
+    command_name: ""
+    command_description: ""
+    parameters:
+      member:
+        name: ""
+        desc: ""
+      reason:
+        name: ""
+        desc: ""
+  kick:
+    command_name: ""
+    command_description: ""
+    parameters:
+      member:
+        name: ""
+        desc: ""
+      reason:
+        name: ""
+        desc: ""
+  emojisteal:
+    command_name: ""
+    command_description: ""
+    parameters:
+      emoji:
+        name: ""
+        desc: ""
+  tempban:
+    command_name: ""
+    command_description: ""
+    parameters:
+      member:
+        name: ""
+        desc: ""
+      time:
+        name: ""
+        desc: ""
+      reason:
+        name: ""
+        desc: ""
+  delete:
+    command_name: ""
+    command_description: ""
+    parameters:
+      amount:
+        name: ""
+        desc: ""
+  hackban:
+    command_name: ""
+    command_description: ""
+    parameters:
+      user:
+        name: ""
+        desc: ""
+      reason:
+        name: ""
+        desc: ""
+  levels:
+    group_description: ""
+    toggle:
+      command_name: ""
+      command_description: ""
+      parameters:
+        toggle:
+          name: ""
+          desc: ""
+    mention:
+      command_name: ""
+      command_description: ""
+      parameters:
+        toggle:
+          name: ""
+          desc: ""
+    channel:
+      command_name: ""
+      command_description: ""
+      parameters:
+        action:
+          name: ""
+          desc: ""
+        channel:
+          name: ""
+          desc: ""
+    background:
+      command_name: ""
+      command_description: ""
+      parameters:
+        image:
+          name: ""
+          desc: ""
+    roles:
+      group_description: ""
+      toggle:
+        command_name: ""
+        command_description: ""
+        parameters:
+          toggle:
+            name: ""
+            desc: ""
+      add:
+        command_name: ""
+        command_description: ""
+        parameters:
+          level:
+            name: ""
+            desc: ""
+          role:
+            name: ""
+            desc: ""
+      remove:
+        command_name: ""
+        command_description: ""
+        parameters:
+          role:
+            name: ""
+            desc: ""
+  rank:
+    command_name: ""
+    command_description: ""
+    parameters:
+      member:
+        name: ""
+        desc: ""
+  leave:
+    group_description: ""
+    toggle:
+      command_name: ""
+      command_description: ""
+      parameters:
+        toggle:
+          name: ""
+          desc: ""
+    message:
+      command_name: ""
+      command_description: ""
+      parameters:
+        embed:
+          name: ""
+          desc: ""
+  economy:
+    chemistryclass:
+      command_name: ""
+      command_description: ""
+      parameters:
+        amount:
+          name: ""
+          desc: ""
+    economyban:
+      command_name: ""
+      command_description: ""
+      parameters:
+        member:
+          name: ""
+          desc: ""
+        reason:
+          name: ""
+          desc: ""
+    economyunban:
+      command_name: ""
+      command_description: ""
+      parameters:
+        member:
+          name: ""
+          desc: ""
+    grant:
+      command_name: ""
+      command_description: ""
+      parameters:
+        member:
+          name: ""
+          desc: ""
+        amount:
+          name: ""
+          desc: ""
+  automod:
+    group_description: ""
+    toggle:
+      command_name: ""
+      command_description: ""
+      parameters:
+        toggle:
+          name: ""
+          desc: ""
+    channel:
+      command_name: ""
+      command_description: ""
+      parameters:
+        channel:
+          name: ""
+          desc: ""
+    autodelete:
+      command_name: ""
+      command_description: ""
+      parameters:
+        category:
+          name: ""
+          desc: ""
+        threshold:
+          name: ""
+          desc: ""
+  achievements:
+    toggle:
+      command_name: ""
+      command_description: ""
+      parameters:
+        toggle:
+          name: ""
+          desc: ""
+    list:
+      command_name: ""
+      command_description: ""
+      parameters:
+        member:
+          name: ""
+          desc: ""
+  userinfo:
+    command_name: ""
+    command_description: ""
+    parameters:
+      member:
+        name: ""
+        desc: ""
+  bonk:
+    command_name: ""
+    command_description: ""
+    parameters:
+      user:
+        name: ""
+        description: ""
+  announcement_create:
+    command_name: ""
+    command_description: ""
+    parameters:
+      channel:
+        name: ""
+        desc: ""
+      ping:
+        name: ""
+        desc: ""
+      image:
+        name: ""
+        desc: ""
+  announcement_edit:
+    command_name: ""
+    command_description: ""
+    parameters:
+      message:
+        name: ""
+        desc: ""
+  autorole:
+    command_description: ""
+  boost_toggle:
+    command_description: ""
+    parameters:
+      toggle:
+        name: ""
+        desc: ""
+  boost_channel:
+    command_description: ""
+    parameters:
+      channel:
+        desc: ""
+  boost_variables:
+    command_description: ""
+  boost_message:
+    command_description: ""
+    parameters:
+      ping:
+        desc: ""
+      embed:
+        desc: ""
+  boost_test:
+    command_description: ""
+  chatgpt_ask:
+    command_description: ""
+  chatgpt_tokens:
+    command_description: ""
+  imagedescription:
+    command_description: ""
+  transcribe:
+    command_description: ""
+  generate_audio:
+    command_description: ""
+    parameters:
+      text:
+        desc: ""
+  custom_add:
+    command_description: ""
+    parameters:
+      trigger:
+        desc: ""
+  custom_remove:
+    command_description: ""
+    parameters:
+      trigger:
+        desc: ""
+  custom_edit:
+    command_description: ""
+    parameters:
+      trigger:
+        desc: ""
+  custom_list:
+    command_description: ""
+  balance:
+    command_description: ""
+  higherlower:
+    command_description: ""
+    parameters:
+      amount:
+        desc: ""
+  withdraw:
+    command_description: ""
+    parameters:
+      amount:
+        desc: ""
+  beg:
+    command_description: ""
+  deposit:
+    command_description: ""
+    parameters:
+      amount:
+        desc: ""
+  coinflip:
+    command_description: ""
+    parameters:
+      amount:
+        desc: ""
+  slots:
+    command_description: ""
+    parameters:
+      amount:
+        desc: ""
+  guess:
+    command_description: ""
+    parameters:
+      amount:
+        desc: ""
+      difficulty:
+        desc: ""
+  rob:
+    command_description: ""
+    parameters:
+      member:
+        desc: ""
+  send:
+    command_description: ""
+    parameters:
+      member:
+        desc: ""
+      amount:
+        desc: ""
+  daily:
+    command_description: ""
+  giveaway_start:
+    command_description: ""
+    parameters:
+      duration:
+        desc: ""
+      winners:
+        desc: ""
+      prize:
+        desc: ""
+      channel:
+        desc: ""
+      ping:
+        desc: ""
+  giveaway_reroll:
+    command_description: ""
+    parameters:
+      id:
+        desc: ""
+      winners:
+        desc: ""
+  giveaway_end:
+    command_description: ""
+    parameters:
+      id:
+        desc: ""
+  giveaway_delete:
+    command_description: ""
+    parameters:
+      id:
+        desc: ""
+  help:
+    command_description: ""
+  mydata:
+    command_description: ""
+  serverinfo:
+    command_description: ""
+  botinfo:
+    command_description: ""
+  avatar:
+    command_description: ""
+    parameters:
+      member:
+        desc: ""
+  leaderboard:
+    command_description: ""
