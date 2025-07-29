@@ -1,75 +1,248 @@
+Achievements:
+
+  msg_toggle: "Achievement messages are now"
+  state_enabled: " `enabled`"
+  state_disabled: " `disabled`"
+
 Announce:
 
-  announce_title: "Announcement title"
-  announce_description: "Description of the announcement"
-  announce_error: "Oops! You took to long, the process has been canceled. Try again!"
-  announce_start: "Create your announcement!"
-  announce_sent: "**Announcement sent!**"
-  announce_not_sent: "**The announcement was not sent!**" # vorher nichts
-  announce_error_choice: "**The announcement was not sent! Only `yes` or `no` count**"
-  announce_send?: "**Would you like to send this announcement?**"
-  placeholder: "Cool placeholder!"
-  announce_hex: "HEX code"
-  wrong_file_type: "Please only use `.jpg`/`.jpeg` or `.png` files!"
+  announce_title: "Title"
+  announce_description: "Description"
+  announce_error: "You took too long and the process got canceled\n-# ➜ Please set up your announcement again"
+  announce_start: "Create your announcement"
+  announce_sent: "Successfully sent the announcement\n-# ➜ You can find it here: {jumpurl}"
+  announce_not_sent: "I did not send the announcement"
+  question_announcement: "<a:idle_loading:942820916751114351> Would you like to send this announcement?"
+  invalid_hex: "`{hex}` is an invalid HEX code. Would you still like to send the announcement?"
+  placeholder: "Placeholder"
+  announce_hex: "HEX"
+  announce_not_found: "Looks like this is not an announcement or it was created before introducing this feature"
+  announce_not_editable: "I can only edit a message every **5** minutes\n-# ➜ Come back {time}"
+  wrong_file_type: "Please only use `.jpg`/`.jpeg` or `.png` files"
+  announce_edit: "Edit your announcement"
+  announce_edited: "Successfully edited\n-# ➜ Find it here: {jumpurl}"
+  announce_not_edited: "I did not edit the announcement"
+  announce_error_edit: "You took too long and the process got canceled\n-# ➜ Please try again"
+  channel_not_exist: "The channel for this announcement no longer exists\n-# ➜ Please only choose existing announcements"
+  not_bot_message: "This message was not sent by the bot"
+  message_not_found: "I could not find the message!\n-# ➜ Make sure to only use the Message ID"
+  announce_error: "An error occured\n-# ➜ Please try again or join the support server"
+  uploading_image: "<a:idle_loading:942820916751114351> Uploading image..."
+
+AiModeration:
+
+  automod_already_enabled: "Automoderation system is already `enabled`"
+  automod_already_disabled: "Automoderation system is already `disabled`"
+  automod_enabled: "Automoderation is now `enabled`"
+  automod_disabled: "Automoderation is now `disabled`"
+  log_channel_already_set: "The log channel is already set to {channel}"
+  log_channel_set: "Log channel set to {channel}"
+  log_channel_changed: "Log channel changed to {channel}"
+  autodelete_not_set: "Auto-delete threshold for **{category}** is not set\n-# ➜ There's nothing to remove"
+  autodelete_removed: "Auto-delete threshold for **{category}** has been removed"
+  autodelete_already_set: "Auto-delete threshold for **{category}** is already set to **{threshold}%**"
+  autodelete_set: "Auto-delete threshold for **{category}** set to **{threshold}%**"
+  autodelete_changed: "Auto-delete threshold for **{category}** updated from *{old_threshold}%* to **{threshold}%**."
 
 
 Autorole:
 
-  autorole_not_assignable: "**I can't assign this role to new members!**\n**My role has to be __above__ the role you want to assign!**"
-  autorole_true: "`True`"
-  autorole_success: "**{role.mention} is now assigned to new members!**"
-  autorole_false: "`False`"
-  autorole_toggle: "**Autorole is now set to:**"
-  autorole_same: "**{role.mention} is already set as the autorole!**"
-  autorole_change: "**Autorole changed to: {role.mention}**"
-  autorole_toggle_embed_title: "🛠️  Autorole settings changed!" # vorher 🛠️
-  autorole_role_error_embed_title: ":x:  Check my role position!"
-  autorole_success_embed_title: "<:accepted:942820245616328725>  Autorole set!"
-  autorole_same_embed_title: ":x:  An error occurred during the change!"
-  autorole_changed_embed_title: "🔁  Autorole changed!"
-  autorole_success_embed_desc: "I was able to change the role. See the details below:"
-  autorole_success_embed_old_role: "Old role:"
-  autorole_success_embed_new_role: "New role:"
-  autorole_reminder: "Make sure that '/autorole toggle' is set to 'True'"
+  autorole_not_assignable: "> Unassignable (*My role has to be **above** the role(s) you want to assign*):"
+  autorole_success: "{role.mention} is now assigned to new members"
+  autorole_toggle: "Autorole is now "
+  autorole_same: "{role.mention} is already set as an autorole for this server\n-# ➜ Run /autorole settings to see all your roles"
+  autorole_not_enabled: "You need to enable autoroles for this server\n-# ➜ Use </autorole toggle:1131346503898771498> to do so"
+  max_role_limit: "You can only set `5` autoroles at once"
+  role_not_set: "{role.mention} is not set as an autorole.\n-# ➜ Currently set: {roles}"
+  autorole_added: "> Added:"
+  autorole_removed: "> Removed:"
+  autorole_none: "None"
+  role_removed: "Removed {role.mention} as an autorole"
+  request_more: "Request More"
+  autorole_max_limit: "You exceeded the limit of **5** autoroles as you would have **{new_total_roles}** roles with the selected ones.\n-# ➜ Please deselect at least **{excess_roles}** role(s)."
+  no_roles: "No role(s) set"
+  settings: "Autorole Settings"
+  settings_footer: "Click on a set role again to remove it"
+  settings_below: "> Below, you can find all your current settings"
+  choose_roles: "Choose your roles"
+  toggle_button: "Toggle"
+  autorole_roles: "Role(s)"
+  autorole_no_data_found: "No data found for this server"
+  status: "Status"
+  state_enabled: "**enabled**"
+  state_disabled: "**disabled**"
+  autorole_moved_title: "<:moved:1398816116142375136> Autorole Settings"
+  autorole_moved_description: "Open the dashboard to access your autorole settings"
 
+
+Userinfo: # achievements.py
+
+  bots_cant_collect_achievements: "Bots can't collect achievements"
+  achievements_title_list: "<:partybread:1084948319119360030> All achievements for {member}"
+  achievements_footer: "Achievements are not tracked in DMs"
+  level_achievement: "Reach level `25` in the level system ({level_progress})"
+  slashcmd_progress: "Execute `1000` commands ({slash_progress})"
+  vote_progress: "[Vote `250` times for Alchemist](https://top.gg/bot/890529286514180166/vote) ({vote_progress})"
+  economy_progress: "Have one million dollar in the bank ({economy_progress})"
+  bughunter_achievement: "Find at least `5` bugs in Alchemist. *[Claim on server](https://discord.com/invite/Qee6WZntcx)* ({bughunter_achievement})"
+  nickname: "👀 Nickname"
+  custom_activity: "📡 (Custom) Activity/Status"
+  status: "Status"
+  all_roles: "All Roles"
+  voice_channel: "<:voice:1087067072611233902> Voice Channel"
+  account_created: "📆 Account Created"
+  joined_at: "<:member_join:1111273560422502520> Joined"
+  achievements: "Achievements"
+  achievements_title: "<a:tada2:1135542208024547368> NEW achievement"
+  achievement_message: "Congratulations {mention}, you have received an achievement for your activity\n-# ➜ Check it out with </achievements list:1150275101535764541>\n\n> *To disable these messages, run </achievements toggle:1203819175638995054>*"
+  roles_title: "Roles of {member}"
+  no_roles: "{member} has no roles"
+  run_again: "Please run the command again as an error occured"
+  avatar_translation: "Avatar"
+
+Birthday:
+
+  timezone_placeholder: "Select your timezone"
+  timezone_set: "Successfully set your timezone to `{timezone}`\n<:dnd:1092904654683263046> Make sure to set your birthday as well - if not done so already - and then click `Submit`. Otherwise, your birthday will not be stored!"
+  set_birthday_modal: "Set your birthday"
+  birthday_input: "Birthday (DD/MM)"
+  birthday_set: "Successfully set your birthday to `{birthday}`\n<:dnd:1092904654683263046> Make sure to set your timezone as well - if not done so already - and then click `Submit`. Otherwise, your birthday will not be stored!"
+  missing_data: "Please set your birthday and timezone first!"
+  birthday_set_title: "Your birthday information"
+  birthday_set_description: "**Set Birthday:** `{birthday}`\n**Timezone:** `{timezone}`"
+  birthday_setup: "Select your timezone and enter your birth day and month:"
+  no_upcoming_birthdays: "There are no upcoming birthdays in range!"
+  upcoming_birthdays: "All upcoming birthdays:"
+  birthday_removed: "Successfully removed your birthday!"
+  no_birthday_set: "You did not set a birthday yet!"
+
+Booster: # boostermsg.py
+
+  booster_channel_moved_desc: "Boost channeld moved to {channel.mention}"
+  booster_channel_set_desc: "Boost channel set to {channel.mention}"
+  booster_same_channel_title: "{channel.mention} is already set as the boost message channel"
+  server_boost_toggle: "Server Boost messages are now **enabled** (<:enabled:942816356385042473>)\n-# ➜ *Make sure to enable `Send a message when someone boosts the server` in your server `Overview`*"
+  server_boost_disabled: "Server Boost messages are now **disabled** (<:disabled:942816356942884905>)"
+  server_boost_variables_title: "<:discordquestion:965870949482233856> Available placeholder"
+  server_boost_variables_mention: "Mention the member who boosted the server"
+  server_boost_variables_name: "Display the Discord Tag of the member who boosted the server"
+  server_boost_variables_id: "Displays the ID of the member who boosted the server"
+  server_boost_variables_guild_name: "Displays the name of the server"
+  server_boost_variables_boost_count: "Shows the current number of boosts for the server"
+  server_boost_variables_boost_level: "Shows the current boost level of the server"
+  boost_not_enabled: "You have not `enabled` the server boost messages\n-# ➜ Do so by running </boost toggle:1131346506155311165>"
+  server_boost_embed_desc_final: "### Boost-Message:\n{boostermsg}"
+  server_boost_message_changed_title: "<a:check_green:942824781303144450> Server Boost Message - Details"
+  unchanged_ping: "Ping (Unchanged):"
+  changed_ping: "Ping (Changed):"
+  unchanged_embed: "Embed (Unchanged):"
+  changed_embed: "Embed (Changed):"
+  unchanged_hex: "HEX (Unchanged):"
+  changed_hex: "HEX (Changed):"
+  settings_missing_message: "You did not set a message\n-# ➜ Do so by running </boost message:1131346506155311165>"
+  settings_missing_channel: "You did not set a channel\n-# ➜ Do so by running </boost channel:1131346506155311165>"
+  test_message_desc: "You can find the message here: {jumpurl}"
+  default_value: "{user.mention} - Thank you for boosting {guild.name}! You are the **{boost.count}** booster!"
+  select_channel: "Select your channel"
+  settings_title: "Booster Settings"
+  missing_channel_permissions: "I can't send messages into this channel!\n-# ➜ Make sure I have the permission to view and send message into the channel"
+  boost_moved_title: "<:moved:1398816116142375136> Boost Message Settings"
+  boost_moved_description: "Open the dashboard to access your boost message settings"
+
+
+Chatbot:
+
+  modal_title: "Ask ChatGPT"
+  modal_label: "Your question/code/text"
+  modal_placeholder: "How are you doing today?"
+  embed_title: "Your question to ChatGPT"
+  embed_footer_extra: "Cost of {tokens} extra tokens ({total_tokens}/2000)"
+  embed_title_answer: "Answer of ChatGPT"
+  cost_content_extra: "Cost of {tokens} **extra** tokens ({total_tokens}/2000)"
+  embed_footer_normal: "Cost of {tokens} tokens ({total_tokens}/1000)"
+  cost_content_normal: "Cost of {tokens} **normal** tokens ({total_tokens}/1000)"
+  error_extra_tokens: "You reached your total daily limit of `2000` tokens\n-# ➜ Come back tomorrow ({time}) for the daily reset"
+  error_no_vote: "You reached your daily limit of `1000` tokens\n-# ➜ **[Vote for Alchemist](https://top.gg/bot/890529286514180166/vote)** to unlock `2000` more tokens, or wait until the daily reset {time}"
+  error_no_tokens: "You did not use ChatGPT yet\n-# ➜ Use /chatgpt ask to get started"
+  token_information: "<:chatgpt:1084858832985006231> Token Information"
+  token_information_content: "**Token used:** `{tokens}/1000`\n**Extra token used:** {extra_tokens}"
+  not_voted_yet: "**[Not voted yet](<https://top.gg/bot/890529286514180166/vote>)**"
+  error_mp3: "Please only upload a **MP3** file"
+
+Customs:
+
+  trigger_already: "`{trigger}` already exists\n-# ➜ Please use </custom edit:1131346505748467793> if you want to update it"
+  create_trigger_title: "Create trigger '{trigger}'"
+  trigger_too_long: "The trigger is too long, must be shorter than 45 characters!"
+  create_trigger_label: "Output"
+  create_trigger_placeholder: "The message the bot should send\nVariables supported: {members}|{mention}|{user}|{guild}"
+  create_trigger_success_message: "Successfully created a new custom message for `{trigger}`"
+  trigger_remove: "Successfully removed `{trigger}` as a trigger"
+  edit_trigger_title: "Editing | '{trigger}'"
+  edit_trigger_success_message: "Successfully edited `{trigger}`"
+  trigger_list_not_found: "You don't have any custom trigger yet\n-# ➜ Add one with </custom add:1131346505748467793>"
+  trigger_not_found: "I could not find `{trigger}` as a trigger\n-# ➜ Run </custom list:1131346505748467793> to see all your trigger"
+  trigger_list_title: "List of trigger for {guild}"
 
 Economy:
 
   slots_ok_title: "It is okay..."
-  top_title: "The 10 richest people among all guilds"
-  balance_title: "🏦  __Your balance stats__"
-  wallet: "💳  You have {wallet_amt} coins in your wallet."
-  positive_amt: "**The amount must be positive.**"
-  coinflip_title_win: "Coin flip with {amount} coins"
-  coinflip_bot_chose: "The bot chose:"
+  send_limit_reached: "You have reached the daily sending limit of `100 000 <:coin:1087923586985107588>`. Come back {hours_left}"
   slots_win_amout: "You won {3 * amount} coins"
   slots_lost_title: "You lost!"
-  coinflip_description_lost: "***You lost {amount} coins.***"
-  coinflip_too_long: "You took too long. Try again in `2 minutes`."
-  bank: "🏦  You have {bank_amt} coins in your bank."
-  coinflip_field1: "Your choice:"
-  top_description: "*Money in the bank and the wallet are crucial here.*"
-  not_enough: "**You do not have enough money to do this!**"
-  too_much: "**Always stay loose. Your amount must not exceed `100000`, we want to keep it fair.**"
-  deposit_success: "**You deposited {number_with_commas(amount)} 🪙 into your bank.**\n*Your new bank balance is:* `{suser['bank'] + amount}`"
-  coinflip_field2: "The bot chose:"
-  withdraw_success: "**You added {number_with_commas(amount)} 🪙 to your wallet.**\n*Your bank account balance is: `{bankfull['bank'] - amount}`*"
-  coinflip_you_chose: "Your choice:"
   slots_lost_amount: "You lost {1 * amount} coins"
-  coinflip_description: "*You have `60` seconds to choose a reaction!*"
-  coinflip_title: "Coin flip with {amount} coins"
-  deposit_all: "**You deposited `{number_with_commas(amount)}` 🪙 into your bank account.**\n*Your new bank balance is:* `{suser['bank'] + amount}`"
-  rob_success: "🕵🏽  **You robbed `{number_with_commas(earnings)}` 🪙 from `{member}`**\n*Your new  bank balance is:* `{suser['bank'] + earnings}`"
-  rob_worthless: "**It is not worth it to steal from the user!**"
-  beg: "**{} gave you {} coins.**"
-  send_success: "**You gave {number_with_commas(amount)} 🪙 to {member}.**\n*Your new bank balance is:* `{suser['bank'] - amount}`"
+  beg: "{chosen} gave you {amount} <:coin:1087923586985107588>"
   slots_won_title: "You won!"
-  coinflip_field3: "Heads"
-  coinflip_description_won: "***You won {amount * 2} coins.***"
   slots_ok_amount: "You won {2 * amount} coins"
-  balance_embed_desc: "🪙  **Wallet balance:** `{number_with_commas(wallet_amt)}`\n💵  **Bank balance:** `{number_with_commas(bank_amt)}`\n🧮  **Total:** `{number_with_commas(total)}`" # vorher 🪙
-  cooldowns_desc: "*Here you can see all the cooldowns for the economy commands*"
-
+  no_daily_data: "Try again tomorrow, I don't have any `daily` data about you yet"
+  dailyreminder_enabled: "Successfully **enabled** (<:enabled:942816356385042473>) your daily reminder\n-# ➜ If you want to turn-off your reminder, click the button again"
+  dailyreminder_disabled: "Successfully **disabled** (<:disabled:942816356942884905>) your daily reminder\n-# ➜ If you want to turn on your reminder, click the button again"
+  you_won: "<a:Confetti:1075917672115601428> You won"
+  head_or_tails_win: "You chose the right side and won `{amount}` <:coin:1087923586985107588>"
+  you_lost: "<:poopers:1069717510032724079> You lost"
+  head_or_tails_lose: "You chose the wrong side and lost `{amount}` <:coin:1087923586985107588>\n-# ➜ Try again {try_again}"
+  daily_limit_reached_750k: "You have reached the daily limit of `750 000 <:coin:1087923586985107588>`. You can gamble again {hours_left}"
+  daily_limit_reached_500k: "You have reached the daily limit of `500 000 <:coin:1087923586985107588>`.\n-# ➜ [Vote on Top.gg](https://top.gg/bot/890529286514180166/vote>) to increase your limit to `750 000 <:coin:1087923586985107588>`"
+  daily_reminder_title: "<a:timer:1016845768335822878> Daily Reminder"
+  daily_reminder_text: "{user}, you can now grab your daily coins again\n-# ➜ Run </daily:1367944978575396895> to do so"
+  not_enough_money: "You currently don't have enough money to do this\n-# ➜ Your current balance is `{amount} <:coin:1087923586985107588>`"
+  not_positive_amount: "`{amount}` is not a positive amount\n-# ➜ Please try again with a positive one"
+  withdraw_successful: "You successfully transferred `{amount} <:coin:1087923586985107588>` to your wallet\n-# ➜ New **wallet balance**: {new_balance} (+{percentage}%)"
+  beg_success: "{emoji} {chosen} gave you __{amount}__ `<:coin:1087923586985107588>`"
+  beg_fail: "{chosen} did not have any money on them\n-# ➜ Maybe next time you will be lucky again"
+  not_valid_amount: "`{amount}` is not a valid amount!\n-# ➜ Please use `all` or a positive number"
+  deposit_successful: "Successfully transferred `{amount}` <:coin:1087923586985107588> to your bank account\n-# ➜ New **bank balance**: `{new_balance}` <:coin:1087923586985107588>"
+  not_valid_or_insufficient: "It looks like you either tried to exceed the `100 000 <:coin:1087923586985107588>` limit, have insufficient wallet balance or used a negative amount\n-# ➜ Please try again with a valid amount"
+  coinflip_title: "Heads OR Tails?"
+  coinflip_description: "Choose by clicking on the buttons below, {mention}\n**➜ Runs out {time_left}**"
+  coinflip_amount: "You bet:"
+  coinflip_possible_winnings: "Amount to win:"
+  slots_spinning_title: "The machine is spinning..."
+  slots_spinning_description: "➜ You put `{amount}` <:coin:1087923586985107588> on the line"
+  guess_title: "<:acm:1114236086785429592> Can you find me?"
+  guess_description: "Where's the bottle? Click on the right button below\n**➜ Time left {time}**"
+  guess_won: "## <a:Confetti:1075917672115601428> You won\n\n-# ➜ CONGRATS, you just won `{amount}` <:coin:1087923586985107588>"
+  guess_lost: "## <a:x_red:942824780992749610> You lost\n\n-# ➜ You didn't find the right bottle and lost `{amount}` <:coin:1087923586985107588>"
+  guess_lost_time: "## <a:x_red:942824780992749610> You lost\n\n-# ➜ You didn't find the right bottle in time and lost `{amount}` <:coin:1087923586985107588>"
+  robbery_impossible: "{mention}'s `{bal}` is already empty, you can't rob them..."
+  robbery_success: "<:thief:964821766147014727> Robbed successfully"
+  robbery_success_balance: "➜ Your new `{bal}` balance is `{new_balance} <:coin:1087923586985107588>`"
+  robbery_impossible_poor: "As either your wallet or bank balance are low, you can't rob anyone at the moment"
+  robbery_failed: "<a:siren:1119789160610406450> Robbery failed"
+  rob_yourself_or_bot: "You can't rob a bot or yourself"
+  robbery_failed_balance: "➜ Your new `{bal}` balance is `{new_balance} <:coin:1087923586985107588>`"
+  robbery_failed_no_funds: "You can't rob this member as you are poor as well!"
+  send_yourself_or_bot: "You can't send money to a bot or yourself"
+  send_success_description: "You successfully sent `{amount}` <:coin:1087923586985107588> to {mention}\n-# ➜ Your new **wallet balance** is `{new_balance}` <:coin:1087923586985107588>"
+  leaderboard_title: "<:cash:1119797292581539840> Leaderboard"
+  leaderboard_description: "➜ Top `10` richest users"
+  daily_too_early: "Hold on, you already claimed your daily coins\n-# ➜ Try again {time}"
+  daily_too_late: "You did not claim your daily coins for 24 hours, so your daily streak got a reset\n-# ➜ You received `{earnings}` <:coin:1087923586985107588>\n-# ➜ Streak: `{streak}`"
+  daily_success: "📆 Welcome back\n\nYou claimed your daily coins and received `{earnings}` <:coin:1087923586985107588>\n-# ➜ Streak: `{streak}`"
+  bank: "Bank"
+  wallet: "Wallet"
+  dailyleaderboard_streak: "Streak"
+  dailyleaderboard_title: "📆 Leaderboard"
 
 Errors:
 
@@ -77,50 +250,63 @@ Errors:
   error_bot_lack: "I can't do this task since I dont have enough permissions to do this!"
   error_disabled: "This command is disabled and can't be used."
   error_cooldown: "**You are on cooldown, try again {self.better_time(cd)}.**"
-  error_title: ":no_entry:  **An error occured!**"
+  error_title: "<:acmsad:1394472308726304850> An error occured"
   error_lack_perms: "You dont have the permission to use this command!"
   error_runtime: "There is a problem with `RunTime`! Please try again later."
+  interaction_not_allowed: "You are not allowed to interact with this message"
+  timeout_error: "You took too long. Please try again!"
+  invalid_date: "This does not seem to be a real date. Try again and remember to use the correct format (DD/MM)!"
+  generic_error: "An unexpected error occurred. Please try again later or contact support if the issue persists."
 
+Giveaway:
+
+  giveaway_ended: "Giveaway ended"
+  no_one_joined: "## <:higherlower_loss:1157812987978055770> No one joined the giveaway, no winner chosen"
+  winner_mention: "**Congratulations to** {winner_mentions}! <a:tada2:1135542208024547368>\n\nYou won **{prize}**"
+  embed_desc_end: "Ended: {ended}\nHost {hosted}\nEntries: **{entries}**\nWinners: {winner_ids_mention}"
+  time_too_long: "The duration for the giveaway is too long. Please choose a shorter one"
+  winners_too_low: "You need to have at least one winner"
+  giveaway_start_desc: "React with <:giveaway:1181628713742381116> to enter!\n\n**Host:** {interaction.author.mention}\n**Ends:** <t:{int((datetime.now() + timedelta(seconds=giveaway_duration)).timestamp())}:R>\n**Winners:** {winners}"
+  giveaway_started_successfully: "Giveaway started successfully"
+  no_giveaway_found: "I could not find a giveaway with this ID\n-# ➜ Only choose the IDs from the autocomplete and try again"
+  too_many_winners: "Too many winners. Your giveaway only had a maximum of `{original_winners_count}` winners"
+  winner_mention_reroll: "**Reroll successful! Congratulations to** {winner_mentions}! <a:tada2:1135542208024547368>\n\nYou won **{prize}**"
+  giveaway_rerolled: "Successfully rerolled the giveaway and announced all new winners"
+  giveaway_ended_successfully: "Successfully ended the giveaway and announced the winners"
+  giveaway_deleted_successfully: "Successfully deleted the giveaway\n-# ➜ No winners got announced"
+  left_giveaway_button: "### <:leave:1181634208775540838> You already joined this giveaway, removing you"
+  joined_giveaway_button: "### <:member_join:1111273560422502520> You joined the giveaway"
 
 Help:
 
-  next_page_embed_footer: "Page {self.embed_count + 1} of {len(self.embeds)}"
-  help_menu_start_title: "Help Menu"
-  help_first_page: "**You already are on the first page!**"
-  help_menu_reaction_title: "Reaction roles"
+  help_additional_perms: "Please note that some commands require more bot/user permissions"
+  help_menu_start_title: "<:discordquestion:965870949482233856> Alchemist Help Menu"
+  choose_category: "Choose a category/categories"
+  help_menu_reaction_title: "Reaction Roles"
   help_menu_customs_title: "Custom Messages"
-  help_menu_customs_desc: "*Note that you may need some additional permissons to perform an action!*\n\n> </custom add:992793617490006046> ➜ Add a custom trigger/message to the bot\n> </custom edit:992793617490006046> ➜ Edit a custom trigger/message\n> </custom remove:992793617490006046> ➜ Remove a custom trigger/message.\n> </custom list:992793617490006046> ➜ Shows the list of all custom trigger/messages"
-  help_command_footer: "Page 1 of {len(embeds)}"
-  end_page_footer: "Page {len(self.embeds)} of {len(self.embeds)}"
-  help_closed: "**Help menu closed**"
-  help_last_page: "**You already are on the last page!**"
+  help_menu_customs_desc: "> </custom add:1131346505748467793> ➜ Add a custom trigger/message to the bot\n> </custom edit:1131346505748467793> ➜ Edit a custom trigger/message\n> </custom remove:1131346505748467793> ➜ Remove a custom trigger/message.\n> </custom list:1131346505748467793> ➜ Shows the list of all custom trigger/messages"
   help_menu_mod_title: "Moderation"
   help_menu_economy_title: "Economy & Work"
   help_menu_info_title: "Information"
   help_menu_utils_title: "Utils"
-  first_page_embed_footer: "Page 1 of {len(self.embeds)}"
-  interaction_nallowed: "**You can't interact with this view!**"
-  laste_page_embed_footer: "Page {self.embed_count + 1} of {len(self.embeds)}"
-  help_menu_pvm_title: "Private Voice Management"
+  help_menu_pvm_title: "Custom Channel"
   help_menu_levels_title: "Level system"
-  help_menu_levels_desc: "*Note that you may need some additional permissons to perform an action!*\n\n> </levels toggle:959795279429775480> ➜ Toggle the level system\n> </levels mention:959795279429775480> ➜ Toggle if you want to ping the member on a level-up\n> </levels channel:959795279429775480> ➜ Exclue/Include EXP channel\n> </levels roles toggle:959795279429775480> ➜ Toggle whether the bot should grant roles on a level-up\n> </levels roles add:959795279429775480> | </levels roles remove:959795279429775480> ➜ Assign or remove a role to a certain level\n> </rank:962286363087101962> ➜ Get the rank card of you or someone else\n> </levels background:959795279429775480> ➜ Set your rankcard background\n> </leaderboard:959795279429775482> ➜ See who is the top chatter"
+  help_menu_levels_desc: "> </levels toggle:1131346504804745227> ➜ Toggle the level system\n> </levels mention:1131346504804745227> ➜ Toggle if you want to ping the member on a level-up\n> </levels channel:1131346504804745227> ➜ Exclue/Include EXP channel\n> </levels roles toggle:1131346504804745227> ➜ Toggle whether the bot should grant roles on a level-up\n> </levels roles add:1131346504804745227> | </levels roles remove:1131346504804745227> ➜ Assign or remove a role to a certain level\n> </rank:1131346504804745228> ➜ Get the rank card of you or someone else\n> </levels background:1131346504804745227> ➜ Set your rankcard background\n> </leaderboard:959795279429775482> ➜ See who is the top chatter"
   help_menu_autorole_title: "Autorole"
-  help_menu_autorole_desc: "*Note that you may need some additional permissons to perform an action!*\n\n> </autorole toggle:955770427068796958> ➜ Toggle whether new members should receive a role upon joining the server\n> </autorole role:955770427068796958> ➜ Set the role that should be assigned"
+  help_menu_autorole_desc: "> </autorole toggle:1131346503898771498> ➜ Toggle whether new members should receive a role upon joining the server\n> </autorole role:1131346503898771498> ➜ Set or remove a role (*You can set up to `5` roles*)"
   help_menu_welcome_title: "Welcome & Leave"
-  help_menu_welcome_desc: "*Note that you may need some additional permissons to perform an action!*\n\n> </welcome toggle:950393904912539719> ➜ Toggle the welcome message\n> </welcome settings:950393904912539719> ➜ Set up the welcome message/channel/ping\n\n> </leave toggle:1040920123684442162> ➜ Toggle the leave message\n> </leave settings:1040920123684442162> ➜ Set up the farwell message/channel" # vorher nichts
-  help_menu_start_desc: "You must use all commands with `/` ➜ This makes it easier to use the bot.\n\nI have many functions, commands and possibilities to adapt to your wishes, just click through the pages and choose the most suitable thing(s) for you! <:acm:1114236086785429592>\n\n***Questions, Suggestions, Feedback etc.? Join my [Discord support server](https://discord.com/invite/Kmztaj9Kqf)***"
-  help_menu_utils_desc: "*Note that you may need some additional permissons to perform an action!*\n\n> </announcement create:1008353916578173020> ➜ Sends out an announcement based on your inputs\n> </language set:982054264383893575> | </language show:982054264383893575> ➜ Set a new language or show all available languages\n> </serverinfo:919944455597989888> ➜ Shows information about the server\n> </userinfo:1022253504603111496> ➜ Gives out information about yourself. If you can manage messages, you can also request information about other users\n > </botinfo:945653545686929478> ➜ Shows information about the bot\n> </avatar:928282041559183371> ➜ Shows you the (server) avatar of a user\n> </chatgpt:1088058236437024808> ➜ Ask ChatGPT anything you want, everything will be answered!"
-  help_menu_info_desc: "*Note that you may need some additional permissons to perform an action!*\n\n> </serverinfo:919944455597989888> ➜ Shows information about the server\n> </userinfo:1022253504603111496> ➜ Gives out information about yourself. If you can manage messages, you can also request information about other users\n > </botinfo:945653545686929478> ➜ Shows information about the bot\n> </avatar:928282041559183371> ➜ Shows you the (server) avatar of a user"
-  help_menu_economy_desc: "**Work**\n> </work apply:919597362396164099> ➜ Apply for a job. Keep working your way up.\n> </work start:919597362396164099> ➜ Show up at work and earn money. (At least once every `24` hours.)\n> </work status:919597362396164099> ➜ Gives out important information about your work status.\n> </work list:919597362396164099> ➜ Shows all the jobs available.\n> </work reminder:919597362396164099> ➜ Set a work reminder.\n\n**Economy**\n> </wallet:924967040299724856> | </bank:924967040299724854> | </balance:924967040383594506> ➜ Displays your bank/wallet balance or everything\n> </withdraw:924967040299724850> | </deposit:926158832261013515> ➜ Withdraw money from your bank or deposit something\n> </beg:924967040299724853> ➜ Poor? Beg for money, you may be lucky\n> </send:924967040299724852> | </rob:924967040337465409> ➜ Send money to a friend or become a robber\n> </coinflip:926158832261013514> ➜ Heads or Tails will decide if you win or lose\n> </slots:924967040337465406> ➜ Play the slot machine\n> </top:944214820641710160> ➜ Shows you the richest users among all servers\n> </daily:1106911482060492830> ➜ Claim your daily coins!"
-  help_menu_reaction_desc: "*Note that you may need some additional permissons to perform an action*\n***You also need to set a channel and the bot role has to be above the roles you want to assign!***\n> </reaction add:924967040337465413> | </reaction remove:924967040337465413> ➜ Add or remove a reaction\n> </reaction channel:924967040337465413> ➜ Set a channel in which the reactions are to be counted\n> </reaction list:924967040337465413> ➜ Show the set channel, roles and emojis for this guild"
-  help_menu_pvm_desc: "*Note that you may need some additional permissons to perform an action!*\n\n> </pvm role:972529331253424149> ➜ Adds or deletes a role. Members with the role are immune against bot actions\n> </pvm setup:972529331253424149> | </pvm clear:972529331253424149> ➜ Sets up, or clears the Private Voice management category\n> </pvm info:972529331253424149> ➜ Gives out information about a private voice channel\n> </pvm delete:972529331253424149> ➜ Deletes all the private voice channel in the server\n> </pvm privacy:972529331253424149> ➜ Opens or closes your private voice channel\n> </pvm invite:972529331253424149> | </pvm kick:972529331253424149> ➜ Invites a member or kicks it out of the channel\n> </pvm name:972529331253424149> | </pvm size:972529331253424149> ➜ Changes the name or size of your channel\n> </pvm menu:972529331253424149> ➜ Shows you the menu for your private channel\n> </pvm threads:972529331253424149> ➜ Enable or disable creating threads for private voice channels."
-  help_menu_mod_desc: "*Note that you may need some additional permissons to perform an action!*\n\n> </modlog:924967040299724858> ➜ Changes the channel for the modlog (Logs bans, kicks, softbans etc.)\n> </ban:924967040337465407> ➜ Bans a member from the server\n> </kick:924967040337465412> ➜ Kicks a member from the server\n> </delete:924967040337465408> ➜ Deletes a certain number of messages\n> </hackban:956254780244783124> ➜ Bans a user that is not on your server anymore\n> </emojisteal:1076660552933318837> ➜ Steal an emoji from a different server"
-  help_menu_namefilter_desc: "*Please note that you need additional permissions for some commands! *\n\n> `namefilter search` ➜ Search for a specific name/nickname and let you perform various actions\n> `namefilter fix` ➜ Change all nicknames based on your settings\n> `namefilter add/remove` ➜ Add or remove a name from the filter\n> `namefilter list` ➜ Shows you a list with all filtered nicknames\n> `namefilter chars` ➜ Enable or disable the special character filter"
-  help_menu_namefilter_title: "Namefilter"
-  reminder_menu_desc: "Here you can find all the commands related to reminders:\n\n> </reminder set:1088058099014828103> ➜ Create a reminder for your desired time\n> </reminder delete:1088058099014828103> ➜ Delete an active reminder of the bot\n> </reminder list:1088058099014828103> ➜ Show you all your reminders"
-  help_menu_tickets_desc: "*Please note that you need additional permissions for some commands!*\n\n> </ticket role:924775647291801611> ➜ Adds or removes a role that can manage tickets\n> </ticket setup:924775647291801611> ➜ Creates the ticket system\n> </ticket category:924775647291801611> ➜ Change the ticket category\n> </ticket edit:924775647291801611> ➜ Edits the ticket message\n> </ticket block:924775647291801611> | </ticket unblock:924775647291801611> ➜ Blocks a member from the ticket system or unblocks it\n> </ticket clear:924775647291801611> ➜ Clears the ticket system.\n> </ticket-ping toggle:1008353998581018674> ➜ Toggle new ticket pings\n> </ticket-ping role:1008353998581018674> ➜ Choose a role that you want to ping on new tickets\n> </ticket log:924775647291801611> ➜ Set the ticket log\n\n**Ticket Responses:**\n\n> </ticket-response add:1106911557578936350> | </ticket-response remove:1106911557578936350> ➜ Remove or add a custom ticket response\n> </ticket-response edit:1106911557578936350> ➜ Edit a custom ticket response\n> </ticket-response list:1106911557578936350> ➜ List all the custom ticket responses"
+  help_menu_welcome_desc: "> </welcome toggle:1131346505748467792> ➜ Toggle the welcome message\n> </welcome message:1131346505748467792> ➜ Set up the welcome message/channel/ping\n\n> </leave toggle:1131346505748467796> ➜ Toggle the leave message\n> </leave message:1131346505748467796> ➜ Set up the farwell message/channel" # vorher nichts
+  help_menu_start_desc: "Hey there,\nyou have opened the help menu successfully, yay! <:frog_uh:1084611488922206248>\n\nI am a slash-command-bot which means you must use `/` before all of my commands ➜ This makes it easier to use me! <:happy:1183189398188216461>\n\nI am customizable in every way, just choose the category/categories you are interested the most! <:acm:1114236086785429592>\n\n**If you have questions, suggestions or feedback, feel free to join my [Discord support server](https://discord.com/invite/Qee6WZntcx)**"
+  help_menu_utils_desc: "> </announcement create:1131346503898771497> ➜ Sends out an announcement based on your inputs\n> </language set:1131346505278697525> | </language show:1131346505278697525> ➜ Set a new language or show all available languages\n> </serverinfo:1131346504402096235> ➜ Shows information about the server\n> </userinfo:1150275101535764542> ➜ Gives out information about a member on the server\n > </botinfo:1131346504402096236> ➜ Shows information about the bot\n> </avatar:1131346504402096238> ➜ Shows you the (server) avatar of a user\n> </chatgpt ask:1131346505748467798> | </chatgpt tokens:1131346505748467798> ➜ Ask ChatGPT anything you want and check your daily tokens!\n> </mydata:1184983761956388946> ➜ See which data the bot stores about you"
+  help_menu_info_desc: "> </serverinfo:919944455597989888> ➜ Shows information about the server\n> </userinfo:1022253504603111496> ➜ Gives out information about yourself. If you can manage messages, you can also request information about other users\n > </botinfo:945653545686929478> ➜ Shows information about the bot\n> </avatar:928282041559183371> ➜ Shows you the (server) avatar of a user"
+  help_menu_economy_desc: "**Work**\n> </work apply:1276330016216715291> ➜ Apply for a job. Keep working your way up.\n> </work start:1276330016216715291> ➜ Show up at work and earn money. (At least once every `24` hours.)\n> </work status:1131346505278697531> ➜ Gives out important information about your work status.\n> </work list:1131346505278697531> ➜ Shows all the jobs available.\n> </work leaderboard:1131346505278697531> ➜ See the top workers across all servers.\n\n**Economy**\n> </balance:1131346503898771499> ➜ Displays your bank/wallet balance or everything\n> </withdraw:1131346503898771500> | </deposit:1131346503898771502> ➜ Withdraw or deposit money\n> </beg:1131346503898771501> ➜ Poor? Beg for money, you may be lucky\n> </send:1131346504402096231> | </rob:1131346504402096230> ➜ Send money to a friend or become a robber\n> </coinflip:1131346503898771503> ➜ Heads or Tails will decide if you win or lose\n> </slots:1131346503898771504> ➜ Play the slot machine\n> </top:1131346504402096232> ➜ Shows you the richest users among all servers\n> </daily:1131346504402096233> ➜ Claim your daily coins!\n> </higherlower:1177686416851992677> ➜ Can you guess the right number and beat the bot?"
+  help_menu_reaction_desc: "> </reaction add:1131346505278697527> | </reaction remove:1131346505278697527> ➜ Add or remove a reaction\n> </reaction channel:1131346505278697527> ➜ Set a channel in which the reactions are to be counted\n> </reaction list:1131346505278697527> ➜ Show the set channel, roles and emojis for this guild"
+  help_menu_pvm_desc: "> </pvm role:1131346505278697526> ➜ Adds or deletes a role. Members with the role are immune against bot actions\n> </pvm setup:1131346505278697526> | </pvm clear:1131346505278697526> ➜ Sets up, or clears the Private Voice management category\n> </pvm info:1131346505278697526> ➜ Gives out information about a private voice channel\n> </pvm privacy:1131346505278697526> ➜ Opens or closes your private voice channel\n> </pvm invite:1131346505278697526> | </pvm kick:1131346505278697526> ➜ Invites a member or kicks it out of the channel\n> </pvm name:1131346505278697526> | </pvm size:1131346505278697526> ➜ Changes the name or size of your channel\n> </pvm menu:1131346505278697526> ➜ Shows you the menu for your private channel"
+  help_menu_mod_desc: "> </modlog:1184222150027137034> ➜ Changes the channel for the modlog (Logs bans, kicks, softbans etc.)\n> </ban:1184222150027137035> ➜ Bans a member from the server\n> </kick:1184222150027137036> ➜ Kicks a member from the server\n> </delete:1184222150027137040> ➜ Deletes a certain number of messages\n> </hackban:1184222150027137041> ➜ Bans a user that is not on your server anymore\n> </channelmode:1193629955934912653> ➜ Set a channel into a specific mode\n> </emojisteal:1184222150027137037> ➜ Steal an emoji from a different server"
+  reminder_menu_desc: "Here you can find all the commands related to reminders:\n\n> </reminder set:1131346505748467799> ➜ Create a reminder for your desired time\n> </reminder delete:1131346505748467799> ➜ Delete an active reminder of the bot\n> </reminder list:1131346505748467799> ➜ Show you all your reminders"
+  help_menu_tickets_desc: "> </ticket role:1131346505278697528> ➜ Adds or removes a role that can manage tickets\n> </ticket setup:1131346505278697528> ➜ Creates the ticket system\n> </ticket category:1131346505278697528> ➜ Change the ticket category\n> </ticket edit:1131346505278697528> ➜ Edits the ticket message\n> </ticket block:1131346505278697528> | </ticket unblock:1131346505278697528> ➜ Blocks a member from the ticket system or unblocks it\n> </ticket clear:1131346505278697528> ➜ Clears the ticket system.\n> </ticket ping:1131346505278697528> ➜ Set a ticket ping role\n> </ticket log:1131346505278697528> ➜ Set the ticket log"
   help_menu_roleshop_title: "Roleshop"
-  help_menu_roleshop_desc: "*Please note that you need more permissions for some commands!*\n\n> </roleshop show:1088057960036585482> ➜ Show you the role shop\n> </roleshop add:1088057960036585482> ➜ Add a role to the role shop\n> </roleshop remove:1088057960036585482> ➜ Remove a role from the role shop\n> </roleshop update:1088057960036585482> ➜ Update a role from the role shop"
+  help_menu_roleshop_desc: "> </roleshop show:1131346505748467800> ➜ Show you the role shop\n> </roleshop add:1131346505748467800> | </roleshop remove:1131346505748467800> ➜ Add a role to the role shop or remove it\n> </roleshop update:1131346505748467800> ➜ Update a role from the role shop"
   help_menu_tickets_title: "Tickets"
   custom_channel_help: "Custom Channel"
   reaction_roles_help: "Reaction Roles"
@@ -133,609 +319,1657 @@ Help:
   information_system_help: "Information"
   utils_system_help: "Utils"
   moderation_system_help: "Moderation"
-  twitch_menu_desc: "*Please note that you need some addtional permissions to perform an action*\n\n> </twitch add:1076658848422707311> | </twitch remove:1076658848422707311> ➜ Add or remove a streamer from your watchlist\n> </twitch role:1076658848422707311> ➜ Add a role that you want to ping\n> </twitch channel:1076658848422707311> ➜ Add a channel in which you want to have the notifications"
-  help_menu_booster_desc: "*Please note that you need some addtional permissions to perform an action*\n\n> </boost toggle:1106911557578936351> ➜ Toggle the boost message system\n> </boost channel:1106911557578936351> ➜ Choose the boost message channel\n> </boost variables:1106911557578936351> ➜ Check out the variables that you can use\n> </boost message:1106911557578936351> ➜ Create and edit the booster message\n> </boost test:1106911557578936351> ➜ Send a test message based on your inputs"
-  help_menu_presence_desc: "*Please note that you need some addtional permissions to perform an action*\n\n> </presence toggle:1106910559821111316> ➜  Toggle the presence system(s) for your server\n> </presence channel:1106910559821111316> ➜ Choose a channel for the presence system(s)\n> </presence role:1106910559821111316> ➜ Choose a role to grant for the presence systemn(s)\n> </presence opt:1106910559821111316> ➜ Opt in or out of the presence system\n> </presence remove:1106910559821111316> ➜ Remove/Disable either a channel or role for the presence system(s)"
+  twitch_menu_desc: "> </twitch add:1152293911151247541> | </twitch remove:1152293911151247541> ➜ Add or remove a streamer from your watchlist\n> </twitch role:1152293911151247541> ➜ Add a role that you want to ping\n> </twitch channel:1152293911151247541> ➜ Add a channel in which you want to have the notifications"
+  help_menu_booster_desc: "> </boost toggle:1131346506155311165> ➜ Toggle the boost message system\n> </boost channel:1131346506155311165> ➜ Choose the boost message channel\n> </boost placeholder:1131346506155311165> ➜ Check out the variables that you can use\n> </boost message:1131346506155311165> ➜ Create and edit the booster message\n> </boost test:1131346506155311165> ➜ Send a test message based on your inputs"
+  help_menu_presence_desc: "> </presence toggle:1131346505748467801> ➜  Toggle the presence system(s) for your server\n> </presence channel:1131346505748467801> ➜ Choose a channel for the presence system(s)\n> </presence role:1131346505748467801> ➜ Choose a role to grant for the presence systemn(s)\n> </presence opt:1131346505748467801> ➜ Opt in or out of the presence system\n> </presence remove:1131346505748467801> ➜ Remove/Disable either a channel or role for the presence system(s)"
+  missing_commands_hint: "Missing commands? Server admins can enable them via the dashboard."
 
 Information:
 
   serverinfo-owner: "<:server_owner:1003412119234031727>  **Owner:** **{interaction.guild.owner}**"
-  uinfo-roles-none: "This user has not got any roles."
   view_is_normal: "**You already view the normal avatar!**"
   serverinfo-created: "<:time:1092914164760051804>  **Created:** <t:{created}:f>"
   serverinfo-txtchannel: "📁 **Channel:**"
   avatar-no-server: "This member does not have a server avatar."
-  uinfo-days: "*- Exactly {days1}d ago!*"
   botinfo-python: "**Python version:**"
-  uinfo-nickname: "**Nickname:**"
   serverinfo-members: "<:members:1003420362387763392>  **Members:** `{interaction.guild.member_count}`"
-  uinfo-voice: "**Voice channel:**"
   botinfo-guilds: "**Total guilds:**"
-  uinfo-created: "**Account created:**"
-  uinfo-joined: "**Joined the server:**"
-  botinfo-channel: "**Total channels:**"
-  uinfo-days1: "*- Exactly {days}d ago!*"
-  uinfo-perms: "***You can only access your own information, because you lack the `manage_messages` permission!***"
   botinfo-users: "**Total users:**"
-  botinfo-disnake: "**disnake.py version:**"
-  uinfo-highest-none: "No top role."
+  botinfo-disnake: "**discord.py version:**"
   view_is_server: "**You already view the server avatar!**"
   serverinfo-roles: "<:roleicon:1088062096954109994>  **Roles:** `{str(role_count)}`"
-  uinfo-roles: "Roles ({len(roles1)}):"
-  uinfo-highest: "Highest role:"
-  serverinfo-guild-name: "Stats for: {interaction.guild.name}"
   botinfo-translator: "**Translator:**"
   botinfo-rebooted: "**Rebooted:**"
-  information-buttons: "**Click on one button to get more information!**"
-  serverinfo-role-mention: "Roles"
+
+Leave:
+
+  leave_toggle: "Leave messages are now **{toggle}** ({emoji})"
+  leave_message: "Message"
+  leave_message_placeholder: "See you soon!"
+  leave_channel: "Channel-ID"
+  edit_leave_message: "Edit your leave message"
+  leave_message_channel: "Channel"
+  leave_message_unchanged: "(Unchanged)"
+  leave_message_changed: "(Changed)"
+  leave_message_unchanged_text: "```Unchanged```"
+  leave_message_indicator: "## Leave Message\n"
+  leave_message_embed: "Embed"
+  leave_toggle_error: "Please toggle the leave messages before settings a message\n-# ➜ Do so by running </leave toggle:1131346505748467796>"
+  leave_moved_title: "<:moved:1398816116142375136> Leave Message Settings"
+  leave_moved_description: "Open the dashboard to access your leave message settings"
 
 
 Levels:
 
-  levels_ignored_already: "**This channel is already ignored!**"
-  levels_ignore_channel: "**You can now no longer collect XP in the following channel:** {channel.mention}"
-  levels_leaderboard_deactivated: "**Leveling is currently disabled for this server. Activate it with `levels toggle`**"
-  levels_allow_success: "**You can now earn XP in this channel again!**"
-  levels_lb_totalxp: "Total XP"
-  levels_leaderboard_title: "Leaderboard | Top 10"
-  levels_lb_totalmsg: "Messages sent"
-  levels_lb_member: "Member"
-  levels_false: "`disabled`"
-  levels_mention_false: "`disabled`"
-  levels_rank_progress: "Progress for level {lvl + 1}:   {xpvalue}"
-  levels_mention_true: "`enabled`"
-  levels_toggle: "**The level system is now** "
-  levels_allow_not_ignored: "**This channel is not ignored!**"
-  levels_allow_nodata: ":x:  I could not find any data for your guild."
-  levels_leaderboard_description: "Top 10 member."
-  levels_allow_nochannel: "**No ignored channel found for this server!**"
-  levels_rank_no_xp: "**You have no experience yet. Stay active in the server or enable the level system.**"
-  on_message_mention: "Congratulations, you are now now level {lvl}! {message.author.mention}"
-  levels_mention_toggle: "**Level-up mentions are now** "
-  levels_true: "`enabled`"
-  levels_rank_deactivated: "**Leveling is currently disbaled for this server.**"
-  levels_ignore_channel_title: "<:accepted:942820245616328725>  Channel successfully added!"
-  levels_ignore_channel_new: "New channel:"
-  levels_ignore_channel_old: "Already ignored:"
-  levels_ignore_channel_title_already: "<:database:955938305319505960>  Channel already ignored!"
-  levels_ignore_channel_desc_already: "{channel.mention} **is already ignored!**"
-  levels_allow_all_channel: "All ignored channels:"
-  levels_allow_nodata_title: "<:database:955938305319505960>  No database entry found!"
-  levels_allow_nodata_desc: "No data/ignored channels found for this guild!"
-  levels_allow_not_ignored_title: ":x:  Channel not ignored!"
-  levels_allow_not_ignored_desc: "{channel.mention} **is not ignored by the bot!**"
-  levels_allow_success_title: "<:accepted:942820245616328725>  Channel unignored!"
-  levels_allow_success_desc: "**The following channel is not ignored anymore:** {channel.mention}"
-  levels_settings_title: "Settings changed!"
-  levels_roles_toggle_title: "Settings changed!"
-  levels_roles_toggle: "**The level role assignment is now:** "
-  levels_roles_toggle_true: "`enabled`"
-  roles_roles_toggle_false: "`disabled`"
-  levels_role_error_embed_title: ":x: Check my role position!"
-  levels_role_not_assignable: "**I can't assign this role because my role is not above the role you want me to assign!**"
-  levels_roles_error_title: "<:database:955938305319505960>  Role or level already exists!"
-  levels_roles_already_role_desc: "You are already using this role. Look at the details:"
-  levels_roles_success_title: "<:accepted:942820245616328725>  Role successfully added!"
-  levels_roles_success_desc: "The role and level could be added successfully. Here are the details:"
-  levels_roles_success_role: "Role:"
-  levels_roles_success_reminder: "Don't forget to use '/levels roles toggle' to activate everything!"
-  levels_roles_remove_success_embed_title: "<:accepted:942820245616328725>  Entry successfully removed!"
-  levels_roles_remove_success_desc: "The role and its associated level could be removed. Here are the details:"
-  levels_roles_addrole_success_role: "Role:"
-  levels_roles_addrole_error_title: "<:database:955938305319505960>  No entry found!"
-  levels_roles_remove_fail: "{role.mention} **could not be found!**"
-  levels_roles_already_role_field: "Role:"
-  levels_roles_already_level_desc: "You are already using this level. Look at the details:"
-  levels_roles_remove_success_role: "Role:"
-
+  levels_leaderboard_title: "Leaderboard | Top {number}"
+  levels_toggle: "Leveling is now **enabled** ({toggle})"
+  levels_allow_not_ignored: "{channel.mention} is not ignored"
+  levels_rank_no_xp: "You don't have any XP yet. Stay active and try again later"
+  on_message_mention: "{message.author.mention} - You are now now level {lvl}! 🎉"
+  levels_mention_toggle: "Level-Up mentions are now **enabled** ({toggle})"
+  levels_rank_deactivated: "The level system is currently deactivated\n-# ➜ If you have permission, enable it with /levels toggle"
+  levels_ignore_channel_new: "Now ignoring {channel.mention}"
+  levels_ignore_channel_adding: "Added {channel.mention} to the channels I ignore"
+  levels_ignore_channel_old: "Ignored channel(s)"
+  levels_ignore_channel_already: "I already ignore {channel.mention}"
+  levels_rank_bot: "Bots don't collect XP"
+  levels_background_too_large: "The file/image is too large\n-# ➜ Please stay below **5 MB**"
+  levels_background_invalid: "Please only upload a PNG or JPG/JPEG file"
+  levels_background_changed: "You successfully changed your background to the following:"
+  recommended_size: "The recommended size is 920x300px"
+  levels_rank_no_xp_member: "{member.mention} does not have any XP yet\n-# ➜ Encourage them to stay active in the server and check back later"
+  levels_allow_nodata_desc: "I am not ignoring any channel for this server\n-# ➜ Start adding them with /levels channel"
+  levels_allow_success_desc: "Removed {channel.mention} from the channels I ignore"
+  levels_roles_toggle: "Roles for a level-up are now **enabled** ({toggle})"
+  levels_role_not_assignable: "I can't assign this role\n-# ➜ Please move my **bot role above the role** you want me to assign"
+  levels_roles_already_role_desc: "{role.mention} is already used for level `{level}`"
+  levels_role_level_too_low: "Please start with level `1` upwards and set your roles\n-# ➜ Negative levels or level `0` won't count"
+  levels_roles_already_level_desc: "Level `{level}` is already used for {role.mention}"
+  levels_roles_success_desc: "Successfully added {role.mention} for Level `{level}`"
+  levels_roles_remove_success_desc: "Successfully removed {role.mention} and the associated level (`{level}`)"
+  levels_roles_remove_fail: "I could not find {role.mention}"
+  levels_leaderboard_footer: "You can display a maximum of 20 places at once"
 
 Moderation:
 
-  modlog_set: "✅  **Modlog set to the following channel: {channel.mention}**"
-  modlog_moved: "🔁  **Modlog moved to the following channel: {channel.mention}**"
-  modlog_same: "❌  **{channel.mention} is already the modlog!**"
-  ban_myself: "❌  **I can't ban myself, nice try!**"
-  ban_yourself: "🤦🏽  **You can't ban yourself!**"
-  ban_embed_title: ":x:  You got banned!"
-  ban_embed_desc: "A moderator banned you from **{ctx.guild.name}**."
+  channelmode_set: "Successfully set {channel} into **'{mode}'** mode"
+  channelmode_already_set: "You already set a mode for this channel, remove it first"
+  modlog_set: "Modlog set to the following channel: {channel.mention}"
+  modlog_moved: "Modlog moved to the following channel: {channel.mention}"
+  modlog_same: "{channel.mention} is already the modlog"
+  ban_myself: "I can't ban myself"
+  ban_yourself: "You can't ban yourself"
+  modlog_found_ban: "{member.mention} got banned & logged in {channel.mention}"
+  no_modlog_found: "{member.mention} got banned\n-# ➜ No modlog found, set one with /modlog if you want to log future actions"
   moderation_embed_reason: "Reason:"
-  no_action_possible: "❌  **I was not able to take action(s) on the member. Make sure my role is at the top.**"
-  action_failed: "❌  **Action failed, try again!**"
-  ban_guild_embed_title: "User got banned!"
-  modlog_found_ban: "**`{member}` got banned, entry created in {channel.mention}**"
-  no_modlog_found: "**I did not find a modlog, here are the details:**"
-  softban_myself: "❌  **The bot can't be banned.**"
-  softban_yourself: "❌  **You can't ban yourself.**"
-  softban_embed_title: ":x:  You got softbanned!"
-  softban_embed_desc: "A moderator softbanned you from **{ctx.guild.name}**."
-  softban_guild_embed_title: "User got softbanned!"
-  moderation_member_mention: "Member:"
-  softban_log_success: "**`{member}` got softbanned, entry created in {channel.mention}**"
-  kick_myself: "❌  **The bot can't be kicked.**"
-  kick_yourself: "❌  **You can't kick yourself.**"
-  hackban_yourself: "❌  **You can't hackban yourself.**"
-  hackban_myself: "❌  **I can't hackban myself.**"
-  kick_embed_title: ":x:  You got kicked!"
-  kick_embed_desc: "A moderator kicked you from **{ctx.guild.name}**."
-  kick_guild_embed_title: "User got kicked!"
-  kick_log_success: "**`{member}` got kicked, entry created in {channel.mention}**"
-  delete_too_high: "❌  **You can't delete more than `100` messages at a time!**"
-  delete_message_channel: "**Cleared `{count}` messages!**"
-  delete_log_message: "🗑️  `{ctx.author}` cleared `{count}` messages in {ctx.channel.mention}"
-  no_modlog_found_delete: "**I did not find a modlog. {count} messages cleared!**"
-  delete_missing_perms: "**You need the `manage_messages` permission to do this!**"
-  hackban_success: "**`{hackbanuser}` can not access your server anymore!**"
-  hackban_failed: ":x:  Hackban failed!"
-  hackban_already_banned: "**`{hackbanuser}` is already banned!**"
-  hackban_log_success: "**`{hackbanuser}` got hackbanned, entry created in {channel.mention}**"
-  slowmode_set_time: "**Slowmode for {channel.mention} set to `{seconds}` seconds.**"
-  slowmode_log_entry: "**⏳ `{ctx.author}` set {channel.mention} into slowmode for `{seconds}` seconds.**"
-  hackban_invalid_argument: "**I was not able to find this member. Make sure to only use the user ID and not the Discord tag.**"
-  tempban_embed_title: "You got temporarily banned"
-  tempban_embed_desc: "A moderator temporarily banned you from **{ctx.guild.name}**"
-  moderation_embed_reason: "Reason:"
-  moderation_embed_duration: "Duration:"
-  tempban_guild_embed_title: "Temporary ban!"
-  tempban_guild_embed_desc: "A member got temporarily banned"
-  moderation_member_mention: "Member:"
-  tempban_log_success: "Successfully banned {member.mention} temporarily from this server. Check out {channel.mention}"
-  action_type: "Action Type:"
-  type_unban: "Unban"
+  banned_until: "Banned until:"
+  ban_guild_embed_title: "<:ban:1146950308778475630> Member Banned"
+  tempban_guild_embed_title: "<:ban:1146950308778475630> Member Temporarily Banned"
+  tempban_success_desc: "Successfully temp-banned **{member}**"
+  tempban_no_modlog_found: "{member} got temporarily banned\n-# ➜ No modlog found, set one with /modlog if you want to log future actions"
+  no_action_possible: "I was not able to take action(s) on the member\n-# ➜ Make sure my role is on top of the members role(s)"
+  action_failed: "Action failed\n-# ➜ Try again and check your server settings/my permission"
+  kick_myself: "The bot can't be kicked"
+  kick_yourself: "You can't kick yourself"
+  kick_embed_title: "<:kick:1146960308687093780> You got kicked from {guild.name}"
+  kick_guild_embed_title: "<:kick:1146960308687093780> Member Kicked"
+  kick_guild_embed_desc: "Successfully kicked **{member}**"
+  kick_log_success: "{member.mention} got kicked & logged in {channel.mention}"
+  kick_log_success_nolog: "{member.mention} got kicked\n-# ➜ No modlog found, set one with /modlog if you want to log future actions"
+  hackban_yourself: "You can't hackban yourself"
+  hackban_myself: "I can't hackban myself"
+  hackban_success: "Successfully hackbanned **{hackbanuser}**"
+  hackban_already_banned: "`{hackbanuser}` is already banned"
+  hackban_log_success: "`{hackbanuser}` got banned & logged in {channel.mention}"
+  hackban_invalid_argument: "I was not able to find this member\n-# ➜ Make sure to only use the user ID and not the Discord tag"
+  hackban_log_success_nolog: "`{hackbanuser}` got banned\n-# ➜ No modlog found, set one with /modlog if you want to log future actions"
+  moderation_id: "ID:"
+  delete_too_high: "You can't delete more than `100` messages at once"
+  delete_message_channel: "Successfully cleared `{amount}` messages & logged in {channel}"
+  delete_negative: "You can't delete a negative number of messages"
+  delete_guild_embed_title: "<:trashcan:1083938700326617158> Messages Deleted"
+  delete_guild_embed_desc: "{mention} deleted **{amount}** messages in {channel}"
+  no_modlog_found_delete: "Deleted **{amount}** messages in {channel.mention}\n-# ➜ No modlog found, set one with /modlog if you want to log future actions"
+  tempban_embed_title: "<:ban:1146950308778475630> Temporarily banned from {guild.name}"
+  tempban_log_success: "Banned {member} from the server & logged in {channel.mention}"
   unbanned_after: "Unbanned after:"
-  unban_embed_title: "<a:timer:1016845768335822878> - User unbanned"
+  unban_embed_title: "<a:timer:1016845768335822878> Unbanned User"
+  unban_desc: "Successfully unbanned **{user}**"
   banned_for: "Banned for:"
-
-
+  ban_datetime: "Time:"
+  banned_guild_title: "<:ban:1146950308778475630> You got banned from {guild.name}"
+  ban_success: "Successfully banned **{member}**"
+  emoji_limit_reached: "Your server has reached the emoji limit of **{interaction.guild.emoji_limit}**\n-# ➜ Delete some emojis to add more"
+  animated_emoji_limit_reached: "You reached the limit of **{limit}** animated emojis for your server\n-# ➜ Please make some space before adding new ones"
+  static_emoji_limit_reached: "You reached the limit of **{limit}** static emojis for your server\n-# ➜ Please make some space before adding new ones"
+  emoji_invalid: "This is not a valid CUSTOM emoji"
+  emoji_added: "{added_emoji} (`{added_emoji.name}`) has been added to this server"
+  channelmode_set: "Channel mode for {channel.mention} set to `{mode}`"
+  channelmode_unset: "Channel mode for {channel.mention} removed"
+  emoji_invalid_format: "Wrong format. You can only insert emojis from other servers!"
+  no_reason: "No reason provided"
 
 Msgvote:
 
-  msgvote_upvote_success: "**{emoji}   is the `upvote` reaction now.**"
-  msgvote_toggle: "**Message vote is now** "
-  msgvote_channel_moved: "**Message vote channel moved to: {channel.mention}**"
-  msgvote_true: "`enabled`"
-  msgvote_upvote_same: "**{emoji}   is already used as the `msgvote {entry}` reaction**"
-  msgvote_channel_same: "**{channel.mention} is already the message vote channel!**"
-  msgvote_channel_set: "**Message vote channel set to: {channel.mention}**"
-  msgvote_false: "`disabled`"
-  msgvote_downvote_success: "**{emoji}   is the `downvote` reaction now.**"
-  msgvote_downvote_same: "**{emoji}   is already used as the `msgvote {entry}` reaction.**"
-  msgvote_settings_title: "Settings changed!"
-  msgvote_channel_set_title: "<:accepted:942820245616328725>  Channel set!"
-  msgvote_channel_set_moved: "🔁  Channel moved!"
-  msgvote_channel_set_desc: "The channel was changed successfully, see the details below:"
+  msgvote_upvote_success: "Successfully added {emoji} as the `upvote` reaction"
+  msgvote_toggle: "Message Votes are now **enabled** ({toggle})"
+  msgvote_toggle_not_set: "It looks like message votes are not enabled yet\n-# ➜ Do so by running </msgvote toggle:1131346505278697524>"
+  msgvote_channel_same: "{channel.mention} is already the message vote channel"
+  msgvote_channel_set: "Message vote channel set to: {channel.mention}"
+  msgvote_downvote_success: "Successfully set {emoji} as the `downvote` reaction"
   msgvote_channel_set_old: "Old channel:"
   msgvote_channel_set_new: "New channel:"
-  msgvote_channel_same_title: "<:database:955938305319505960>  Same channel!"
-  msgvote_same_title: "<:database:955938305319505960>  Emoji already used!"
-  msgvote_same_desc: "This emoji is already in use. Here are the details:"
-  msgvote_same_entry: "Used for:"
-  msgvote_success_title: "<:accepted:942820245616328725>  Settings changed!"
-  msgvote_used_for: "Used for:"
-  msgvote_success_reminder: "Set a channel with '/msgvote channel' and toggle everything with '/msgvote toggle'"
-
+  msgvote_same_desc_upvote: "I already use {emoji} as the `upvote` reaction"
+  msgvote_same_desc_downvote: "I already use {emoji} as the `downvote` reaction"
 
 Language:
 
-  languages_title: "All languages"
+  languages_title: "<:infoWebsite:1120874159732441129> All languages"
   setlang_failed: "This language is not valid!"
   setlang_success: "Language set to **English**"
   languages_footer: "If no language is set, I speak English."
   test_command: "This is a test command: {role.mention}"
-  choose_translation: "**Choose a language!**"
+  choose_translation: "<a:idle_loading:942820916751114351> Choose a language..."
 
+Presence:
+
+  no_spotify_channel: "You did not set a Spotify channel\n-# ➜ Do so by running </presence channel:1131346505748467801>"
+  spotify_channel_removed: "Successfully removed {channel} as your Spotify channel"
+  no_spotify_role: "You did not set a Spotify role\n-# ➜ Do so by running </presence role:1131346505748467801>"
+  spotify_role_removed: "Successfully removed {role} as your Spotify role"
+  no_twitch_channel: "You did not set a Twitch channel"
+  twitch_channel_removed: "Successfully removed {channel} as your Twitch channel"
+  no_twitch_role: "You did not set a Twitch role\n-# ➜ Do so by running </presence role:1131346505748467801>"
+  twitch_role_removed: "Successfully removed {role} as your Twitch role"
+  no_spotify_channel_or_role: "Please either set a role OR a channel for the Spotify system before toggling it\n-# ➜ Do so by running </presence channel:1131346505748467801> or </presence role:1131346505748467801>"
+  spotify_toggle_changed: "The Spotify presence system is now **{toggle}**"
+  no_twitch_channel_or_role: "Please either set a role OR a channel for the Twitch system before toggling it\n-# ➜ Do so by running </presence channel:1131346505748467801> or </presence role:1131346505748467801>"
+  twitch_toggle_changed: "The Twitch presence system is now **{toggle}**"
+  spotify_channel_changed: "Successfully set the Spotify channel to {channel}"
+  spotify_channel_already_set: "{channel} is already set as your Spotify channel"
+  spotify_channel_changed_new: "Successfully changed Spotify channel to {channel}"
+  twitch_channel_changed: "Successfully set Twitch channel to {channel}"
+  twitch_channel_changed_new: "Successfully changed Twitch channel to {channel}"
+  twitch_channel_already_set: "{channel} is already set as your Twitch channel"
+  already_opt_in: "You did not **opt-out** of the presence system and are therefore already **opt-in** to the system"
+  opted_in: "You successfully **opted-in** to the presence system\n-# ➜ Run /presence opt to opt-out again or click the button under my Twitch/Spotify messages"
+  already_opted_out: "You already **opted-out** of the presence system"
+  opted_out: "You successfully **opted-out** of the presence system\n-# ➜ Run /presence opt to opt-in again or click the button under my Twitch/Spotify messages"
+  spotify_role_changed: "Successfully set Spotify role to {role}"
+  spotify_role_already_set: "{role} is already set as your Spotify role"
+  spotify_role_changed_new: "Successfully changed Spotify role to {role}"
+  twitch_role_changed: "Successfully set Twitch role to {role}"
+  twitch_role_already_set: "{role} is already set as your Twitch role"
+  twitch_role_changed_new: "Successfully changed Twitch role to {role}"
+  new_start_information: "**Title:** {spotify_activity.title}\n**Artist:** {spotify_activity.artist}\n-# ➜ [**Track URL**]({spotify_activity.track_url})"
+  switched_song_information: "**Title:** {switched_presence.title}\n**Artist:** {switched_presence.artist}\n-# ➜ [**Track URL**]({switched_presence.track_url})"
+  new_start_twitch_information: "<:twitch:1067955414811029534>  {after.display_name} is now active on Twitch"
+  stream_information: "**Title:** {twitch_activity.name}\n-# ➜ [Link to Twitch]({twitch_activity.url})"
+  spotify_member_now: "<:spotify:928667136686174248> {after.name} listens to a song"
+  no_presence_data: "I could not find any presence data for this guild"
 
 Private:
 
-  pvm_setup_embed_f3_n: "Channel leaving effect:"
   pvm_setup_cmanagement: "channel-management"
-  pvm_setup_category: "Private Voice Management"
-  pvm_setup_embed_title: "Tips for the private voice channels"
-  pvm_setup_embed_f1_n: "User commands:"
-  pvm_setup_embed_f2_v: "> Join {joinchannel.mention} to create your own channel."
-  pvm_setup_embed_f3_v: "> If you leave your own channel and no one else is in it, it will be deleted. In the other case the rights are transferred to another member from the channel."
-  pvm_setup_joinchannel: "Create channel"
-  pvm_info_kicked: "Kicked users"
-  pvm_info_field1: "Channel"
-  pvm_setup_embed_f2_n: "How to create a private channel:"
-  pvm_clear_success: "<:accepted:942820245616328725> Custom channel system cleared!"
-  pvm_setup_embed_desc: "*Note that some commands may require additional permissions*"
-  pvm_limit: "🛑 - You can create a channel again in **{time}** seconds." # vorher 🛑
-  pvm_info_title: "Information about custom voice"
-  pvm_info_field2: "Joined users"
-  pvm_cooldowns_desc: "*See all your cooldowns for the `/pvm` commands below:*"
-
-  pvm_addrole_success_title: "<:accepted:942820245616328725>  Role added!"
-  pvm_addrole_list: "Roles that are allowed to manage the custom channel:"
-  pvm_addrole_success_desc: "**The following role can now manage the private voice channels:** {role.mention}"
-  pvm_an_error: "<:database:955938305319505960>  An error occured!"
-  pvm_addrole_same_desc: "{role.mention} **can already manage the private voice channels!**"
-  pvm_nodata: "<:database:955938305319505960>  No data/configuration found for this guild!"
-  pvm_removerole_no_role_found: "<:database:955938305319505960>  No role found for this server!"
-  pvm_removerole_noperms: "<:denied:942820246023196742>  This role can't manage the custom channel"
-  pvm_removerole_success_title: "<:accepted:942820245616328725>  Role successfully removed!"
-  pvm_removerole_success_desc: "**{role.mention} can no longer manage the custom channel!**"
-  pvm_setup_success: "<:accepted:942820245616328725>  The custom channel system is set up!"
-  pvm_setup_addrole: "<:denied:942820246023196742> **Please set up a role with `/pvm role`.\nAfter doing this you can run the setup again!**"
-  pvm_setup_already: "<:database:955938305319505960>  **The custom system is already setup. \nUse `/pvm clear` and try again!**"
-  private_new_name: ":eyes:  Please type out a new name!"
-  private_new_name_too_long: "<:denied:942820246023196742>  The name should not exceed 25 characters!"
-  pvm_name_success_title: "<:accepted:942820245616328725>  Name changed successfully!"
-  pvm_name_success: "**The name of your custom channel has been changed to `{name}`.**"
-  contact_owner: "Error code:\n```py\n{e}```\nPlease try again or contact the bot owner."
-  pvm_novc: "<:denied:942820246023196742>  You are not connected to a voice channel."
-  pvm_not_owner: "<:denied:942820246023196742>  You are not the owner of the channel."
-  pvm_privacy_closed: "🔒  The channel is now closed!" # vorher 
-  pvm_privacy_open: "🔓  The channel is now open!"
-  private_no_number: "<:denied:942820246023196742>  Please only give a **number**!"
-  pvm_size_success_title: "<:accepted:942820245616328725>  Size changed!"
-  pvm_size_success_desc: "**The size of your custom channel has been changed to `{size}`.**"
-  private_new_size: ":eyes:  Please state a new size!"
-  private_kick: ":eyes:  **Please mention the user you want to kick!**"
-  pvm_member_not_found: "<:denied:942820246023196742>  Member not found!"
-  private_invite: ":eyes:  Please mention the user you want to invite!"
-  pvm_invite_already: "<:denied:942820246023196742>  {user.mention} is already in your channel!"
-  pvm_invite_success: "<:accepted:942820245616328725>  {user.mention} has been invited to the channel."
-  pvm_immune: ":eyes:  I can't do this since the user is immune."
-  pvm_kick_success: "<:accepted:942820245616328725>  {user.mention} has been removed from the channel!"
-  pvm_kick_already: "<:denied:942820246023196742>  {user.mention} already got kicked!"
-  pvm_kick_not_in_channel: "<:denied:942820246023196742>  {user.mention} is not in your channel."
-  pvm_name_cooldown_title: "<:denied:942820246023196742>  I can't edit this channel!"
-  pvm_name_cooldown_desc: "***Please try again {time}***\n*You can edit the channel via ⚙️ (`Edit channel`) next to the channel name as well!*"
-  pvm_ignore_already: "<:database:955938305319505960>  {user} is already ignored!"
-  pvm_ignore_success: "<:accepted:942820245616328725>  {user.mention} is now ignored!"
-  pvm_observe_not_found: "<:database:955938305319505960>  I do not ignore any member!"
-  pvm_observe_not_ignored: "<:database:955938305319505960>  {user.mention} is not ignored!"
-  pvm_observe_success: "<:accepted:942820245616328725>  {user.mention} is no longer ignored!"
-  pvm_clear_no_setup: "<:database:955938305319505960>  I could not find a custom channel system.\n*(Run `/pvm setup` and try again)*."
-  pvm_info_nopvc: "**{channel} does not seem to be a custom channel...**"
-  pvm_delete_no_customs: ":eyes:  I couldn't find any custom channel!"
-  pvm_delete_messsage: "Due to problems, your channel **'{deletedchannel}'** has been deleted.\nPlease create a new custom channel or join an existing one\nSorry for the inconvenience!"
-  pvm_delete_success: "<:accepted:942820245616328725> I deleted **{len(deletedchannels)}** channels!"
-  private_channel_toggle_embed_title: "Settings changed!"
-  private_channel_toggle: "Creating a private thread is: "
-  text_channel_true: "`enabled`"
-  text_channel_false: "`disabled`"
-
+  pvm_setup_category: "Custom Channel"
+  pvm_setup_joinchannel: "Create Channel"
+  pvm_info_kicked: "Kicked"
+  pvm_clear_success: "Successfully cleared the custom channel system"
+  pvm_limit: "You can only create a custom channel every `15` seconds\n-# ➜ There are `{time}` seconds left"
+  pvm_info_title: "<:voice:1087067072611233902> Information about {channel}"
+  pvm_info_joined: "Joined"
+  pvm_addrole_same_desc: "{role} can already manage custom channels"
+  pvm_nodata: "I don't have any data for this server yet\n-# ➜ Try again after doing some changes"
+  pvm_role_not_in_list: "{role} can't manage the custom channel\n-# ➜ If you want it to manage custom channel, run </pvm role:1131346505278697526>"
+  pvm_removerole_success_desc: "Successfully removed {role}\n-# ➜ This role can no longer manage custom channel"
+  pvm_setup_success: "Successfully created the custom channel system\n-# ➜ Join {joinchannel} to get started"
+  pvm_setup_already: "It looks like, the custom channel system is already set up\n-# ➜ Run </pvm clear:1131346505278697526> to start from scratch"
+  pvm_name_success: "Successfully renamed your custom channel to `{name}`\n-# ➜ You can change the name every `5` minutes or use the ⚙️ to edit your channel manually"
+  pvm_novc: "You are currently not connected to a (custom) voice channel\n-# ➜ Join one and try again"
+  pvm_not_owner: "It looks like you're not the owner of this custom channel"
+  pvm_privacy_closed: "Successfully **closed** the custom channel" # vorher 
+  pvm_privacy_open: "Successfully **opened** the custom channel"
+  pvm_member_not_found: "I could not find the member `{member}`\n-# ➜ Please try again and make sure the ID/the name is correct"
+  pvm_invite_already: "{member} is already in your custom channel/invited"
+  pvm_embed_open: "Open"
+  pvm_embed_close: "Close"
+  pvm_embed_kick: "Kick"
+  pvm_embed_invite: "Invite"
+  pvm_embed_size: "Size"
+  pvm_embed_name: "Name"
+  privacy_text_translation: "- </pvm privacy:1131346505278697526> ➜ **Opens** or **Closes** your custom voice channel\n"
+  pvm_setup_kick_text: "- </pvm kick:1131346505278697526> ➜ **Kick someone** from your custom voice channel\n"
+  pvm_setup_invite_text: "- </pvm invite:1131346505278697526> ➜ **Invite someone** to your custom voice channel\n"
+  pvm_size_text_translation: "- </pvm size:1131346505278697526> ➜ **Change** the **size** of your custom voice channel\n"
+  pvm_setup_name_text: "- </pvm name:1131346505278697526> ➜ **Change** the **name** of your custom voice channel\n"
+  pvm_setup_title: "<:voice:1087067072611233902> Custom Channel Menu"
+  pvm_invite_success: "Successfully invited {member} to your custom channel"
+  pvm_immune: "{member} is immune against this action"
+  pvm_kick_success: "Successfully kicked {member} from your channel"
+  pvm_kick_already: "{member} is already kicked from your custom channel"
+  pvm_kick_not_in_channel: "{member} is currently not in your channel, I can't kick them"
+  pvm_already_immune: "{member} is already immune against my actions"
+  pvm_addrole_everyone: "You can't add `@everyone` as a role\n-# ➜ Please only use server roles"
+  pvm_addrole_success_desc: "Successfully added {role}\n-# ➜ They can now manage custom channels as well"
+  pvm_kick_self: "You can't kick yourself from this channel"
+  pvm_not_numeric: "You can't set your channel to a negative size, size more than 99 or a non-numeric number\n-# ➜ Only use positive numbers"
+  pvm_menu_title: "<:voice:1087067072611233902> Custom Channel Menu"
+  pvm_menu_desc: "The buttons and actions are only valid for {channel}\n-# ➜ Only the owner can interact with this menu"
+  pvm_ignore_success: "{member} is now immune against my actions"
+  pvm_not_immune: "{member} is not immune to my action at all"
+  pvm_unignore_success: "{member} is not immune anymore"
+  pvm_setup_noroles: "You did not set up any roles that can manage the custom channel\n-# ➜ Do so by running </pvm role:1131346505278697526> before you do the setup"
+  no_custom_channel: "{channel} does not seem to be a custom channel"
+  pvm_name_cooldown: "You're currently on cooldown\n-# ➜ Come back {time} or use the ⚙️ symbol to edit your channel manually"
+  pvm_size_success: "Successfully change the size of your custom channel to `{size}`"
+  pvm_modal_invite_title: "Invite a member"
+  pvm_modal_invite_member: "Member"
+  pvm_modal_member_placeholder: "Name#000/Username/ID"
+  pvm_modal_kick_title: "Kick a member"
+  pvm_modal_kick_member: "Member"
+  pvm_modal_size_title: "Change the size"
+  pvm_modal_size_label: "Size"
+  pvm_modal_size_placeholder: "1-99"
+  pvm_modal_name_title: "Set channel name"
+  pvm_modal_name_label: "Name"
+  pvm_modal_name_placeholder: "LFG"
 
 Reaction:
 
-  reaction_channel_moved: "**Channel for reactions moved to: {channel.mention}**"
-  reaction_channel_already: "**{channel.mention} is already the channel for reactions!**"
-  reaction_title: "All reaction roles"
-  reaction_no_channel: "No channel set!"
-  reaction_addrole_use: "**:x:  - The role `{role1.name}` is already in use.**"
-  reaction_addrole_emoji_use: "**You already use this emoji!**"
-  reaction_list_no_data: ":x: - No reaction roles set for this server." # vorher :x:
-  reaction_addrole_success: "**Assigned  {emoji}  to role: `{role1.name}`**"
-  reaction_channel_set: "**Channel for reactions set to: {channel.mention}**"
-  reaction_remove_fail: "**{role1.mention} could not be found.**"
-  reaction_remove_success: "**Deleted the role and emoji. You can now use them again!**"
-  reaction_channel_data: "Channel:"
-  reaction_role_not_assignable: "**I can't give this role to members!**\n**Make sure my role is above the roles you want me to assign.**"
-  reaction_addrole_error_title: "<:database:955938305319505960>  An error occured!"
-  reaction_addrole_already_desc: "You already use this role. See the details below:"
-  reaction_addrole_already_role_field: "Role registered:"
-  reaction_addrole_already_emoj_field: "Assigned emoji:"
-  reaction_addrole_already_emoji_field: "Registered emoji:"
-  reaction_addrole_already_emoj_role_field: "Assigned role:"
-  reaction_addrole_success_title: "<:accepted:942820245616328725>  Reaction role saved!"
-  reaction_addrole_success_desc: "Your settings could be saved. Here are the details:"
-  reaction_addrole_success_role: "Role:"
-  reaction_addrole_already_emoji_desc: "You already use this emoji. See the details below:"
-  reaction_remove_success_embed_title: "<:accepted:942820245616328725>  Successfully deleted!"
-  reaction_remove_success_desc: "Data successfully deleted from the database!\nYou can now use the following role & emoji again:"
-  reaction_remove_fail_footer: "Unsure which roles you set? Run '/roles list' to see them!"
-  reaction_success_reminder: "Do not forget to set a channel with '/reaction channel'!"
-  reaction_channel_set_embed_title: "<:accepted:942820245616328725>  Channel for role assignment saved!"
-  reaction_channel_moved_embed_title: "🔁  Channel for role assignment moved!"
-  reaction_channel_moved_embed_desc: "The channel has been successfully changed. Here are the details:"
-  reaction_channel_moved_old: "Old channel:"
-  reaction_channel_moved_new: "New channel:"
-  reaction_channel_same_embed_title: ":x:  Customization failed!"
-  reaction_role_error_embed_title: ":x:  Check my role position!"
-  
+  reaction_channel_already: "{channel} is already set as the reaction role channel"
+  reaction_channel_update: "Successfully updated your reaction role channel to {channel}"
+  reaction_title: "🔗 Reaction Roles Settings"
+  reaction_no_channel: "No channel set\n-# ➜ Do so by accessing the dashboard"
+  reaction_list_no_data: "You did not set any reaction roles yet\n-# ➜ Do so by accessing the dashboard"
+  reaction_channel_set: "Successfully set reaction role channel to {channel}"
+  reaction_remove_fail: "I was not able to find any data for {role}"
+  reaction_channel_data: "Channel"
+  reaction_role_not_assignable: "I can't assign {role}\n-# ➜ Please make sure my bot role is above all the roles you want me to assign"
+  reaction_role_already_used: "You already use {role} for {emoji}"
+  reaction_emoji_already_used: "You already use {emoji} for {role}"
+  reaction_addrole_success: "Successfully set {emoji} for {role}"
+  reaction_remove_success: "Successfully removed {role} and the associated reaction ({emoji})"
+  reaction_role_emoji_not_from_guild: "{emoji} is not from this server\n-# ➜ Please only use standard emojis or the ones from this server"
+
+Reminder:
+
+  reminder_translation: "Reminder"
+  reminder_time: "> 📆 **Time:**"
+  choose_reminder: "Choose a reminder"
+  removed_reminder_dropdown: "Reminder already got removed from the database\n-# ➜ You probably tried to view information about a reminder that already passed"
+  reminder_too_long: "The reminder is too long. Please don't exceed `3700` characters"
+  time_too_long: "The time for the reminder is too long. Please choose a shorter one"
+  reminder_set_title: "<a:check_green:942824781303144450> Successfully set reminder"
+  reminder_set_description: "> {reminder}"
+  reminder_dm: "*Make sure that I can send you a direct message*"
+  reminder_channel: "*Sending the reminder into this channel*"
+  no_reminders: "You have no reminders yet\n-# ➜ You can set your first reminder by using </reminder set:1131346505748467799>"
+  reminder_list_title_one: "<a:timer:1016845768335822878> List of reminder"
+  reminder_deleted: "Successfully deleted **Reminder #{reminder}**"
+  reminder_title: "Reminder"
+  reminder_context: "> 🗒️ **Reminder:**"
+
+Roleshop:
+
+  is_empty: "The roleshop for this server is empty\n-# ➜ Start adding roles by using </roleshop add:1131346505748467800>"
+  roleshop_translation: "Roleshop for {guild}"
+  role_not_assignable: "I can't assign {role}\n-# ➜ Please make sure my bot role is above all the roles you want me to assign"
+  role_already_exists: "You already use {role} in your roleshop\n-# ➜ Remove it first or update the role if needed"
+  role_added_description: "Successfully added {role} for `{price} <:coin:1087923586985107588>` to the roleshop"
+  role_removed_description: "Successfully removed {role} from the roleshop\n-# ➜ You can now use the role again"
+  role_not_in_roleshop: "{role} is not in the roleshop. Please only select roles within the shop"
+  roleshop_role_active_removed: "{role} is not in the roleshop anymore\n-# ➜ Run /roleshop show to see the actual shop"
+  role_updated_description: "Successfully updated the roleshop. See the details below:\n-# ➜ Role: {role}\n-# ➜ **New** Price: `{price} <:coin:1087923586985107588>`"
+  not_enough_coins: "You don't have enough coins on your bank to purchase this role"
+  role_already_owned: "You already own {role.mention}\n-# ➜ I did not remove any coins from your bank balance"
+  role_purchased_description: "You successfully purchased a role. See the details below:\n-# ➜ Role: {role.mention}\n-# ➜ Price: {price}"
+  role_purchase_failed: "Something went wrong while purchasing\n-# ➜ Please try again or join my [support server](https://discord.com/invite/Qee6WZntcx) for help"
+  roleshop_negative_amount: "You can't set a negative amount for a role\n-# ➜ Please set a positive number"
+
+Spotify:
+
+  spotify_channel_set: "Successfully set {channel} as your Spotify channel\n-# ➜ I will now post new album releases in this channel, make sure I can send messages into it"
+  spotify_channel_already_set: "{channel} is already set as your Spotify channel"
+  spotify_channel_update: "Successfully updated the Spotify channel to {channel}\n-# ➜ I will now post new album releases in this channel, make sure I can send messages into it"
+  artist_not_found: "**{artist}** does not seem to be an artist or I could not find it\n-# ➜ If you think this is a mistake, feel free to join my [support server](https://discord.com/invite/Qee6WZntcx)"
+  artist_already_in_list: "**{artist}** is already in your list of artists"
+  artist_added: "Successfully added **{artist}** to your list of artists\n-# ➜ I will now listen to new releases from them"
+  artist_not_in_list: "**{artist}** is not in your list of artists\n-# ➜ Please only choose the artists suggested from the autocomplete"
+  artist_removed: "Successfully removed **{artist}** from your list of artists"
+  no_artists: "You don't have any artists in your list"
+  artists_following: "<:spotify:928667136686174248> All artists for {guild}"
+
+Serverlogging:
+
+  logging_channel_already_set: "{channel} is already set as your logging channel"
+  logging_channel_updated: "Logging channel set to {channel}"
+  logging_type_already_set: "**{type}** logging is already **{toggle}**"
+  logging_type_already_disabled: "**{type}** is already disabled"
+  logging_type_updated: "**{type}** logging has been **{toggle}**"
+
+Sticky:
+
+  count_label: "Count"
+  no_sticky_messages: "There are not sticky messages for this server"
+  sticky_message_set: "Successfully set the following sticky message for {channel}:"
+  sticky_message_removed: "It looks like this sticky message has been removed and can no longer be displayed"
+  no_sticky_message: "No sticky message found"
+  not_a_number: "This is not a number, please only use real numbers"
+  count_too_low: "Please only use positive numbers starting at `1`"
+  sticky_message_edited: "Successfully updated the sticky message"
+  sticky_message_removed: "Successfully removed sticky message for {channel}"
+  sticky_message_already_exists: "There's already a sticky message for this channel\n-# ➜ Please remove or update it first!"
+  sticky_message_title: "Sticky message for {channel}"
+  select_channel: "Select a channel"
+  sticky_messages_list: "Sticky Messages"
+  sticky_messages_list_desc: "Below, you will find all sticky messages within a dropdown menu"
+  sticky_message_not_found: "No sticky message/data found"
+  sticky_message_for_channel: "Sticky message for {channel}"
+  create_sticky_message: "Create your sticky message"
+  embed_label: "Embed"
+  sticky_message_label: "The Sticky Message"
+  sticky_message_placeholder: "This is a sticky message placeholder"
+  sticky_message_count_label: "Post after how many messages?"
+  edit_sticky_message: "Edit your sticky message"
+  select_channel_to_view: "Select a channel to view its sticky message:"
 
 Ticket:
 
-  ticket_unblock_success: "✅ - {user.mention} is no longer blocked from the ticket system."
-  ticket_unblock_no_block: "⚠️ - {user.mention} is not blocked from creating tickets."
-  ticket_addrole_same: "⚠️ - This role can already manage tickets."
-  ticket_addrole_success: "✅️ - {role.mention} can now manage tickets."
-  ticket_ping_addrole_success: "✅️ - {role.mention} is now pinged on new tickets."
-  ticket_ping_addrole_same: "⚠️ - This role is already mentioned on new tickets."
-  ticket_setup_no_role: "**Please setup a role with `/ticket role` first, then try again!**"
-  ticket_block_success: "✅️ - {user.mention} can now no longer create tickets."
-  ticket_removerole_success: "✅ - {role.mention} can no longer manage the tickets." # vorher checkmark
-  button_create_no_role: "**You tried to create a ticket but it looks like no support role is set. Contact the server owner or do `/ticket role`.**"
-  button_youre_blocked: "🚫 - You are blocked from creating tickets."
+  ticket_unblock_success: "Successfully unblocked {member}\n-# ➜ They can now create tickets again"
+  ticket_unblock_no_block: "{member} is not blocked from creating tickets"
+  ticket_addrole_same: "{role} can already manage tickets on your server"
+  ticket_addrole_success: "Successfully added {role}\n-# ➜ Anyone with the role can now manage tickets"
+  ticket_ping_addrole_success: "{role} now gets pinged on new tickets\n-# ➜ Run </ticket role:1131346505278697528> again with `remove` to remove the role"
+  ticket_ping_addrole_same: "{role} is already pinged on new tickets"
+  ticket_block_success: "Successfully blocked {member}\n-# ➜ They can't create tickets anymore, unless you run </ticket unblock:1131346505278697528>"
+  ticket_removerole_success: "Successfully remove {role}\n-# ➜ They can no longer manage tickets"
+  button_youre_blocked: "You are blocked from creating tickets on this server"
   ticket_setup_supportchannel: "create-ticket"
-  ticket_setup_embed_title: "**Please choose a title!**"
-  button_block_self: "**You can't block yourself from the ticket system...**"
-  ticket_setup_embed_description: "**Please choose a description**"
-  button_close_noperms: "⚠️ - You dont have the permission to close this ticket."
-  ticket_embed_title: "**Ticket-System**"
-  ticket_close_wrongc: "⚠️ - This is not a ticket channel." # vorher ⚠️
-  button_ticket_embed_title: "**Ticket created!**" # vorher war nichts
-  button_block_already: "⚠️ - <@{user}> is already blocked from creating tickets."
-  ticket_setup_embed_message: "**Do you want to create your own embed (`yes`) or choose the default one? (`no`)**"
-  button_block_success: "✅️ - <@{user}> is now blocked from creating tickets."
-  ticket_setup_already: "🚫 - The ticket system is already setup.  Use `/ticket clear` to clear it and try again!"
-  ticket_block_failed: "⚠️ - {user.mention} is already blocked from creating tickets."
-  ticket_topic: "Ticket for: {user} | {user.id}"
-  ticket_unblock_no_data: "🛑 - No blocked user found for this server."
-  ticket_removerole_not_set: "🛑 - {role.mention} was not set to manage tickets!"
-  ticket_success: "✅ - Ticket system created successfully."
-  ticket_setup_too_long_success: "✅ - You took too long or something went wrong. The ticket system was created successfully with the standard message."
-  button_create_ticket_f3: "Account created:"
-  button_create_open_ticket: "<@{user.id}>, you already have an open ticket here!"
-  button_block_noperms: "⚠️ - You dont have the permission to block users from the ticket system..."
-  button_create_ticket_f2: "Joined the server:"
-  ticket_setup_button: "Create a ticket"
-  button_create_ticket_f1: "Ticket created:"
-  button_ticket_embed_description: "Hey <@{user.id}>,\n\nYour ticket has been created. Describe your issue as accurately as possible and give the support team some time to process your request."
-  ticket_embed_description: "To create a ticket, simply click on the button under the embed.\nA staff member will answer your ticket shortly.\n\n*If you violate the server rules or show bad manners, you can also be banned from creating tickets!*"
-  edit_start: "**You have `3` minutes for each step!**"
-  edit_title: "**Please give the embed a new title:**"
-  edit_description: "**Please give the embed a new description:**"
-  edit_edit?: "**Do you want to replace the embed with the following?**"
-  edit_true: "**I edited the embed for you!**"
-  edit_false: "**I did not edit the embed!**"
-  edit_error: "Oops! You took to long or an error occured, the process has been canceled. Try again!"
-  ticket_settings_title: "Settings changed!"
-  ticket_channel_changed_title: "<:accepted:942820245616328725>  Log channel changed!"
-  ticket_channel_changed_fail_title: "<:denied:942820246023196742>  An error occured!"
-  ticket_transcript_toggle: "The ticket transcript is now:"
-  ticket_transcript_true: " `enabled`"
-  ticket_transcript_false: " `disabled`"
-  ticket_channel_set: "**Ticket log channel set to: {channel.mention}**"
-  ticket_channel_already: "**{channel.mention} is already the ticket log channel!**"
-  ticket_channel_moved: "**Ticket log channel moved to: {channel.mention}**"
-  ticket_no_config: "<:database:955938305319505960>  No data found for this server!"
-  ticket_no_category: "<:denied:942820246023196742>  This is not a real category!"
-  ticket_same_category: "<:denied:942820246023196742>  This is already the ticket category!"
-  ticket_category_success: "<:accepted:942820245616328725>  Ticket category changed!"
-  ticket_category_success_desc: "**The new ticket category is: {category}**"
-  ticket_clear_success: "<:accepted:942820245616328725>  Cleared the ticket system!"
-  ticket_setup_again: "<:database:955938305319505960>  I lack some data. Please set up the ticket system again!"
-  edit_true: "<:accepted:942820245616328725>  **Embed edited!**"
-  edit_false: "<:denied:942820246023196742>  **Embed not edited!**"
-  ticket_pings_toggle: "**Ticket pings are now** "
-  ticket_ping_true: "`enabled`"
-  ticket_ping_false: "`disabled`"
+  button_block_self: "You can't block yourself from creating a ticket"
+  ticket_block_self: "You can't block yourself from creating tickets"
+  button_block_staff: "You can't block this user as they have higher permissions than you"
+  button_close_noperms: "You don't have the permission to close this ticket\n-# ➜ Self-closing is also currently not supported"
+  ticket_embed_title: "Ticket-System"
+  button_ticket_embed_title: "Ticket of {user}"
+  button_block_success: "Successfully blocked {member.mention}\n-# ➜ They can't create tickets anymore unless you unblock them with </ticket unblock:1131346505278697528>"
+  ticket_setup_already: "The ticket system seems to be set-up already\n-# ➜ Run </ticket clear:1131346505278697528> to clear it & try again"
+  ticket_setup_title: "Create your ticket message"
+  ticket_setup_modal_title: "Title"
+  ticket_setup_modal_description: "Description"
+  ticket_setup_modal_description_placeholder: "Welcome to our ticket system"
+  ticket_setup_modal_title_placeholder: "Ticket-Support"
+  ticket_setup_modal_footer: "Footer"
+  ticket_setup_modal_footer_placeholder: "One ticket a time"
+  ticket_setup_modal_hexcolor: "HEX-Color"
+  ticket_topic: "Ticket of {user} | {user.id}"
+  button_close_ticket: "Close"
+  button_block_ticket: "Block"
+  ticket_removerole_not_set: "It looks like {role} was not set to manage tickets on your server at all"
+  ticket_success: "Successfully created the ticket system\n-# ➜ Find it here: {jumpurl}"
+  created_account_field: "Account created:"
+  ticket_closed_menu: "Manage the channel of {member} with the buttons below"
+  button_block_noperms: "You don't have the permission to block this user"
+  log_not_found: "I could not find the set log-channel on the server\n-# ➜ Run </ticket log:1131346505278697528> to set a new one or make the channel visible for me"
+  no_ticketlog_set: "You need to set a ticket-log first in order to receive transcripts\n-# ➜ Run </ticket log:1131346505278697528> to do so"
+  server_joined_field: "Joined the server:"
+  ticket_setup_button: "Create Ticket"
+  ticket_created_field: "Ticket created:"
+  button_ticket_embed_description: "Hey there,\nplease describe your issue as accurately as possible and give the support team some time to process your request"
+  ticket_embed_description: "Create a ticket by clicking the button under this message\nYou can only have one ticket a time"
+  ticket_edit_title: "Edit the ticket message"
+  ticket_channel_set: "Successfully set ticket log to {channel}"
+  ticket_channel_already: "{channel} is already set as the ticket log channel"
+  ticket_no_config: "It looks like you did not set up the ticket system yet\n-# ➜ Run </ticket setup:1131346505278697528> to do so"
+  ticket_category_success: "Successfully changed the ticket category to {category}"
+  ticket_category_same: "`{category}` is already the ticket category"
+  ticket_category_success_set: "Successfully set ticket category to {category}"
+  ticket_clear_success: "Successfully cleared the ticket system"
+  ticket_no_config_message: "It looks like you did not set up the ticket system/message\n-# ➜ Run </ticket setup:1131346505278697528> or </ticket clear:1131346505278697528> if you have trouble setting things up"
+  ticket_unfetchable_message: "Could not find the ticket message for this server\n-# ➜ Run </ticket clear:1131346505278697528> for a fresh start"
+  ticket_edit_success: "Successfully edited the ticket message\n-# ➜ Find it here: {jumpurl}"
+  ticket_channel_changed: "Successfully set ticket log to {channel}"
+  ticket_ping_removerole_no_role: "{role} is not set as your ping role or you did not set one yet\n-# ➜ Run </ticket role:1131346505278697528> to do so"
+  ticket_ping_removerole_success: "Successfully removed {role} as your ping role➜ I won't ping anyone unless you set a role again"
+  created_mention: "I created your ticket here: {channel}"
+  button_create_ticket_error: "I can't create tickets on this server\n-# ➜ I either don't have sufficient permission or there are some faulty/missing settings"
+  button_create_ticket_already: "You already have an open ticket\n-# ➜ Find it here: {channel}"
+  button_transcript: "Transcript"
+  button_reopen: "Re-open"
+  button_delete: "Delete"
+  close_success: "Successfully closed this ticket\n-# ➜ Use the buttons below to interact with it"
+  saving_transcript: "Saving the transcript. This might take a while..."
+  transcript_saved: "Successfully saved the transcript in {channel}"
+  view_transcript_link: "[View the transcript here]({link})"
+  button_reopen_own: "You can't re-open your own ticket"
+  reopen_success: "Successfully re-opened the ticket for {user.mention}"
+  ticket_block_same: "{member} is already blocked from creating tickets"
+  ticket_image_size: "The image size is too big. Please use an image with a size of **3MB** or less."
+  button_create_ticket_full: "There are more than 50 tickets open on this server. I can't create more tickets!\nPlease contact the staff team!"
+  closed_information: "Ticket closed by **{user}** (`{id}`) - {timestamp}"
+  closed_information_left: "Ticket closed by **{user}** (`{id}`) as the member left the server - {timestamp}"
+  edit_new_ticket_message_title: "Edit your ticket message"
+  edit_new_ticket_message_label: "New Ticket Message"
+  edit_new_ticket_message_placeholder: "Hey there, this is your new ticket"
+  edit_new_ticket_message_success: "Message edited successfully!"
+  edit_new_ticket_message_title: "Edit the ticket creation message"
+  edit_new_ticket_message_label: "New Message"
+  edit_new_ticket_message_placeholder: "You can create a ticket here"
+  edit_create_ticket_message_title: "Edit the ticket message"
+  edit_create_ticket_message_title_label: "Title"
+  edit_create_ticket_message_title_placeholder: "Create your ticket here"
+  edit_create_ticket_message_description_label: "Description"
+  edit_create_ticket_message_description_placeholder: "Click on the button"
+  edit_create_ticket_message_footer_label: "Footer"
+  edit_create_ticket_message_footer_placeholder: "Only one ticket per user"
+  edit_create_ticket_message_hex_color_label: "HEX-Color"
+  edit_create_ticket_message_success: "Successfully edited the message"
+  ticket_invalid_category: "This category does not exist\n-# ➜ Please only use the ones given in the Autocomplete"
+  ticket_channel_not_found: "I could not find the ticket channel\n-# ➜ Please clear the ticket system and set it up again or check if I have access to the channel!"
+  ticket_message_not_found: "I could not find the ticket message\n-# ➜ Please clear the ticket system and set it up again or check if I have access to the message!"
+  
+  # Enhanced ticket system translations
+  not_a_ticket: "This command can only be used in ticket channels"
+  confirm_closure: "Confirm Ticket Closure"
+  confirm_closure_description: "Are you sure you want to close this ticket?\n\n**Reason options:**\n• Issue Resolved\n• No Response\n• Duplicate\n• Other"
+  confirm_closure_manual: "Are you sure you want to close this ticket?\n\n**Reason:** {reason}"
+  select_close_reason: "Select a reason for closing"
+  reason_resolved: "Issue Resolved"
+  reason_resolved_desc: "The issue has been successfully resolved"
+  reason_no_response: "No Response"
+  reason_no_response_desc: "No response from ticket owner"
+  reason_duplicate: "Duplicate"
+  reason_duplicate_desc: "Duplicate of another ticket"
+  reason_other: "Other"
+  reason_other_desc: "Other reason"
+  no_reason_provided: "No reason provided"
+  ticket_closed: "Ticket Closed"
+  ticket_closed_by: "This ticket has been closed by {user}"
+  close_reason: "Reason"
+  close_cancelled: "Ticket closure cancelled"
+  close_error: "Failed to close ticket: {error}"
+  transcript_no_perms: "Only staff members can generate transcripts"
+  transcript_url: "📄 Transcript URL"
+  transcript_error: "Failed to generate transcript: {error}"
+  transcript: "Transcript"
+  ticket_footer: "Use the buttons below to manage your ticket"
+  log_user: "User"
+  log_ticket: "Ticket"
+  log_number: "Number"
+  create_error: "Failed to create ticket: {error}"
+  block_error: "Failed to block user. Please use the block command manually"
+  owner_not_found: "Could not find the ticket owner"
+  panel_before_title: "📋 Before Creating a Ticket"
+  panel_before_content: "• Check our FAQ and documentation\n• Search for existing solutions\n• Prepare relevant information"
+  panel_response_title: "⏱️ Response Time"
+  panel_response_content: "Our staff typically responds within 24 hours"
+  panel_created: "Ticket panel has been sent to {channel}"
+  panel_error: "Failed to create ticket panel: {error}"
+  stats_title: "📊 Ticket Statistics"
+  stats_description: "Statistics for {guild}"
+  stats_overview: "📈 Overview"
+  stats_performance: "⏱️ Performance"
+  stats_total: "Total Tickets"
+  stats_open: "Open"
+  stats_closed: "Closed"
+  stats_avg_resolution: "Avg Resolution"
+  stats_hours: "hours"
+  stats_tickets: "tickets"
+  stats_top_creators: "👥 Top Ticket Creators"
+  stats_error: "Failed to get ticket statistics: {error}"
+  auto_closed_title: "Ticket Auto-Closed"
+  auto_closed_description: "This ticket has been automatically closed because {member} left the server"
 
+Ticketresponse:
+
+  tr_trigger_already: "`{trigger}` already exists\n-# ➜ Please use </ticket response edit:1131346505278697528> to update it"
+  create_trigger_title: "Create trigger '{trigger}'"
+  create_trigger_placeholder: "The message the bot should send\nVariables supported: {members}|{mention}|{user}|{guild}"
+  create_trigger_label: "Output"
+  edit_trigger_title: "Editing | '{trigger}'"
+  trigger_list_not_found: "You did not create any ticket trigger yet\n-# ➜ Do so by running </ticket response add:1131346505278697528>"
+  tr_trigger_remove: "Successfully removed `{trigger}` as a trigger"
+  tr_trigger_not_found: "I could not find `{trigger}` as a trigger\n-# ➜ Run </ticket response list:1131346505278697528> to see all your trigger"
+  trigger_list_title: "List of trigger for {guild}"
+  tr_create_trigger_success_message: "Successfully created ticket response for trigger `{trigger}`"
+  edit_trigger_success_message: "Successfully edited `{trigger}`"
+
+Twitch:
+
+  invalid_channel: "**{streamer}** is not a valid channel/streamer on Twitch\n-# ➜ Please try again or join my [support server](https://discord.com/invite/Qee6WZntcx) for help"
+  twitch_channel_added: "Successfully added **{streamer}** to your watchlist"
+  twitch_channel_removed: "Successfully removed **{streamer}** from your watchlist"
+  already_in_watchlist: "**{streamer}** is already in your watchlist\n-# ➜ Please try a different channel/streamer or join my [support server](https://discord.com/invite/Qee6WZntcx) for help"
+  no_watchlist: "You currently don't have a watchlist\n-# ➜ Start adding streamer/channel with </twitch add:1152293911151247541>"
+  not_in_watchlist: "**{streamer}** is not in your watchlist\n-# ➜ Please try a different channel/streamer or join my [support server](https://discord.com/invite/Qee6WZntcx) for help"
+  twitch_channel_set: "Successfully set Twitch notification channel to {channel}"
+  twitch_channel_already_set: "{channel} is already the Twitch notification channel on your server"
+  twitch_channel_moved: "Successfully moved Twitch notification channel to {channel}"
+  twitch_role_set: "Successfully set {role} for new Twitch messages\n-# ➜ The role will now get pinged on new streams"
+  role_already_set: "{role} is already pinged on new Twitch messages"
+  twitch_role_moved: "Successfully changed Twitch notification role to {role}"
+  watchlist: "<:twitch:1067955414811029534> Watchlist for {guild}"
+  twitch_moved_title: "<:moved:1398816116142375136> Twitch Settings"
+  twitch_moved_description: "Open the dashboard to access your Twitch settings"
+
+Welcome:
+
+  welcome_toggle: "Welcome messages are now **enabled**"
+  welcome_not_enabled: "It looks like, welcome messages are not enabled on this server\n-# ➜ Do so by running </welcome toggle:1131346505748467792>"
+  welcome_placeholder: "You can use these placeholders:\n\n{members} - Shows the total number of members.\n{mention} - Tags the new user.\n{user} - This will display the name of the user.\n{guild} - Shows the guild/server name."
+  welcome_modal_title: "Create your welcome message"
+  welcome_modal_label: "Message"
+  welcome_modal_placeholder: "Welcome to the server, {user}"
+  welcome_modal_channelid: "Channel-ID"
+  welcome_modal_channelid_placeholder: "123456789"
+  welcome_modalres_title: "## <:member_join:1111273560422502520> Your welcome message"
+  welcome_modalres_unchanged_channel: "Channel (unchanged)"
+  welcome_modalres_changed_channel: "Channel (changed)"
+  welcome_modalres_ping_unchanged: "Ping"
+  welcome_modalres_ping_changed: "Ping"
+  welcome_modalres_embed_unchanged: "Embed (unchanged)"
+  welcome_modalres_unchangedmsg: "```Welcome message unchanged```"
+  welcome_modalres_embed_changed: "Embed (changed)"
+  select_channel: "Select a channel"
+  settings_title: "Welcome Settings"
+  system_disabled: "The welcome system is currently **disabled**. Please enable it first."
+  toggle_error: "There was an error toggling this setting. Please try again later."
+  no_channel_set: "No channel is set to send welcome messages."
+  no_message_set: "No welcome message has been set. Use the 'Edit Message' option."
+  channel_not_found: "The selected channel could not be found."
+  missing_permissions: "The bot does not have permission to send messages in the selected channel."
+  channel_already_set: "Welcome messages are already being sent to {channel.mention}."
+  channel_moved: "Welcome messages will now be sent to {channel.mention} (previous channel replaced)."
+  channel_set: "Welcome messages will now be sent to {channel.mention}."
+  toggle_error: "An error occurred while updating this setting."
+  send_error: "The welcome message could not be sent."
+  test_error: "Something went wrong while sending the test message."
+  error_opening_settings: "Something went wrong while opening the settings panel."
+  variables_title: "Available Placeholders"
+  welcome_moved_title: "<:moved:1398816116142375136> Welcome Messages"
+  welcome_moved_description: "Open the dashboard to access your welcome message settings"
 
 Work:
 
-  worklist_start_title: "List of all jobs"
-  worklist_start_desc: "On the next pages you will see all the information about the available professions.\nSome professions need a little experience before you can apply for them.\n\n*New jobs will be added from time to time*."
-  worklist_lowpaid_title: "Jobs, but poorly paid"
-  worklist_middle_title: "Better paid jobs"
-  worklist_highpaid_title: "The best paid jobs"
-  worklist_lowpaid_desc: "*You don't get as much money here, but you can jump right in*\n\n🧑🏽‍🦱  **Employee**\n*Become an individual, sounds boring and is boring.*\n**Hours required:** `0`\n**Salary:** `10`\n\n💸  **Cashier**\n*You love dealing with money? Start at the cash register!*\n**Hours required:** `10`\n**Salary:** `15`"
-  worklist_lowpaid_desc2: "*You're almost there and soon you'll be earning better money!*\n\n🌾  **Gardener**\n*Become a gardener only when you and nature are one!*\n**Hours required:** `15`\n**Salary:** `17`\n\n🧑🏽‍🏫  **Educator**\n*Teaching children and preparing them for life, how great!*\n**Hours required:** `25`\n**Salary:** `20`"
-  worklist_mid_desc: "*Congratulations! You have made it and can already earn more money!*\n\n👩🏽‍⚕️  **Nurse**\n*Only if you can stand blood and annoying patients!*\n**Hours required:** `40`\n**Salary:** `25`\n\n📚  **Librarian**\n*Bookworms wanted! And possibly found?*\n**Hours required:** `55`\n**Salary:** `35`" # vorher 📚
-  worklist_mid_desc2: "*Things are looking better! Even more money, but even more experience is needed!*\n\n👨🏽‍⚕️  **Doctor**\n*Busy schedule, annoying patients, but diversified*\n**Hours required:** `65`\n**Salary:** `40`\n\n🎼  **Musician**\n*That sounds like... music to my ears*\n**Hours required:** `80`\n**Salary:** `42`"
-  worklist_mid_desc3: "*Soon you'll be playing at the top!*\n\n🕵🏽  **Lawyer**\n*Let others feel the harshness of your judgments!*\n**Hours required:** `95`\n**Salary:** `45`\n\n👟  **Athlete**\n*Women or men will be at your feet, you are sporty!*\n**Hours required:** `115`\n**Salary:** `47`"
-  worklist_high_desc: "*You've made it, you're playing at the top here!*\n\n👮🏽‍♂️  **Police officer**\n*Only criminals run away from you, chase them!*\n**Hours required:** `130`\n**Salary:** `55`\n\n🧑🏽‍🔧  **Engineer**\n*Maybe youll build the next skyscraper in your city?*\n**Hours required:** `150`\n**Salary:** `60`\n\n⚙️  **Programmer**\n*You want to code a bot too? Seriously?!*\n**Hours required:** `160`\n**Salary:** `75`"
-  worklist_closed: "**Worklist closed**"
-  work_reminder: " - You can now show up at work again!"
+  workstatus_next_job_reached: "*Apply __now__*"
+  workleaderboard_hours: "hours"
+  workleaderboard_title: "💼 Top 10 Workers"
+  worklist_start_title: "Overview about all jobs"
+  worklist_start_desc: "In the dropdown you will find all available jobs\nSome need a little more experience before you can apply for them.\n*New jobs will be added from time to time*."
+  work_reminder: "\nYou can now show up at work again\n-# ➜ Run </work start:1276330016216715291> to do so"
   key_gardener: "Gardener"
   key_athlete: "Athlete"
-  embed_field_salary: "Salary:"
   key_librarian: "Librarian"
   employee_desc: "Become an individual, sounds boring and is boring."
-  no_reminder_button: "Dont set a reminder!"
   key_lawyer: "Lawyer"
   key_doctor: "Doctor"
   key_cashier: "Cashier"
   key_nurses: "Nurses"
-  engineer_desc: "Maybe youll build the next skyscraper in your city?"
+  engineer_desc: "Maybe you'll build the next skyscraper in your city?"
   key_musician: "Musician"
   key_employee: "Employee"
-  embed_field_appear_time: "1x within `24` hours"
   lawyer_desc: "Let others feel the harshness of your judgments!"
-  set_reminder_button: "Set a reminder!"
   key_programmer: "Programmer"
   nurses_desc: "Only if you can stand blood and annoying patients!"
   doctor_desc: "Busy schedule, annoying patients, but diversified"
-  job_changed_embed_desc: "Congrats! Your request to change your job has been **approved**. See all the details below!"
   programmer_desc: "You want to code a bot too? Seriously?!"
-  workstatus_current_job: "Your current job:"
+  workstatus_current_job: "Current Job"
   key_police_officer: "Police officer"
-  workstatus_apply: "🚫  **You do not have a job right now. Try to `apply` for one.**" # vorher🚫
   gardener_desc: "Become a gardener only when you and nature are one!"
   educator_desc: "Teaching children and preparing them for life, how great!"
   musician_desc: "That sounds like... music to my ears"
-  work_quit_last_job: "Lastely worked as:"
-  embed_field_job: "Job:"
-  work_start_show_up: "If you do not show up for work, you will lose your job:"
   athlete_desc: "Women or men will be at your feet, you are sporty!"
-  set_reminder_button_success: "Set reminder!"
-  embed_title_work_accepted: "🎉  Application accepted!"
-  not_enough_hours: "⛔  **You do not have enough hours to apply for this job! You need to work `{jobs[job][1]}` hours first!**"
-  job_same: "❌  **You are already working as a/an {job}!**"
-  work_quit_total_hours: "Total work hours:"
-  job_changed_embed_title: "🎉  Successfully changed job!"
-  work_start_field_job: "Worked as:"
-  work_start_field_earned: "You earned:"
-  work_quit_desc: "You successfully quit your job.\nHere are your statistics:"
-  workstatus_earned_money: "Earned money:"
-  job_not_available: "❌  This job is not available right now."
-  cooldowns_desc: "*An overview of all commands and their remaining cooldown*"
-  work_start_embed_title: "💼  Successfully gone to work!" # vorher 💼 
-  work_start_cooldown: "⏳  **You are on cooldown, try again ** `{self.better_time(21601 - (int(dt.datetime.now().timestamp() - data[str(ctx.author.id)][0]['last_seen'])))}`**.**"
+  not_enough_hours: "You don't have enough hours to accept this job\n-# ➜ You need at least **{job_hours_required}** hours to apply for it"
+  job_same: "You are already working as a/an **{job}**\n-# ➜ Come back to work every day to climb up"
+  work_start_field_job: "Job"
+  work_start_field_earned: "Earned"
+  work_start_embed_title: "💼  Successfully gone to work"
+  work_start_cooldown: "We love fast workers, but you are too fast\n-# ➜ Come back {time}"
   work_start_embed_desc: "You showed up at work and successfully completed the shift."
-  work_quit_title: "😔  Job quit!"
-  workstatus_title: "Work stats"
-  workstatus_worked_hours: "Worked hours:"
-  embed_desc_work_accepted: "Congrats! Your application got **accepted**. See all the details below!"
-  apply_first: "**You have to `apply` for a job first!**"
+  workstatus_title: "<:upward_stonks:1148421272586440825> Work Statistics"
+  workstatus_worked_hours: "Working Hours"
+  apply_first: "You have to apply for a job first\n-# ➜ Do so by running </work apply:1276330016216715291>"
   key_educator: "Educator"
   librarian_desc: "Bookworms wanted! And possibly found?"
   police_officer_desc: "Only criminals run away from you, chase them!"
-  no_reminder_button_success: "Did not set a reminder!"
-  workstatus_last_time: "Last time you worked:"
+  workstatus_last_time: "Last Work"
   key_engineer: "Engineer"
   cashier_desc: "You love dealing with money? Start at the cash register!"
-  embed_field_appear: "Appear at work:"
-  work_quit_total_earnings: "Total earnings:"
-  apply_again: "🚫  **You have to `apply` for a job again!**"
-  work_apply_text: "**Choose the job you want. Note that you must show up at work once within `24` hours or you will lose the job.**\n\n*Some jobs require a certain number of hours of work!*"
-  workstatus_next_job: "Next possible job:"
-
-Welcome:
-
-  welcome_toggle: "✅ - **Welcoming new members is now**" # vorher checkmark
-  welcome_true: " `enabled`"
-  welcome_false: " `disabled`"
-  welcome_channel_set: "**Welcome channel set to: {channel.mention}**"
-  welcome_channel_already: "**{channel.mention} is already the welcome channel!**"
-  welcome_channel_moved: "**Welcome channel moved to: {channel.mention}**"
-  welcome_msg_toggle: "Please first toggle the welcome messages with `/welcome toggle` and set it to `True`"
-  welcome_msg_choose: "**Your next message will be the new private welcome message!**\n\n__You can use these placeholders:__\n\n`{members}` - Shows the total number of members.\n`{mention}` - Tags the new user.\n`{user}` - This will display the name of the user.\n`{guild}` - Shows the guild/server name."
-  welcome_msg_title: "Success! Welcome message set to:"
-  welcome_msg_already: "**This is already the welcome message!**"
-  welcome_msg_switched: "Success! Welcome message switched to:"
-  welcome_msg_too_long: "You took too long, try again!"
-  welcome_not_enabled: ":x:  |  You do not have the welcome system set up!"
-
-
-Namefilter:
-
-  namefilter_settings_title: "Settings changed!"
-  namefilter_add_fail_too_long: "<:denied:942820246023196742>  Nicknames can only be between 0 & 32 characters."
-  namefilter_toggle: "The char-filter is now: "
-  namefilter_true: "`enabled`"
-  namefilter_false: "`disabled`"
-  namefilter_add_success_title: "<:accepted:942820245616328725>  Word added!"
-  namefilter_add_success_desc: "**The name `{word}` was successfully added!**"
-  namefilter_add_fail_title: "<:denied:942820246023196742>  Could not add the word!"
-  namefilter_add_fail_desc: "**The name `{word}` is already filtered!**"
-  namefilter_add_tip_list: "To see a list with all filtered words, use '/filter list'"
-  namefilter_error_nodata: "<:database:955938305319505960>  The namefilter is empty!"
-  namefilter_remove_error_title: "<:database:955938305319505960>  Word not found!"
-  namefilter_remove_error_desc: "**The name `{word}` was not found in the database!**"
-  namefilter_remove_success_title: "<:accepted:942820245616328725>  Word removed!"
-  namefilter_remove_success_desc: "**The name `{word}` was successfully removed from the filter!**"
-  namefilter_list_success: "📝  List of all filtered names"
-  namefilter_check_title: "👀  Member(s) found!"
-  namefilter_check_desc: "The following member(s) have `{word}` in their nickname/name. What do you want to do?\n\n"
-  namefilter_check_not_found_title: "No member(s) with the name `{word}` found."
-  namefilter_check_ban_button: "Ban"
-  namefilter_check_rename_button: "Rename"
-  namefilter_check_nothing_button: "Nothing"
-  namefilter_check_footer: "1: Ban | 2: Rename | 3: Nothing"
-  namefilter_check_banned_title: "<:accepted:942820245616328725>  Successfully banned!"
-  namefilter_check_banned_desc: "In total I have banned `{banned_members}` member(s)!"
-  namefilter_check_banned_unable_desc: "**In total I have banned `{banned_members}` member(s)!\n\n`{unable}` member(s) could not be banned due to higher permissions!**"
-  namefilter_ban_reason: "Namefilter ban!"
-  namefilter_check_renamed_title: "<:accepted:942820245616328725>  Successfully renamed!"
-  namefilter_check_renamed_unable_desc: "**In total I have renamed `{renamed_members}` member(s)!\n\n`{unable}` member(s) could not be renamed due to higher permissions!**"
-  namefilter_check_renamed_desc: "**In total I have renamed `{renamed_members}` member(s)!**"
-  namefilter_fix_result_desc_unable: "**In total I have renamed `{renamed_members}` member(s)!\n\n`{unable}` member(s) could not be renamed due to higher permissions!**"
-  namefilter_check_nothing_title: "<:accepted:942820245616328725>  No action taken!"
-  namefilter_check_0_renamed_title: "<:denied:942820246023196742>  No member renamed!"
-  namefilter_check_0_renamed_desc: "**It looks like the member(s) found already have a nickname...\n\nIf you want to change specific nicknames in your server, simply search for them & I will change them!**"
-  namefilter_timeout_error: "Oops! You took to long, the process has been canceled. Try again!"
-  namefilter_fix_start: "<a:loading:964822053502984262>  Finding all the members..."
-  namefilter_fix_result_title: "🛠️  Checking completed!"
-  namefilter_fix_result_desc: "**I have found `{renamed_members}` member(s) and changed their nickname.**"
-  namefilter_fix_result_nothing_title: "👀  No violation found!"
-  namefilter_fix_result_nothing_desc: "I have checked `{counter}` out of `{len(interaction.guild.members)}` members and couldn't find any violation."
-  namefilter_on_member_update_title: "🔁  Nickname changed!"
-  namefilter_on_member_update_desc: "Nickname of {before.member.mention} changed. See the details:"
-  namefilter_on_member_update_old_name: "Old nickname:"
-  namefilter_on_member_update_new_name: "New nickname:"
-  namefilter_fix_no_charfilter_title: "<:denied:942820246023196742>  The charfilter is not active!"
-
-Customs:
-
-  trigger_already: "**This trigger already exists. Please use `/custom update` to update it.**"
-  create_trigger_title: "Creating trigger | '{trigger}'"
-  create_trigger_label: "Output"
-  create_trigger_placeholder: "The message the bot should send.\nPlaceholder are supported! ({members}/{mention}/{user}/{guild})"
-  create_trigger_success: "New trigger | {trigger}"
-  create_trigger_success_description: "**Output:**\n{value}"
-  trigger_remove: "Removed the custom trigger '{trigger.lower()}'"
-  edit_trigger_title: "Editing | '{trigger}'"
-  edit_trigger_success: "Trigger edited | {trigger}"
-  edit_trigger_success_description: "**New output:**\n{value}"
-  trigger_list: "A list with all custom trigger!"
-  trigger_list_not_found: "No custom trigger found!" # vorher nichts
-
-Feedback:
-
-  standard_embed: "Standard Embed"
-  own_embed: "Own Embed"
-  5min: 5
-  10min: 10
-  15min: 15
-  20min: 20
-  25min: 25
-  30min: 30
-  45min: 45
-  60min: 60
-  send?: "**Do you want to send out this feedback embed?**"
-  sent: "**Embed sent!**"
-  not_sent: "**Cancelled!**"
+  workstatus_next_job: "Next Job"
+  application_accepted: "<a:tada2:1135542208024547368> Application accepted"
+  employee_start_desc: "You are now working as an **Employee**\n-# ➜ Come back to work every 8 hours with </work start:1276330016216715291>"
+  reminder_change: "Work reminder messages are now **enabled** ({state})"
+  employee_first: "You have to work your way up\n-# ➜ For now you can only begin as an Employee"
+  promotion_accepted_title: "<a:tada2:1135542208024547368> Promotion accepted"
+  promotion_accepted_desc: "You just got promoted. Check out the details:\n**Job:** ~~{old_job}~~ {new_job}\n**Salary:** ~~{old_salary}~~ {new_salary} <:coin:1087923586985107588> (+{percentage_increase}%)"
+  apply_title: "💼 Application Menu"
+  apply_desc: "Please select the job you want to apply for"
+  workstatus_end: "*Reached the end for now*"
+  key_marketing_intern: "Marketing Intern"
+  marketing_intern_desc: "You love creative challenges? Start your career in marketing and make brands shine!"
+  key_sales_representative: "Sales Representative"
+  sales_representative_desc: "You can sell anything? Become a sales representative and convince customers in a heartbeat!"
+  key_graphic_designer: "Graphic Designer"
+  graphic_designer_desc: "You see the world in pixels? Become a graphic designer and shape the future!"
+  key_hr_specialist: "HR Specialist"
+  hr_specialist_desc: "Find the right tone and become an HR specialist to discover the best talents!"
+  key_account_manager: "Account Manager"
+  account_manager_desc: "Keep track of finances and client relationships as an account manager!"
+  key_it_support: "IT Support Specialist"
+  it_support_desc: "Can you solve computer problems in your sleep? Become an IT support specialist and save the day!"
+  key_research_scientist: "Research Scientist"
+  research_scientist_desc: "Explore the world as a research scientist and uncover the secrets of the universe!"
+  key_financial_analyst: "Financial Analyst"
+  financial_analyst_desc: "Do you love numbers and facts? Become a financial analyst and find meaning in the data mountains!"
+  key_legal_advisor: "Legal Advisor"
+  legal_advisor_desc: "Know the laws like the back of your hand and become a legal advisor to provide guidance and support!"
+  key_supply_chain_manager: "Supply Chain Manager"
+  supply_chain_manager_desc: "Hold all the strings and ensure smooth operations as a supply chain manager!"
+  key_construction_manager: "Construction Manager"
+  construction_manager_desc: "Build impressive projects as a construction manager and bring your visions to life!"
+  key_architect: "Architect"
+  architect_desc: "Have a vision for the future and become an architect to design impressive structures!"
+  key_biotech_engineer: "Biotech Engineer"
+  biotech_engineer_desc: "Change lives and bring innovation to medicine as a biotech engineer!"
+  key_aerospace_engineer: "Aerospace Engineer"
+  aerospace_engineer_desc: "Dreaming of flying? Conquer the skies as an aerospace engineer!"
+  key_diplomat: "Diplomat"
+  diplomat_desc: "Master negotiations and bring countries to the table as a diplomat!"
+  key_cybersecurity_expert: "Cybersecurity Expert"
+  cybersecurity_expert_desc: "Protect the digital world from hacker attacks as a cybersecurity expert!"
+  key_energy_consultant: "Energy Consultant"
+  energy_consultant_desc: "Shape a green future as an energy consultant with sustainable energy!"
+  key_climate_scientist: "Climate Scientist"
+  climate_scientist_desc: "Save the planet and explore ways to protect the Earth as a climate scientist!"
+  key_space_explorer: "Space Explorer"
+  space_explorer_desc: "Explore the unknown and dream of the stars as a space explorer!"
+  key_futurist: "Futurist"
+  futurist_desc: "Always think one step ahead and shape the world of tomorrow as a futurist!"
+  coins: "Coins"
+  hours: "Hours"
 
 
-Leave:
-  leave_toggle: "<:accepted:942820245616328725>  |  Farwelling members is now "
-  leave_msg_toggle: "<:denied:942820246023196742>  |  You have to toggle the leave message first!"
-  leave_not_enabled: "<:denied:942820246023196742>  |  Farwelling members is not enabled!"
-  leave_true: "`enabled`"
-  leave_false: "`disabled`"
+YouTube:
+
+  channel_not_found: "**{channel}** was not found.\n-# ➜ If you used the channel name (`@YouTube`) without the `@`, try to add it or search the YouTube channel by its `UC...`-ID"
+  channel_added: "**[{channel_name}]({channel_url})** has been added to the notification list!"
+  channel_already_added: "This channel already exists in your notification list!"
+  channel_already_set: "Notifications are already being sent to {channel}"
+  channel_set: "Notifications will be sent to {channel}"
+  channel_removed: "Successfully removed **{channel}**"
+  no_channels: "You are not watching any YouTube channels\n-# ➜ Do so by running /youtube channel"
+  channels_list: "YouTube channel for {guild}"
+  role_already_set: "{role} is already set as the YouTube role"
+  role_set: "Success! I will ping {role} for the newest YouTube videos"
+  role_removed: "Successfully unset/removed {role} as the ping role. I will not ping a role for new YouTube videos!"
+  role_not_set: "{role} is not set as the YouTube ping role!"
+  youtube_moved_title: "<:moved:1398816116142375136> YouTube Settings"
+  youtube_moved_description: "Open the dashboard to access your YouTube Settings"
 
 
-Booster:
+Tournament:
 
-  new_booster_channel_title: "<:nitro:1092908695035326675> Settings changed!"
-  new_booster_channel_desc: "Set channel to: {channel.mention}"
-  booster_channel_moved_desc: "Moved channel to: {channel.mention}"
-  booster_same_channel_title: "{channel.mention} is already set as the boost-message channel!"
+  tournament_in_progress: "A tournament is already active in this guild."
+  not_enough_participants: "At least 3 participants are required to start."
+  tournament_starting: "Let the Tournament Begin! ⚔️"
+  tournament_starting_desc: "{initiator} opened the arena! <:acmonfire:1357109359628386434>\n\n**{participants_count} Competing Alchemists:**\n```{participants_list}```\n━━━━━━━━━━━━━━━━━━━━━━\n💥 Flasks are bubbling...\n🧪 Ingredients are mixing...\n⏱️ Powers are awakening...\n💫 Champions are rising...\n━━━━━━━━━━━━━━━━━━━━━━\n**Let the battle of wits and wizardry begin! <:acmlaugh:1357111792249208994>**"
+  tournament_error: "An error occurred while setting up the tournament. Please try again."
+  winner_announcement: "<:acmwin:1357110704813113475> We have a winner!"
+  winner_description: "{winner} won Alchemist's Tournament `#{tournament_number}`!"
+  prize_field: "💰 Prize"
+  participants_field: "👥 Total participants"
+  time_field: "⏱️ Time survived"
+  wins_server_field: "🏆 Total wins in server"
+  wins_global_field: "🌎 Total wins globally"
+  not_enough_coins: "You need at least 1000 coins to join."
+  already_joined: "You already joined!"
+  join_success: "You joined the tournament!"
+  join_with_custom_bet: "You joined the tournament with {bet:,} coins!"
+  custom_bet_title: "Enter Custom Bet (min 1000 coins)"
+  custom_bet_label: "Bet Amount"
+  custom_bet_placeholder: "Enter an amount (minimum 1000)"
+  minimum_bet_error: "Minimum bet is 1000 coins."
+  insufficient_funds: "You don't have enough coins for that bet. Your balance: {balance:,} coins."
+  signup_title: "⚗️ Alchemist Tournament #{tournament_number} ⚗️"
+  signup_description: "An epic battle of potions and elixirs! <:acmonfire:1357109359628386434>"
+  prize_pool_field: "💰 Prize Pool"
+  participants_field_title: "👥 Participants"
+  how_to_join_betting: "• Press **Join Tournament** to enter with 1000 coins\n• Press **Custom Bet** to join with more coins\n• Press **Participants** to see who's in\n• Tournament starts when initiator presses **Start Tournament**"
+  how_to_join_standard: "• Press **Join Tournament** to enter\n• Press **Participants** to see who's in\n• Tournament starts when initiator presses **Start Tournament**"
+  hosted_by: "Tournament hosted by {host_name} • ID: {game_id}"
+  no_completed_tournaments: "No completed tournaments found in this guild."
+  no_tournament_history: "No tournament history found for this guild."
+  tournament_cancelled: "Tournament cancelled successfully. All participants have been refunded."
+  no_active_tournament: "No active tournament to cancel in this guild."
+  need_admin_permissions: "You need administrator permissions to cancel tournaments."
+  error_cancelling: "An error occurred while cancelling the tournament. Some refunds may not have processed."
 
-  server_boost_toggle_true: "<:enabled:942816356385042473> Settings changed!"
-  server_boost_toggle_true_desc : "Server Boost messages are now `enabled`!\n*Make sure to enable 'Send a message when someone boosts the server' in your server 'Overview'!*"
-  server_boost_toggle_false: "<:disabled:942816356942884905> Settings changed!"
-  server_boost_toggle_false_desc : "Server Boost messages are now `disabled`!"
+Action:
 
-  server_boost_variables_title: "<:discordquestion:965870949482233856> Available variables"
-  server_boost_variables_mention: "Mention the member who boosted the server"
-  server_boost_variables_name: "Display the Discord Tag of the member who boosted the server"
-  server_boost_variables_id: "Displays the ID of the member who boosted the server"
-  server_boost_variables_guild_name: "Displays the name of the server"
-  server_boost_variables_boost_count: "Shows the current number of boosts for the server"
-  server_boost_variables_boost_level: "Shows the current boost level of the server"
+  completed: "<a:check_green:942824781303144450> Action completed"
+  in_progress: "<a:idle_loading:942820916751114351> Action in progress"
+  ticket_created: "<a:check_green:942824781303144450> Ticket created"
+  canceled: "<a:x_red:942824780992749610> Action canceled"
+  open_dashboard: "Open Dashboard"
 
-  boost_not_enabled: "You have not `enabled` the server booster messages!"
-  boost_enable_first: "You need to `enabled` the server booster messages first!"
-  server_boost_message_set_title: "<:accepted:942820245616328725> Set server boost message!"
-  invalid_hex_code: "Invalid HEX-code, using **#814261**"
-  valid_hex_code: "Using HEX-code **{valid_hex_code}**"
-  server_boost_embed_desc_final: "> Boost-Message:\n\n"
-  server_boost_message_changed_title: "<:accepted:942820245616328725> Changed server boost message!"
-  unchanged_ping: "Ping (Unchanged):"
-  unchanged_embed: "Embed (Unchanged):"
-  unchanged_hex: "HEX (Unchanged):"
-  unchanged_boost_message: "> Boost-Message: Unchanged"
-  settings_missing_message: "You did not set a booster message!"
-  settings_missing_channel: "You did not set a booster message channel!"
-  test_message_title: "<a:check_green:942824781303144450> Successfully sent message!"
-  test_message_desc: "Sent message into {channel}"
+Settings:
 
-TicketResp:
+  changed: "<a:check_green:942824781303144450> Settings changed"
+  updated: "<a:check_green:942824781303144450> Settings updated"
 
-trigger_already: "**This ticket response already exists. Please use `/ticket-response edit` to update it.**"
-create_trigger_title: "Creating ticket response | '{trigger}'"
-create_trigger_placeholder: "The message the bot should send.\nPlaceholder are supported! ({members}/{mention}/{user}/{guild})"
-create_trigger_success: "New response | {trigger}"
-trigger_remove: "Removed the ticket response '{trigger.lower()}'"
-edit_trigger_title: "Editing | '{trigger}'"
-create_trigger_label: "Output"
-create_trigger_success_description: "**Output:**\n{value}"
-edit_trigger_title: "Editing | '{trigger}'"
-edit_trigger_success: "Ticket response edited | {trigger}"
-edit_trigger_success_description: "**New output:**\n{value}"
-trigger_list: "A list with all custom responses!"
-trigger_list_not_found: "No custom ticket responses found!" # vorher nichts
+### COMMAND TRANSLATIONS ###
+
+
+Commands:
+
+  youtube:
+    group_description: "All commands related to YouTube notifications."
+    
+    add:
+      command_description: "Add a YouTube channel to the notification list"
+      parameters:
+        channel:
+          desc: "The YouTube channel you want to add"
+    
+    channel:
+      command_description: "Set the channel where the notifications will be sent"
+      parameters:
+        channel:
+          desc: "The channel on the server"
+    
+    remove:
+      command_description: "Remove a YouTube channel from the notification list"
+      parameters:
+        channel:
+          desc: "The YouTube channel to remove"
+    
+    list:
+      command_description: "List all YouTube channels that are being watched"
+  
+  ping:
+    command_description: "Add or remove a role to ping when a new video is uploaded"
+    parameters:
+      action:
+        desc: "Whether to add or remove the role"
+      role:
+        desc: "The role to ping"
+
+  work:
+    group_description: "All work related commands"
+    
+    apply:
+      command_description: "Apply for an available job"
+    
+    start:
+      command_description: "Start working at your job"
+    
+    list:
+      command_description: "Display all available jobs"
+    
+    status:
+      command_description: "Display current job status and progress"
+
+  welcome:
+    command_name: "welcome"
+    command_description: "Configure server welcome messages"
+
+  twitch:
+    group_description: "Twitch related commands"
+    
+    accesstoken:
+      command_description: "Get a new Twitch access token (admin only)"
+    
+    add:
+      command_description: "Add a Twitch streamer or channel to your watchlist"
+      parameters:
+        streamer:
+          desc: "The name of the streamer or channel"
+    
+    remove:
+      command_description: "Remove a Twitch streamer or channel from your watchlist"
+      parameters:
+        streamer:
+          desc: "The name of the streamer or channel"
+    
+    channel:
+      command_description: "Set the channel for the Twitch notifications"
+      parameters:
+        channel:
+          desc: "The channel to send the notifications to"
+    
+    role:
+      command_description: "Set a ping role for the Twitch notifications"
+      parameters:
+        role:
+          desc: "The role to ping for the notifications"
+        action:
+          desc: "Whether to add or remove the role"
+    
+    list:
+      command_description: "List all streamers in your watchlist"
+
+  tournament:
+    command_name: "tournament"
+    command_description: "Start a knockout tournament"
+    parameters:
+      mode:
+        name: "mode"
+        desc: "Tournament mode ('standard' or 'betting')"
+
+  tournament_stats:
+    command_name: "tournament_stats"
+    command_description: "View tournament statistics"
+
+  tournament_history:
+    command_name: "tournament_history"
+    command_description: "View recent tournament history"
+
+  tournament_cancel:
+    command_name: "tournament_cancel"
+    command_description: "Cancel an ongoing tournament (Admin only)"
+
+  ticket:
+    group_description: "All ticket related commands"
+    
+    role:
+      command_description: "Add or remove a ticket manager role"
+      parameters:
+        role:
+          desc: "The role you want to add or remove as a ticket manager"
+        action:
+          desc: "Whether you want to add or remove the role"
+    
+    setup:
+      command_description: "Create your ticket system"
+      parameters:
+        system:
+          desc: "The system you want to use"
+        thumbnail:
+          desc: "The thumbnail of the embed"
+        image:
+          desc: "The image of the embed"
+    
+    edit:
+      command_description: "Edit the ticket system messages"
+      parameters:
+        thumbnail:
+          desc: "The new thumbnail of the embed"
+        image:
+          desc: "The new image of the embed"
+        type:
+          desc: "The type of message you want to edit"
+    
+    clear:
+      command_description: "Remove the ticket system from your server"
+    
+    log:
+      command_description: "Set a log channel for tickets"
+      parameters:
+        channel:
+          desc: "The log channel for tickets in your server"
+    
+    category:
+      command_description: "Change the category for new tickets"
+      parameters:
+        category:
+          desc: "The category for new tickets"
+    
+    ping:
+      command_description: "Role that gets pinged on a new ticket"
+      parameters:
+        role:
+          desc: "The role you want to ping on a new ticket"
+        action:
+          desc: "Add or remove the role"
+    
+    member:
+      command_description: "Block or unblock a member from creating tickets"
+      parameters:
+        member:
+          desc: "The member you want to block or unblock from creating tickets"
+        action:
+          desc: "Whether you want to block or unblock the member"
+
+  sticky:
+    group_description: "Commands to manage the sticky commands"
+    
+    set:
+      command_description: "Set a sticky message for a channel"
+      parameters:
+        channel:
+          desc: "The channel to set the sticky message for"
+        embed:
+          desc: "Whether to send the message as an embed"
+    
+    unset:
+      command_description: "Remove the sticky message from a channel"
+      parameters:
+        channel:
+          desc: "The channel to remove the sticky message from"
+    
+    edit:
+      command_description: "Edit a channel's sticky message"
+      parameters:
+        channel:
+          desc: "The channel to edit the sticky message for"
+    
+    list:
+      command_description: "List all sticky messages for this server"
+
+  roleshop:
+    group_description: "All commands related to the roleshop"
+    
+    show:
+      command_description: "Shows the roleshop for the server"
+    
+    add:
+      command_description: "Add a role to your roleshop"
+      parameters:
+        role:
+          desc: "The role you want to add"
+        price:
+          desc: "The price of the role"
+    
+    remove:
+      command_description: "Remove a role from the roleshop"
+      parameters:
+        role:
+          desc: "The role you want to remove"
+    
+    update:
+      command_description: "Update a role in the roleshop"
+      parameters:
+        role:
+          desc: "The role you want to update"
+        price:
+          desc: "The new price of the role"
+
+  logging:
+    group_description: "All commands related to server logging"
+    
+    channel:
+      command_description: "Set the logging channel for the server"
+      parameters:
+        channel:
+          desc: "The channel where logging should be sent"
+    
+    type:
+      command_description: "Set the type of logging to be done"
+      parameters:
+        type:
+          desc: "The type of logging to be done"
+        toggle:
+          desc: "Enable (True) or Disable (False) the logging type"
+    
+    status:
+      command_description: "Show the current logging settings for the server"
+
+  reminder:
+    group_description: "All commands related to reminders"
+    
+    set:
+      command_description: "Set a new reminder with optional recurring interval"
+      parameters:
+        time:
+          desc: "The reminder time in s/m/h/d (eg: 1h30m)"
+        reminder:
+          desc: "The reminder text"
+        dm:
+          desc: "Whether to send the reminder as a direct message"
+        interval:
+          desc: "Optional: set a recurring interval (same format as time, minimum 10s)"
+    
+    delete:
+      command_description: "Delete a specific reminder"
+      parameters:
+        reminder:
+          desc: "The reminder you want to delete"
+    
+    list:
+      command_description: "List all your active reminders"
+
+  reaction:
+    group_description: "All commands concerning reactions"
+    
+    channel:
+      command_description: "Set a reaction role channel"
+      parameters:
+        channel:
+          desc: "The channel where the reaction roles will be enabled"
+    
+    add:
+      command_description: "Add a role to the reaction roles"
+      parameters:
+        emoji:
+          desc: "The emoji corresponding to the role"
+        role:
+          desc: "The role you want to grant"
+    
+    remove:
+      command_description: "Remove a role from the reaction roles"
+      parameters:
+        role:
+          desc: "The role you want to remove"
+    
+    list:
+      command_description: "Shows you the reaction role settings"
+
+
+  pvm:
+    group_description: "Commands to manage the custom voice channels"
+    
+    role:
+      command_name: "role"
+      command_description: "Remove or add a manager role for your custom channel"
+      parameters:
+        role:
+          name: "role"
+          desc: "The role to be added or removed"
+        action:
+          name: "action"
+          desc: "Whether you want to add or remove the role"
+    
+    member:
+      command_name: "member"
+      command_description: "Make a member immune or not immune"
+      parameters:
+        member:
+          name: "member"
+          desc: "The member on your server"
+        action:
+          name: "action"
+          desc: "Whether you want to ignore or unignore the member"
+    
+    setup:
+      command_name: "setup"
+      command_description: "Create the custom channel system"
+    
+    menu:
+      command_name: "menu"
+      command_description: "Show the menu for your custom channel"
+    
+    clear:
+      command_name: "clear"
+      command_description: "Clears the custom channel system"
+    
+    info:
+      command_name: "info"
+      command_description: "Get information about a custom channel"
+      parameters:
+        channel:
+          name: "channel"
+          desc: "The custom channel you want to get information about"
+    
+    privacy:
+      command_name: "privacy"
+      command_description: "Change the appearance of your custom channel"
+      parameters:
+        toggle:
+          name: "toggle"
+          desc: "True = Close | False = Open"
+    
+    kick:
+      command_name: "kick"
+      command_description: "Kick a member from your custom channel"
+      parameters:
+        member:
+          name: "member"
+          desc: "The member you want to kick from the custom channel"
+    
+    invite:
+      command_name: "invite"
+      command_description: "Invite a member to your custom channel"
+      parameters:
+        member:
+          name: "member"
+          desc: "The member you want to invite to the custom channel"
+    
+    name:
+      command_name: "name"
+      command_description: "Change the name of your custom channel"
+      parameters:
+        name:
+          name: "name"
+          desc: "The new name for your custom channel"
+    
+    size:
+      command_name: "size"
+      command_description: "Change the size of your custom channel"
+      parameters:
+        size:
+          name: "size"
+          desc: "The new size of the custom channel"
+
+  msgvote:
+    group_description: "All message-vote commands"
+    
+    toggle:
+      command_name: "toggle"
+      command_description: "Toggle the message votes"
+      parameters:
+        toggle:
+          name: "toggle"
+          desc: "Enable (T) or Disable (F) the message votes"
+    
+    channel:
+      command_name: "channel"
+      command_description: "Set the channel for the message votes"
+      parameters:
+        channel:
+          name: "channel"
+          desc: "The channel where the message votes will be enabled"
+    
+    upvote:
+      command_name: "upvote"
+      command_description: "Set the upvote reaction"
+      parameters:
+        emoji:
+          name: "emoji"
+          desc: "The emoji you want to set as the upvote emoji"
+    
+    downvote:
+      command_name: "downvote"
+      command_description: "Set the downvote reaction"
+      parameters:
+        emoji:
+          name: "emoji"
+          desc: "The emoji you want to set as the downvote emoji"
+
+  modlog:
+    command_name: "modlog"
+    command_description: "Set a modlog for your server"
+    parameters:
+      channel:
+        name: "channel"
+        desc: "The channel you want the modlog to be set in"
+
+  channelmode:
+    command_name: "channelmode"
+    command_description: "Set a channel into a specific mode"
+    parameters:
+      channel:
+        name: "channel"
+        desc: "The channel in your server you want to assign a mode to"
+      mode:
+        name: "mode"
+        desc: "The mode you want to set the channel to"
+      toggle:
+        name: "toggle"
+        desc: "Whether you want to enable or disable the mode"
+
+  ban:
+    command_name: "ban"
+    command_description: "Ban a member from your server"
+    parameters:
+      member:
+        name: "member"
+        desc: "The member you want to ban"
+      reason:
+        name: "reason"
+        desc: "The ban reason"
+
+  kick:
+    command_name: "kick"
+    command_description: "Kick a member from your server"
+    parameters:
+      member:
+        name: "member"
+        desc: "The member you want to kick"
+      reason:
+        name: "reason"
+        desc: "The kick reason"
+
+  emojisteal:
+    command_name: "emojisteal"
+    command_description: "Steal an emoji from a different server"
+    parameters:
+      emoji:
+        name: "emoji"
+        desc: "The emoji you want to steal"
+
+  tempban:
+    command_name: "tempban"
+    command_description: "Ban a member from your server for a certain amount of time"
+    parameters:
+      member:
+        name: "member"
+        desc: "The member you want to temporarily ban"
+      time:
+        name: "time"
+        desc: "The duration of the ban"
+      reason:
+        name: "reason"
+        desc: "The tempban reason"
+
+  delete:
+    command_name: "delete"
+    command_description: "Delete a certain amount of messages in the current channel"
+    parameters:
+      amount:
+        name: "amount"
+        desc: "The amount of messages you want to delete"
+
+  hackban:
+    command_name: "hackban"
+    command_description: "Ban a user in advance from your server"
+    parameters:
+      user:
+        name: "user"
+        desc: "The user you want to hackban"
+      reason:
+        name: "reason"
+        desc: "The hackban reason"
+
+  levels:
+    group_description: "All commands related to the leveling system"
+    
+    toggle:
+      command_name: "toggle"
+      command_description: "Toggle the level-system"
+      parameters:
+        toggle:
+          name: "toggle"
+          desc: "Enable (T) or Disable (F) the level-system"
+    
+    mention:
+      command_name: "mention"
+      command_description: "Toggle level-up mentions"
+      parameters:
+        toggle:
+          name: "toggle"
+          desc: "Enable (T) or Disable (F) level-up mentions"
+    
+    channel:
+      command_name: "channel"
+      command_description: "Exclude or include a channel from the level-system"
+      parameters:
+        action:
+          name: "action"
+          desc: "Ignore or unignore a channel from the level-system"
+        channel:
+          name: "channel"
+          desc: "The channel you want to ignore/unignore"
+    
+    background:
+      command_name: "background"
+      command_description: "Change the background of your rankcard"
+      parameters:
+        image:
+          name: "image"
+          desc: "The image you want to use as your background"
+    
+    roles:
+      group_description: "Commands for level-up roles"
+      
+      toggle:
+        command_name: "toggle"
+        command_description: "Toggle level-up roles"
+        parameters:
+          toggle:
+            name: "toggle"
+            desc: "Enable (T) or Disable (F) level-up roles"
+      
+      add:
+        command_name: "add"
+        command_description: "Set level-up roles"
+        parameters:
+          level:
+            name: "level"
+            desc: "The level required to get the role"
+          role:
+            name: "role"
+            desc: "The server role you want to assign"
+      
+      remove:
+        command_name: "remove"
+        command_description: "Remove a level-up role"
+        parameters:
+          role:
+            name: "role"
+            desc: "The level-up role you want to remove"
+  
+  rank:
+    command_name: "rank"
+    command_description: "Get your or someone else's rank"
+    parameters:
+      member:
+        name: "member"
+        desc: "The member you want to get the rank of"
+
+  leave:
+    group_description: "All commands for leave messages"
+    
+    toggle:
+      command_name: "toggle"
+      command_description: "Toggle leave messages for your server"
+      parameters:
+        toggle:
+          name: "toggle"
+          desc: "Enable (T) or Disable (F) leave messages for your server"
+    
+    message:
+      command_name: "message"
+      command_description: "Set up the leave message"
+      parameters:
+        embed:
+          name: "embed"
+          desc: "Whether the message should be an embed"
+
+  economy:
+    chemistryclass:
+      command_name: "chemistryclass"
+      command_description: "Start a chemistry class game with a pot"
+      parameters:
+        amount:
+          name: "amount"
+          desc: "The amount you want to add to the pot"
+    
+    economyban:
+      command_name: "economyban"
+      command_description: "Ban a user from the economy commands"
+      parameters:
+        member:
+          name: "member"
+          desc: "The member you want to ban"
+        reason:
+          name: "reason"
+          desc: "The ban reason"
+    
+    economyunban:
+      command_name: "economyunban"
+      command_description: "Unban a user from the economy commands"
+      parameters:
+        member:
+          name: "member"
+          desc: "The member you want to unban"
+    
+    grant:
+      command_name: "grant"
+      command_description: "Send a user some money (admin only)"
+      parameters:
+        member:
+          name: "member"
+          desc: "The member you want to send money to"
+        amount:
+          name: "amount"
+          desc: "The amount you want to send"
+
+
+  automod:
+    group_description: "All commands about automoderation"
+    
+    toggle:
+      command_name: "toggle"
+      command_description: "Toggle the automoderation system" 
+      parameters:
+        toggle:
+          name: "toggle"
+          desc: "Enable or disable the automoderation system"
+    
+    channel:
+      command_name: "channel"
+      command_description: "Set the log channel for automoderation"
+      parameters:
+        channel:
+          name: "channel"
+          desc: "The channel to use for logging automoderation actions"
+    
+    autodelete:
+      command_name: "autodelete"
+      command_description: "Set or remove auto-delete threshold for a category"
+      parameters:
+        category:
+          name: "category"
+          desc: "The category to set the auto-delete threshold for or remove"
+        threshold:
+          name: "threshold"
+          desc: "The threshold percentage (10-100%, in 10% steps) or 'Remove' to disable"
+
+  achievements:
+    toggle:
+      command_name: "toggle"
+      command_description: "Enable (T) or Disable (F) achievement messages"
+      parameters:
+        toggle:
+          name: "toggle"
+          desc: "Enable (T) or Disable (F) achievement messages"
+    
+    list:
+      command_name: "list"
+      command_description: "Get a list of all achievements"
+      parameters:
+        member:
+          name: "member"
+          desc: "The member you want to get achievements from"
+  
+  userinfo:
+    command_name: "userinfo"
+    command_description: "Outputs information about a member"
+    parameters:
+      member:
+        name: "member"
+        desc: "The member you want to get information about"
+
+  bonk:
+    command_name: "bonk"
+    command_description: "Bonk a user"
+    parameters:
+      user:
+        name: "user"
+        description: "The user to bonk"
+
+  announcement_create:
+    command_name: "create"
+    command_description: "Create an announcement"
+    parameters:
+      channel:
+        name: "channel"
+        desc: "Channel to post the announcement"
+      ping:
+        name: "ping"
+        desc: "Role to ping"
+      image:
+        name: "image"
+        desc: "Image to attach"
+
+
+  announcement_edit:
+    command_name: "edit"
+    command_description: "Edit an existing announcement"
+    parameters:
+      message:
+        name: "message"
+        desc: "ID of the message to edit"
+
+
+  autorole:
+    command_description: "Manage your Autorole settings"
+
+
+  boost_toggle:
+    command_description: "Toggle the server boost message"
+    parameters:
+      toggle:
+        name: "toggle"
+        desc: "Enable (T) or Disable (F) the boost message"
+
+  boost_channel:
+    command_description: "Set the channel for the boost message"
+    parameters:
+      channel:
+        desc: "The channel where the boost message will be sent"
+
+  boost_variables:
+    command_description: "See all available variables for the boost message"
+
+  boost_message:
+    command_description: "Create or edit the server boost message"
+    parameters:
+      ping:
+        desc: "Whether to ping the booster or not"
+      embed:
+        desc: "Whether to send the message as an embed or not"
+
+  boost_test:
+    command_description: "Sends a boost test message"
+
+  chatgpt_ask:
+    command_description: "Ask ChatGPT whatever you want"
+
+  chatgpt_tokens:
+    command_description: "Get information about your tokens"
+
+  imagedescription:
+    command_description: "Get a description for an image"
+
+  transcribe:
+    command_description: "Transcribe audio files"
+
+  generate_audio:
+    command_description: "Generate audio from text"
+    parameters:
+      text:
+        desc: "The text to convert to audio"
+
+  custom_add:
+    command_description: "Add a new custom message"
+    parameters:
+      trigger:
+        desc: "The trigger for the custom message"
+
+  custom_remove:
+    command_description: "Remove a custom message"
+    parameters:
+      trigger:
+        desc: "The trigger you want to remove"
+
+  custom_edit:
+    command_description: "Edit a custom message"
+    parameters:
+      trigger:
+        desc: "The trigger you want to edit"
+
+  custom_list:
+    command_description: "See a list with all your custom messages"
+  
+
+
+  balance:
+    command_description: "Check your balance"
+
+  higherlower:
+    command_description: "Play the Higher or Lower game"
+    parameters:
+      amount:
+        desc: "The amount you want to bet"
+
+  withdraw:
+    command_description: "Add money to your wallet"
+    parameters:
+      amount:
+        desc: "The amount you want to withdraw from your bank account"
+
+  beg:
+    command_description: "Beg for some money and see what happens"
+
+  deposit:
+    command_description: "Deposit money to your bank account"
+    parameters:
+      amount:
+        desc: "The amount you want to deposit ('all' for all money)"
+
+  coinflip:
+    command_description: "Flip a coin and test your luck"
+    parameters:
+      amount:
+        desc: "The amount you want to bet"
+
+  slots:
+    command_description: "Play slots at your own risk"
+    parameters:
+      amount:
+        desc: "The amount you want to spend on slots"
+
+  guess:
+    command_description: "Guess where the bottle is hidden"
+    parameters:
+      amount:
+        desc: "The amount you want to spend on guessing"
+      difficulty:
+        desc: "The difficulty of the images"
+
+  rob:
+    command_description: "Rob a user, maybe you get lucky"
+    parameters:
+      member:
+        desc: "The member you want to rob"
+
+  send:
+    command_description: "Send money to another user"
+    parameters:
+      member:
+        desc: "The member you want to give money to"
+      amount:
+        desc: "The amount you want to give"
+
+  daily:
+    command_description: "Grab your daily coins"
+  
+
+  giveaway_start:
+    command_description: "Start a giveaway"
+    parameters:
+      duration:
+        desc: "The duration of the giveaway (d/h/m/s)"
+      winners:
+        desc: "The amount of winners"
+      prize:
+        desc: "The prize of the giveaway"
+      channel:
+        desc: "The channel where the giveaway should be hosted"
+      ping:
+        desc: "The role you want to ping"
+
+  giveaway_reroll:
+    command_description: "Reroll winners for a giveaway"
+    parameters:
+      id:
+        desc: "The ID of the giveaway"
+      winners:
+        desc: "Number of winners to reroll (optional)"
+
+  giveaway_end:
+    command_description: "End a giveaway and announce winners"
+    parameters:
+      id:
+        desc: "The ID of the giveaway"
+
+  giveaway_delete:
+    command_description: "Delete a giveaway"
+    parameters:
+      id:
+        desc: "The ID of the giveaway"
+  
+  help:
+    command_description: "Need help? Use this command to get started!"
+  
+  mydata:
+    command_description: "Get insights into your stored data"
+
+  serverinfo:
+    command_description: "Outputs information about the server"
+
+  botinfo:
+    command_description: "Outputs some bot statistics and information"
+
+  ping:
+    command_description: "Check if the bot is online"
+
+  avatar:
+    command_description: "Shows the avatar or server avatar of a member"
+    parameters:
+      member:
+        desc: "The member you want to view the avatar of"
+  
+  leaderboard:
+    command_description: "The module you want to get the leaderboard from"
+
